@@ -39,7 +39,6 @@ extra_css:
 
 plugins:
   - search
-  - glightbox
   - mkdoxy:
       projects:
         api_data:
