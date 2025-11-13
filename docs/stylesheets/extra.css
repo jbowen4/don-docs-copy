@@ -1,0 +1,10 @@
+@font-face {
+  font-family: '<font>';
+  src: '...';
+}
+
+.img-bg {
+  background-color: #e0f7fa;
+  padding: 8px;
+  border-radius: 6px;
+}

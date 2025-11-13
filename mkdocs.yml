@@ -1,0 +1,169 @@
+site_name: DON Documentation
+site_url: https://don.readthedocs.io/
+theme:
+  name: material
+  font:
+    text: Inter
+    code: Red Hat Mono
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.expand
+    - navigation.path
+    - toc.follow
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.magiclink
+  - pymdownx.blocks.caption
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - glightbox
+  - mkdoxy:
+      projects:
+        api_data:
+          src-dirs: Source/DONToUnreal/Public/Data Source/DONToUnreal/Private/Data
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: '*.cpp *.h*'
+            RECURSIVE: True
+
+        api_level:
+          src-dirs: Source/DONToUnreal/Public/Level Source/DONToUnreal/Private/Level
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: '*.cpp *.h*'
+            RECURSIVE: True
+
+        don_test:
+          src-dirs: Source/DONToUnreal/Private/Tests
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: '*.cpp *.h*'
+            RECURSIVE: True
+
+        api_utils:
+          src-dirs: Source/DONToUnreal/Public/Util Source/DONToUnreal/Private/Util
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: '*.cpp *.h*'
+            RECURSIVE: True
+
+        api_core:
+          src-dirs: Source/DONToUnreal/Public ../Source/DONToUnreal/Private
+          full-doc: True
+          doxy-cfg:
+            FILE_PATTERNS: '*.cpp *.h*'
+            RECURSIVE: True
+            EXCLUDE: ../Source/DONToUnreal/Public/Data
+              ../Source/DONToUnreal/Private/Data
+              ../Source/DONToUnreal/Public/Level
+              ../Source/DONToUnreal/Private/Level
+              ../Source/DONToUnreal/Public/Util
+              ../Source/DONToUnreal/Private/Util
+
+nav:
+  - Introduction:
+      - Overview: introduction/index.md
+      - What is DON?: introduction/what-is-don.md
+      - Background: introduction/background.md
+      - Getting Started:
+          - Overview: introduction/getting-started/index.md
+          - Windows Installation & Setup: introduction/getting-started/don-setup.md
+          - Mac Installation & Setup: introduction/getting-started/mac-don-setup.md
+      - Administrative: introduction/administrative.md
+      - Project History:
+          - Project History: introduction/project-history/index.md
+          - Version History: introduction/project-history/version-history.md
+  - Design Docs:
+      - Overview: design-docs/index.md
+      - Methodology:
+          - Design Methodology: design-docs/methodology/index.md
+      - Object State Tracking:
+          - Object State Tracking: design-docs/object-state-tracking/index.md
+      - Camera Rework:
+          - Camera Rework: design-docs/camera-rework/index.md
+      - Rendering Modes:
+          - Rendering Modes: design-docs/rendering-modes/index.md
+      - Close Range Rendering:
+          - Overview: design-docs/close-range/index.md
+      - Long Range Rendering:
+          - Distant Rendering: design-docs/long-range/index.md
+          - Billboarding: design-docs/long-range/billboarding.md
+      - Telemetry:
+          - Overview: design-docs/telemetry/index.md
+          - History: design-docs/telemetry/history.md
+          - MPC Specification: design-docs/telemetry/mpc-specification.md
+          - Config & Mission Files: design-docs/telemetry/config-and-mission-files.md
+      - Blueprints:
+          - Blueprints Overview: design-docs/blueprints/index.md
+  - API:
+      - API Docs: api/index.md
+      - Data:
+          - Classes:
+              - Class List: api_data/annotated.md
+              - Class Members: api_data/class_members.md
+              - Member Functions: api_data/class_member_functions.md
+              - Member Variables: api_data/class_member_variables.md
+          - Files: api_data/files.md
+      - Level:
+          - Classes:
+              - Class List: api_level/annotated.md
+              - Class Members: api_level/class_members.md
+              - Member Functions: api_level/class_member_functions.md
+              - Member Variables: api_level/class_member_variables.md
+          - Files: api_level/files.md
+      - Utils:
+          - Classes:
+              - Class List: api_utils/annotated.md
+              - Class Members: api_utils/class_members.md
+              - Member Functions: api_utils/class_member_functions.md
+              - Member Variables: api_utils/class_member_variables.md
+          - Files: api_utils/files.md
+      - Core:
+          - 'Links': 'api_core/links.md'
+          - Classes:
+              - Class List: api_core/annotated.md
+              - Class Index: api_core/classes.md
+              - Class Hierarchy: api_core/hierarchy.md
+              - Class Members: api_core/class_members.md
+              - Class Member Functions: api_core/class_member_functions.md
+              - Class Member Variables: api_core/class_member_variables.md
+              - 'Class Member Typedefs': 'api_core/class_member_typedefs.md'
+              - 'Class Member Enumerations': 'api_core/class_member_enums.md'
+          - Files: api_core/files.md
+          - Variables: api_core/variables.md
+          - Macros: api_core/macros.md
+  - Using DON:
+      - Using DON: using-don/index.md
+      - User Interface:
+          - using-don/user-interface/index.md
+          - Simulation Selection: using-don/user-interface/user-interface.md
+          - Simualation GUI: using-don/user-interface/in-sim-gui.md
+      - How to Run a Simulation: using-don/running-simulations.md
+      - Demos:
+          - Overview: using-don/demos/index.md
+          - Orbits Demo: using-don/demos/orbits-demo.md
+          - New Demo: using-don/demos/new-demo.md
+          - Making Testing Simulations: using-don/demos/making-simulations.md

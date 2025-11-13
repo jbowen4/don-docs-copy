@@ -1,0 +1,3 @@
+![Image title](../../assets/images/use-case-diagram.png)
+
+The Use Case Diagram describes the possible interaction routes a user may take with DON 4.5. Please note that DON 4.5 does not significantly extend the interactability of the DON project, much of this complexity is inherited. The primary mode of interaction is through the main menu scene, where the user can either load a simulation from local data, network data, sketch a new scene manually, or change settings including the quality level and asset loading. While in an active simulation, the user has a range of controls including pausing, playing, changing the active frame, changing the playback speed, and freely moving the camera’s angle and location.
