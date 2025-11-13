@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_f752106aec1708221047f68d9fed8822" kind="dir">
+    <compoundname>Source/DONToUnreal/Public/Level</compoundname>
+    <innerdir refid="dir_f8149d1e01a7524d424599d29091c4b7">Source/DONToUnreal/Public/Level/Placement</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/Level/"/>
+  </compounddef>
+</doxygen>

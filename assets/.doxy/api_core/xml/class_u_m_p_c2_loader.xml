@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_u_m_p_c2_loader" kind="class" language="C++" prot="public">
+    <compoundname>UMPC2Loader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UBlueprintFunctionLibrary</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_u_m_p_c2_loader_1a5bea2cd9e2894e3cd0a49c170d3b0526" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_f_simulation_metadata" kindref="compound">FSimulationMetadata</ref></type>
+        <definition>FSimulationMetadata UMPC2Loader::CurrentSimulationData</definition>
+        <argsstring></argsstring>
+        <name>CurrentSimulationData</name>
+        <qualifiedname>UMPC2Loader::CurrentSimulationData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="55" column="32" bodyfile="Source/DONToUnreal/Public/MPC2Loader.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a4ea45282882ffcca5b05dad037c21ec6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool UMPC2Loader::LoadSimulationConfigMPC2</definition>
+        <argsstring>(const bool importModels, const FString &amp;SimulationDirectory)</argsstring>
+        <name>LoadSimulationConfigMPC2</name>
+        <qualifiedname>UMPC2Loader::LoadSimulationConfigMPC2</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>importModels</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>SimulationDirectory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="15" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ada52135164768befac6361164b6f0085" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ImportSimulationModelsMPC2</definition>
+        <argsstring>(const FString &amp;ModelsFolderPath)</argsstring>
+        <name>ImportSimulationModelsMPC2</name>
+        <qualifiedname>UMPC2Loader::ImportSimulationModelsMPC2</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ModelsFolderPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="18" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ad236d7ec0a503cf163068fb3bd04f7cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ParseModelFileMPC2</definition>
+        <argsstring>(const FString &amp;FilePath)</argsstring>
+        <name>ParseModelFileMPC2</name>
+        <qualifiedname>UMPC2Loader::ParseModelFileMPC2</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="21" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ab63aa22a98683ce3e45e8d4c3d3d3531" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_model_metadata" kindref="compound">FModelMetadata</ref> &gt;</type>
+        <definition>static TArray&lt; FModelMetadata &gt; UMPC2Loader::GetModelData</definition>
+        <argsstring>()</argsstring>
+        <name>GetModelData</name>
+        <qualifiedname>UMPC2Loader::GetModelData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="24" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ad7a84a46365375aaec0e80acf7ee9865" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_terrain_metadata" kindref="compound">FTerrainMetadata</ref> &gt;</type>
+        <definition>static TArray&lt; FTerrainMetadata &gt; UMPC2Loader::GetTerrainData</definition>
+        <argsstring>()</argsstring>
+        <name>GetTerrainData</name>
+        <qualifiedname>UMPC2Loader::GetTerrainData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="27" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a540f58fbb64a8420a290c8ac379aada3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_light_data" kindref="compound">FLightData</ref> &gt;</type>
+        <definition>static TArray&lt; FLightData &gt; UMPC2Loader::GetLightData</definition>
+        <argsstring>()</argsstring>
+        <name>GetLightData</name>
+        <qualifiedname>UMPC2Loader::GetLightData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="30" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ac00984b95cb3d52cb0f3f549fe2270f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_objects_of_interest" kindref="compound">FObjectsOfInterest</ref> &gt;</type>
+        <definition>static TArray&lt; FObjectsOfInterest &gt; UMPC2Loader::GetObjectsOfInterest</definition>
+        <argsstring>()</argsstring>
+        <name>GetObjectsOfInterest</name>
+        <qualifiedname>UMPC2Loader::GetObjectsOfInterest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="33" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a0bf14df6b519dec4acbdc7b91e9ac9f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>static FString UMPC2Loader::GetAuthor</definition>
+        <argsstring>()</argsstring>
+        <name>GetAuthor</name>
+        <qualifiedname>UMPC2Loader::GetAuthor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="36" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a16cd68ab1f0373cd1a6a7a1c923c7f44" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>static FString UMPC2Loader::GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <qualifiedname>UMPC2Loader::GetName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="39" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a1c5e7c4cbb5fb87ebfd76a41a534ed52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>static FString UMPC2Loader::GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <qualifiedname>UMPC2Loader::GetDescription</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="42" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ad3545bde685e6792100156a4fca433c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double UMPC2Loader::ExtractTimeValueMPC2</definition>
+        <argsstring>(const FString &amp;TimeTagXML)</argsstring>
+        <name>ExtractTimeValueMPC2</name>
+        <qualifiedname>UMPC2Loader::ExtractTimeValueMPC2</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TimeTagXML</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="45" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ad2ff5dcd49caaf64c48d6cdf0baae9ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ProcessTelemetryFileMPC2</definition>
+        <argsstring>(const FString &amp;TelemetryPath, USimulationGameInstance *GameInstance)</argsstring>
+        <name>ProcessTelemetryFileMPC2</name>
+        <qualifiedname>UMPC2Loader::ProcessTelemetryFileMPC2</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TelemetryPath</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_simulation_game_instance" kindref="compound">USimulationGameInstance</ref> *</type>
+          <declname>GameInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="48" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a556f0dbe8ec01417ef3419b8140148c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>static FString UMPC2Loader::FModelMetadatatoStr</definition>
+        <argsstring>(const FModelMetadata &amp;Model)</argsstring>
+        <name>FModelMetadatatoStr</name>
+        <qualifiedname>UMPC2Loader::FModelMetadatatoStr</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_model_metadata" kindref="compound">FModelMetadata</ref> &amp;</type>
+          <declname>Model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="50" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a9828f02096b3cc600fe51a99a2c326f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TMap&lt; FString, <ref refid="struct_f_object_state" kindref="compound">FObjectState</ref> &gt;</type>
+        <definition>static TMap&lt; FString, FObjectState &gt; UMPC2Loader::ExtractObjectStatesMPC2</definition>
+        <argsstring>(tinyxml2::XMLElement *TimeTagXML)</argsstring>
+        <name>ExtractObjectStatesMPC2</name>
+        <qualifiedname>UMPC2Loader::ExtractObjectStatesMPC2</qualifiedname>
+        <param>
+          <type><ref refid="classtinyxml2_1_1_x_m_l_element" kindref="compound">tinyxml2::XMLElement</ref> *</type>
+          <declname>TimeTagXML</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="52" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ade0e795083611a3f35c7f1fd2021b0ba" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::parseObjectsOfInterestElement</definition>
+        <argsstring>(tinyxml2::XMLElement *ObjectsOfInterestNode, TArray&lt; FObjectsOfInterest &gt; ObjectsOfInterest)</argsstring>
+        <name>parseObjectsOfInterestElement</name>
+        <qualifiedname>UMPC2Loader::parseObjectsOfInterestElement</qualifiedname>
+        <param>
+          <type><ref refid="classtinyxml2_1_1_x_m_l_element" kindref="compound">tinyxml2::XMLElement</ref> *</type>
+          <declname>ObjectsOfInterestNode</declname>
+        </param>
+        <param>
+          <type>TArray&lt; <ref refid="struct_f_objects_of_interest" kindref="compound">FObjectsOfInterest</ref> &gt;</type>
+          <declname>ObjectsOfInterest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="57" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a1bd11e65e1806514f29ba153fe7a220a" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::parseTerrainElement</definition>
+        <argsstring>(tinyxml2::XMLElement *TerrainNode, FTerrainMetadata &amp;TerrainData)</argsstring>
+        <name>parseTerrainElement</name>
+        <qualifiedname>UMPC2Loader::parseTerrainElement</qualifiedname>
+        <param>
+          <type><ref refid="classtinyxml2_1_1_x_m_l_element" kindref="compound">tinyxml2::XMLElement</ref> *</type>
+          <declname>TerrainNode</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_f_terrain_metadata" kindref="compound">FTerrainMetadata</ref> &amp;</type>
+          <declname>TerrainData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="58" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a0a583a78e1a1ac2ce4add19679156974" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ParseVector</definition>
+        <argsstring>(const std::string &amp;Text, const std::string &amp;Prefix, FVector &amp;OutVector)</argsstring>
+        <name>ParseVector</name>
+        <qualifiedname>UMPC2Loader::ParseVector</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Text</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Prefix</declname>
+        </param>
+        <param>
+          <type>FVector &amp;</type>
+          <declname>OutVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="59" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1aee8a734787a2d34c80f0958bb29cc78f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ParseQuat</definition>
+        <argsstring>(const std::string &amp;Text, const std::string &amp;Prefix, FQuat &amp;OutQuat)</argsstring>
+        <name>ParseQuat</name>
+        <qualifiedname>UMPC2Loader::ParseQuat</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Text</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Prefix</declname>
+        </param>
+        <param>
+          <type>FQuat &amp;</type>
+          <declname>OutQuat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="60" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1a4fb623c9cfe12b0015cd40573d04231f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ParseString</definition>
+        <argsstring>(const std::string &amp;Text, const std::string &amp;Prefix, FString &amp;OutString)</argsstring>
+        <name>ParseString</name>
+        <qualifiedname>UMPC2Loader::ParseString</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Text</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>Prefix</declname>
+        </param>
+        <param>
+          <type>FString &amp;</type>
+          <declname>OutString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="61" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c2_loader_1ae80ee28ab93af371cb1f22b07820ab4c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void UMPC2Loader::ParseComponents</definition>
+        <argsstring>(const std::string &amp;ModelBlock, TArray&lt; FModelComponentData &gt; &amp;OutComponents)</argsstring>
+        <name>ParseComponents</name>
+        <qualifiedname>UMPC2Loader::ParseComponents</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ModelBlock</declname>
+        </param>
+        <param>
+          <type>TArray&lt; <ref refid="struct_f_model_component_data" kindref="compound">FModelComponentData</ref> &gt; &amp;</type>
+          <declname>OutComponents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="62" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UMPC2Loader</label>
+        <link refid="class_u_m_p_c2_loader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UBlueprintFunctionLibrary</label>
+      </node>
+      <node id="1">
+        <label>UMPC2Loader</label>
+        <link refid="class_u_m_p_c2_loader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/MPC2Loader.h" line="10" column="1" bodyfile="Source/DONToUnreal/Public/MPC2Loader.h" bodystart="11" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_u_m_p_c2_loader_1a5bea2cd9e2894e3cd0a49c170d3b0526" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>CurrentSimulationData</name></member>
+      <member refid="class_u_m_p_c2_loader_1a9828f02096b3cc600fe51a99a2c326f8" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>ExtractObjectStatesMPC2</name></member>
+      <member refid="class_u_m_p_c2_loader_1ad3545bde685e6792100156a4fca433c6" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>ExtractTimeValueMPC2</name></member>
+      <member refid="class_u_m_p_c2_loader_1a556f0dbe8ec01417ef3419b8140148c7" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>FModelMetadatatoStr</name></member>
+      <member refid="class_u_m_p_c2_loader_1a0bf14df6b519dec4acbdc7b91e9ac9f9" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetAuthor</name></member>
+      <member refid="class_u_m_p_c2_loader_1a1c5e7c4cbb5fb87ebfd76a41a534ed52" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetDescription</name></member>
+      <member refid="class_u_m_p_c2_loader_1a540f58fbb64a8420a290c8ac379aada3" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetLightData</name></member>
+      <member refid="class_u_m_p_c2_loader_1ab63aa22a98683ce3e45e8d4c3d3d3531" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetModelData</name></member>
+      <member refid="class_u_m_p_c2_loader_1a16cd68ab1f0373cd1a6a7a1c923c7f44" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetName</name></member>
+      <member refid="class_u_m_p_c2_loader_1ac00984b95cb3d52cb0f3f549fe2270f5" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetObjectsOfInterest</name></member>
+      <member refid="class_u_m_p_c2_loader_1ad7a84a46365375aaec0e80acf7ee9865" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>GetTerrainData</name></member>
+      <member refid="class_u_m_p_c2_loader_1ada52135164768befac6361164b6f0085" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>ImportSimulationModelsMPC2</name></member>
+      <member refid="class_u_m_p_c2_loader_1a4ea45282882ffcca5b05dad037c21ec6" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>LoadSimulationConfigMPC2</name></member>
+      <member refid="class_u_m_p_c2_loader_1ae80ee28ab93af371cb1f22b07820ab4c" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>ParseComponents</name></member>
+      <member refid="class_u_m_p_c2_loader_1ad236d7ec0a503cf163068fb3bd04f7cb" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>ParseModelFileMPC2</name></member>
+      <member refid="class_u_m_p_c2_loader_1ade0e795083611a3f35c7f1fd2021b0ba" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>parseObjectsOfInterestElement</name></member>
+      <member refid="class_u_m_p_c2_loader_1aee8a734787a2d34c80f0958bb29cc78f" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>ParseQuat</name></member>
+      <member refid="class_u_m_p_c2_loader_1a4fb623c9cfe12b0015cd40573d04231f" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>ParseString</name></member>
+      <member refid="class_u_m_p_c2_loader_1a1bd11e65e1806514f29ba153fe7a220a" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>parseTerrainElement</name></member>
+      <member refid="class_u_m_p_c2_loader_1a0a583a78e1a1ac2ce4add19679156974" prot="private" virt="non-virtual"><scope>UMPC2Loader</scope><name>ParseVector</name></member>
+      <member refid="class_u_m_p_c2_loader_1ad2ff5dcd49caaf64c48d6cdf0baae9ff" prot="public" virt="non-virtual"><scope>UMPC2Loader</scope><name>ProcessTelemetryFileMPC2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

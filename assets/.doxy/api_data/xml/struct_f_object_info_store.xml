@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_object_info_store" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectInfoStore</compoundname>
+    <includes refid="_object_info_store_8h" local="no">ObjectInfoStore.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_f_object_info_store_1a234c255a7d975f60158ae1b46cc013d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct FObjectInfoStoreBuilder</definition>
+        <argsstring></argsstring>
+        <name>FObjectInfoStoreBuilder</name>
+        <qualifiedname>FObjectInfoStore::FObjectInfoStoreBuilder</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store_builder" kindref="compound">FObjectInfoStoreBuilder</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="18" column="15" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_f_object_info_store_1af6c918bc2eee61cc24f5d0638fca43c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct FObjectInfoStoreCopyBuilder</definition>
+        <argsstring></argsstring>
+        <name>FObjectInfoStoreCopyBuilder</name>
+        <qualifiedname>FObjectInfoStore::FObjectInfoStoreCopyBuilder</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store_copy_builder" kindref="compound">FObjectInfoStoreCopyBuilder</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="19" column="15" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_store_1a966e9205566fc63f1a3bb6a8d9b46b07" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref></type>
+        <definition>FObjectInfo FObjectInfoStore::Origin</definition>
+        <argsstring></argsstring>
+        <name>Origin</name>
+        <qualifiedname>FObjectInfoStore::Origin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="32" column="13" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_info_store_1a3e6c1535df16991de301b549c51607f8" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FName, <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt;</type>
+        <definition>TMap&lt;FName, FObjectInfo&gt; FObjectInfoStore::objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <qualifiedname>FObjectInfoStore::objects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="35" column="6" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_f_object_info_store_1a1d36332394b9e829db7ce47ed8a56312" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_object_info_store_builder" kindref="compound">FObjectInfoStoreBuilder</ref></type>
+        <definition>FObjectInfoStoreBuilder FObjectInfoStore::Builder</definition>
+        <argsstring>()</argsstring>
+        <name>Builder</name>
+        <qualifiedname>FObjectInfoStore::Builder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a builder to create an <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> from scratch. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="24" column="32" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1afda60b7988c532b855815d14059e9ad9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_object_info_store_copy_builder" kindref="compound">FObjectInfoStoreCopyBuilder</ref></type>
+        <definition>FObjectInfoStoreCopyBuilder FObjectInfoStore::CopyBuilder</definition>
+        <argsstring>(const FObjectInfoStore &amp;CopyFrom)</argsstring>
+        <name>CopyBuilder</name>
+        <qualifiedname>FObjectInfoStore::CopyBuilder</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+          <declname>CopyFrom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a builder for a new <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> populated with the values from another <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="28" column="36" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_object_info_store_1adfac55f8dc2cdcbcf58fbc9d1044b8fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStore::GETTER</definition>
+        <argsstring>(FObjectInfo, Origin)</argsstring>
+        <name>GETTER</name>
+        <qualifiedname>FObjectInfoStore::GETTER</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref></type>
+        </param>
+        <param>
+          <type>Origin</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the origin for this coordinate system that objects&apos; positions are based on.</para>
+<para>Current implementation is always <ref refid="" kindref="compound">. </ref></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1ac53373886244e0d8662fa5366b718022" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TOptRef&lt; const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt;</type>
+        <definition>TOptRef&lt; const FObjectInfo &gt; FObjectInfoStore::Get</definition>
+        <argsstring>(const FName &amp;Name) const</argsstring>
+        <name>Get</name>
+        <qualifiedname>FObjectInfoStore::Get</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the object info for the given name, or empty if that object does not exist in this store. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="48" column="9" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FObjectInfoStore::Keys</definition>
+        <argsstring>(TArray&lt; FName &gt; &amp;Out) const</argsstring>
+        <name>Keys</name>
+        <qualifiedname>FObjectInfoStore::Keys</qualifiedname>
+        <param>
+          <type>TArray&lt; FName &gt; &amp;</type>
+          <declname>Out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a list of all object names in this store.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upon return, contains the set of unique keys in this store. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="55" column="6" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1aa21a1017cf4cc5a01d9fcb99194368a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE TArray&lt; FName &gt;</type>
+        <definition>FORCEINLINE TArray&lt; FName &gt; FObjectInfoStore::Keys</definition>
+        <argsstring>() const</argsstring>
+        <name>Keys</name>
+        <qualifiedname>FObjectInfoStore::Keys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list of all object names in this store. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="60" column="20" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="60" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a834b1a3473daf652d5a9e2b5c00ef450" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 FObjectInfoStore::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <qualifiedname>FObjectInfoStore::Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How many objects are in this store. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="70" column="7" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a0da00b55fc88fa4c6fc4dd49c8e8afe1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FObjectInfoStore::ToString</definition>
+        <argsstring>() const</argsstring>
+        <name>ToString</name>
+        <qualifiedname>FObjectInfoStore::ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a string representation of this object. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>TODO use FStringBuilder</para>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="75" column="9" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="68" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a5761cab04719c966087e780882799699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStore::FObjectInfoStore</definition>
+        <argsstring>()</argsstring>
+        <name>FObjectInfoStore</name>
+        <qualifiedname>FObjectInfoStore::FObjectInfoStore</qualifiedname>
+        <briefdescription>
+<para>Default/empty constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="79" column="1" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a40994f23aa17e86deba5efc0dbe131be" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStore::FObjectInfoStore</definition>
+        <argsstring>(const FObjectInfo &amp;Origin)</argsstring>
+        <name>FObjectInfoStore</name>
+        <qualifiedname>FObjectInfoStore::FObjectInfoStore</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>Origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates an ObjectInfoStore with the provided origin. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The basis for this coordinate system, which all objects&apos; positions will be relative to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="85" column="10" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a5b7f88a1af503706f63e3c39825f3e86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStore::FObjectInfoStore</definition>
+        <argsstring>(const FObjectInfoStore &amp;copyFrom)</argsstring>
+        <name>FObjectInfoStore</name>
+        <qualifiedname>FObjectInfoStore::FObjectInfoStore</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+          <declname>copyFrom</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="88" column="1" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="43" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a99f0bb5d81c882cd371f6238a3a60f7a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStore::FObjectInfoStore</definition>
+        <argsstring>(FObjectInfoStore &amp;&amp;other) noexcept</argsstring>
+        <name>FObjectInfoStore</name>
+        <qualifiedname>FObjectInfoStore::FObjectInfoStore</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="91" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a084c9852862d62180902bda1172d8dca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+        <definition>FObjectInfoStore &amp; FObjectInfoStore::operator=</definition>
+        <argsstring>(const FObjectInfoStore &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FObjectInfoStore::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="97" column="18" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_1a44d5558e9eb0f4fc085654759efcd335" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+        <definition>FObjectInfoStore &amp; FObjectInfoStore::operator=</definition>
+        <argsstring>(FObjectInfoStore &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FObjectInfoStore::operator=</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="106" column="18" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="106" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="struct_f_object_info_store_1a7eefaa8a4ca94edef13a515935911f08" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> *</type>
+        <definition>FObjectInfo * FObjectInfoStore::getUnchecked</definition>
+        <argsstring>(const FName &amp;Name) const</argsstring>
+        <name>getUnchecked</name>
+        <qualifiedname>FObjectInfoStore::getUnchecked</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="116" column="13" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Stores the data (position, orientation, visibility, and parent) for every object in the simulation at a time step. </para>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="14" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="15" bodyend="117"/>
+    <listofallmembers>
+      <member refid="struct_f_object_info_store_1a1d36332394b9e829db7ce47ed8a56312" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>Builder</name></member>
+      <member refid="struct_f_object_info_store_1afda60b7988c532b855815d14059e9ad9" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>CopyBuilder</name></member>
+      <member refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>FObjectInfoStore</name></member>
+      <member refid="struct_f_object_info_store_1a40994f23aa17e86deba5efc0dbe131be" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>FObjectInfoStore</name></member>
+      <member refid="struct_f_object_info_store_1a5b7f88a1af503706f63e3c39825f3e86" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>FObjectInfoStore</name></member>
+      <member refid="struct_f_object_info_store_1a99f0bb5d81c882cd371f6238a3a60f7a" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>FObjectInfoStore</name></member>
+      <member refid="struct_f_object_info_store_1a234c255a7d975f60158ae1b46cc013d1" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>FObjectInfoStoreBuilder</name></member>
+      <member refid="struct_f_object_info_store_1af6c918bc2eee61cc24f5d0638fca43c4" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>FObjectInfoStoreCopyBuilder</name></member>
+      <member refid="struct_f_object_info_store_1ac53373886244e0d8662fa5366b718022" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>Get</name></member>
+      <member refid="struct_f_object_info_store_1adfac55f8dc2cdcbcf58fbc9d1044b8fa" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>GETTER</name></member>
+      <member refid="struct_f_object_info_store_1a7eefaa8a4ca94edef13a515935911f08" prot="private" virt="non-virtual"><scope>FObjectInfoStore</scope><name>getUnchecked</name></member>
+      <member refid="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>Keys</name></member>
+      <member refid="struct_f_object_info_store_1aa21a1017cf4cc5a01d9fcb99194368a3" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>Keys</name></member>
+      <member refid="struct_f_object_info_store_1a3e6c1535df16991de301b549c51607f8" prot="private" virt="non-virtual"><scope>FObjectInfoStore</scope><name>objects</name></member>
+      <member refid="struct_f_object_info_store_1a084c9852862d62180902bda1172d8dca" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>operator=</name></member>
+      <member refid="struct_f_object_info_store_1a44d5558e9eb0f4fc085654759efcd335" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>operator=</name></member>
+      <member refid="struct_f_object_info_store_1a966e9205566fc63f1a3bb6a8d9b46b07" prot="private" virt="non-virtual"><scope>FObjectInfoStore</scope><name>Origin</name></member>
+      <member refid="struct_f_object_info_store_1a834b1a3473daf652d5a9e2b5c00ef450" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>Size</name></member>
+      <member refid="struct_f_object_info_store_1a0da00b55fc88fa4c6fc4dd49c8e8afe1" prot="public" virt="non-virtual"><scope>FObjectInfoStore</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

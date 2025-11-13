@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_object_info_store_8h" kind="file" language="C++">
+    <compoundname>ObjectInfoStore.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes refid="_object_info_8h" local="yes">ObjectInfo.h</includes>
+    <includes local="yes">UObject/Object.h</includes>
+    <includes local="yes">ObjectInfoStore.generated.h</includes>
+    <includedby refid="_timeline_8h" local="yes">Source/DONToUnreal/Public/Data/Timeline.h</includedby>
+    <includedby refid="_actor_placement_manager_8h" local="yes">Source/DONToUnreal/Public/Level/Placement/ActorPlacementManager.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>ObjectInfo.h</label>
+        <link refid="_object_info_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Source/DONToUnreal/Public/Data/ObjectInfoStore.h</label>
+        <link refid="_object_info_store_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RelativePosition.h</label>
+        <link refid="_relative_position_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Util/ClassMacros.h</label>
+        <link refid="_class_macros_8h_source"/>
+      </node>
+      <node id="5">
+        <label>Util/Types/TOptRef.h</label>
+        <link refid="_t_opt_ref_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="8">
+        <label>ObjectInfo.generated.h</label>
+      </node>
+      <node id="10">
+        <label>ObjectInfoStore.generated.h</label>
+      </node>
+      <node id="7">
+        <label>RelativePosition.generated.h</label>
+      </node>
+      <node id="9">
+        <label>UObject/Object.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Source/DONToUnreal/Public/Data/ObjectInfoStore.h</label>
+        <link refid="_object_info_store_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Source/DONToUnreal/Public/Data/Timeline.h</label>
+        <link refid="_timeline_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Source/DONToUnreal/Public/Level/Placement/ActorPlacementManager.h</label>
+        <link refid="_actor_placement_manager_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h</label>
+        <link refid="_outer_space_actor_placement_manager_8h_source"/>
+      </node>
+      <node id="4">
+        <label>Source/DONToUnreal/Public/MPC2Loader.h</label>
+        <link refid="_m_p_c2_loader_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Source/DONToUnreal/Public/SimulationGameInstance.h</label>
+        <link refid="_simulation_game_instance_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Source/DONToUnreal/Public/SimulationLoader.h</label>
+        <link refid="_simulation_loader_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_f_object_info_store" prot="public">FObjectInfoStore</innerclass>
+    <innerclass refid="struct_f_object_info_tmp" prot="public">FObjectInfoTmp</innerclass>
+    <innerclass refid="struct_f_object_info_store_builder" prot="public">FObjectInfoStoreBuilder</innerclass>
+    <innerclass refid="struct_f_object_info_store_copy_builder" prot="public">FObjectInfoStoreCopyBuilder</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ObjectInfo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;UObject/Object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ObjectInfoStore.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">USTRUCT()</highlight></codeline>
+<codeline lineno="14" refid="struct_f_object_info_store" refkind="compound"><highlight class="normal">struct<sp/>DONTOUNREAL_API<sp/><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">FObjectInfoStoreBuilder;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">FObjectInfoStoreCopyBuilder;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="struct_f_object_info_store_1a8a8553035086f1cda55a38e0618a8d79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FObjectInfoStoreBuilder<sp/><ref refid="struct_f_object_info_store_1a8a8553035086f1cda55a38e0618a8d79" kindref="member">Builder</ref>();</highlight></codeline>
+<codeline lineno="28" refid="struct_f_object_info_store_1a13f36bc065a533416a47b8dedaa97214" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FObjectInfoStoreCopyBuilder<sp/><ref refid="struct_f_object_info_store_1a13f36bc065a533416a47b8dedaa97214" kindref="member">CopyBuilder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore</ref>&amp;<sp/>CopyFrom);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref><sp/>Origin;<sp/></highlight><highlight class="comment">//<sp/>can&apos;t<sp/>make<sp/>it<sp/>const<sp/>due<sp/>to<sp/>the<sp/>move<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FName,<sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>&gt;<sp/>objects;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">public:</highlight></codeline>
+<codeline lineno="43" refid="struct_f_object_info_store_1adfac55f8dc2cdcbcf58fbc9d1044b8fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_1adfac55f8dc2cdcbcf58fbc9d1044b8fa" kindref="member">GETTER</ref>(<ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>,<sp/>Origin);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct_f_object_info_store_1ac53373886244e0d8662fa5366b718022" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_t_opt_ref" kindref="compound">TOptRef</ref>&lt;const<sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>&gt;<sp/><ref refid="struct_f_object_info_store_1ac53373886244e0d8662fa5366b718022" kindref="member">Get</ref>(const<sp/>FName&amp;<sp/>Name)<sp/>const;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" kindref="member">Keys</ref>(TArray&lt;FName&gt;&amp;<sp/>Out)<sp/>const;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="struct_f_object_info_store_1aa21a1017cf4cc5a01d9fcb99194368a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FORCEINLINE<sp/>TArray&lt;FName&gt;<sp/><ref refid="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" kindref="member">Keys</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="61"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TArray&lt;FName&gt;<sp/>ret;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" kindref="member">Keys</ref>(ret);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="struct_f_object_info_store_1a834b1a3473daf652d5a9e2b5c00ef450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><ref refid="struct_f_object_info_store_1a834b1a3473daf652d5a9e2b5c00ef450" kindref="member">Size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="struct_f_object_info_store_1a0da00b55fc88fa4c6fc4dd49c8e8afe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/><ref refid="struct_f_object_info_store_1a0da00b55fc88fa4c6fc4dd49c8e8afe1" kindref="member">ToString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="struct_f_object_info_store_1a40994f23aa17e86deba5efc0dbe131be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_1a40994f23aa17e86deba5efc0dbe131be" kindref="member">FObjectInfoStore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>&amp;<sp/>Origin);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_f_object_info_store_1a5b7f88a1af503706f63e3c39825f3e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_1a5b7f88a1af503706f63e3c39825f3e86" kindref="member">FObjectInfoStore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore</ref>&amp;<sp/>copyFrom);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore</ref>(<ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore</ref>&amp;&amp;<sp/>other)<sp/>noexcept</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Origin(std::move(other.Origin)),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects(std::move(other.objects))</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;<sp/>other)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>&amp;other)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Origin<sp/>=<sp/>other.Origin;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects<sp/>=<sp/>other.objects;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;<sp/>operator=(<ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;&amp;<sp/>other)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>&amp;other)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Origin<sp/>=<sp/>std::move(other.Origin);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects<sp/>=<sp/>std::move(other.objects);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>*<sp/>getUnchecked(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ignore<sp/>this.<sp/>Internal<sp/>stuff<sp/>that&apos;s<sp/>only<sp/>outside<sp/>the<sp/>class<sp/>because<sp/>of<sp/>Unreal&apos;s<sp/>freaking<sp/>reflection<sp/>system</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">USTRUCT()</highlight></codeline>
+<codeline lineno="121" refid="struct_f_object_info_tmp" refkind="compound"><highlight class="normal">struct<sp/>FObjectInfoTmp</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>FName<sp/>Name;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>TOptional&lt;FName&gt;<sp/>ParentName;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>FVector<sp/>Position;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>FQuat<sp/>Orientation;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Visibility;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>FObjectInfoTmp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TOptional&lt;FName&gt;&amp;<sp/>parent_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FVector&amp;<sp/>position,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FQuat&amp;<sp/>orientation,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visibility)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Name(name),</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ParentName(parent_name),</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Position(position),</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Orientation(orientation),</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Visibility(visibility)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>FObjectInfoTmp()</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Name(),<sp/>ParentName(NullOpt),<sp/>Position(FVector(0)),<sp/>Orientation(FQuat(0)),<sp/>Visibility(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>~FObjectInfoTmp()</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>ToString()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">USTRUCT()</highlight></codeline>
+<codeline lineno="158" refid="struct_f_object_info_store_builder" refkind="compound"><highlight class="normal">struct<sp/><ref refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" kindref="member">FObjectInfoStoreBuilder</ref></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref><sp/>origin<sp/>=<sp/>FObjectInfo::ORIGIN;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">FObjectInfoStore;</highlight></codeline>
+<codeline lineno="176" refid="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" kindref="member">AddObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TOptional&lt;FName&gt;&amp;<sp/>ParentName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FVector&amp;<sp/>Position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FQuat&amp;<sp/>Orientation,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Visibility);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="struct_f_object_info_store_builder_1aa70eb6ea2a83e44bce74f0a832be0a74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_builder_1aa70eb6ea2a83e44bce74f0a832be0a74" kindref="member">AddObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>&amp;<sp/>ToCopy);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="struct_f_object_info_store_builder_1aac8722ae710a15a9a6072a1417c6aaec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>USE_RET<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_builder_1aac8722ae710a15a9a6072a1417c6aaec" kindref="member">SetOrigin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>&amp;<sp/>Origin);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="struct_f_object_info_store_builder_1a10244285864a2ef5f875a4ce4733b7d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_builder_1a10244285864a2ef5f875a4ce4733b7d3" kindref="member">Contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" kindref="member">Build</ref>(FObjectInfoStore&amp;<sp/>out);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="struct_f_object_info_store_builder_1a4e63defb1d2ea77331384cbd9afd19c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FORCEINLINE<sp/>FObjectInfoStore<sp/><ref refid="struct_f_object_info_store_builder_1a4e63defb1d2ea77331384cbd9afd19c3" kindref="member">Build</ref>()</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfoStore<sp/>ret;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" kindref="member">Build</ref>(ret);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="struct_f_object_info_store_builder_1a8115418e70ee8bb0227bf21f0b29d84d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><ref refid="struct_f_object_info_store_builder_1a8115418e70ee8bb0227bf21f0b29d84d" kindref="member">Size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" kindref="member">FObjectInfoStoreBuilder</ref>();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY()</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FName,<sp/><ref refid="struct_f_object_info_tmp" kindref="compound">FObjectInfoTmp</ref>&gt;<sp/>toAdd;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">USTRUCT()</highlight></codeline>
+<codeline lineno="242" refid="struct_f_object_info_store_copy_builder" refkind="compound"><highlight class="normal">struct<sp/>FObjectInfoStoreCopyBuilder<sp/>:<sp/>public<sp/><ref refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" kindref="member">FObjectInfoStoreBuilder</ref></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="262" refid="struct_f_object_info_store_copy_builder_1aa0171e4cd7755c0487b72496a0db0f14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/><ref refid="struct_f_object_info_store_copy_builder_1aa0171e4cd7755c0487b72496a0db0f14" kindref="member">UpdateInfo</ref>(const<sp/>FName&amp;<sp/>Name,<sp/><ref refid="class_t_opt_ref" kindref="compound">TOptRef</ref>&lt;TOptional&lt;FName&gt;&gt;<sp/>ParentName,<sp/><ref refid="class_t_opt_ref" kindref="compound">TOptRef</ref>&lt;const<sp/>FVector&gt;<sp/>Position,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_t_opt_ref" kindref="compound">TOptRef</ref>&lt;const<sp/>FQuat&gt;<sp/>Orientation,<sp/>TOptional&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;<sp/>Visibility);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DON&apos;T<sp/>CALL<sp/>THIS.<sp/>NEVER<sp/>CALL<sp/>THIS.<sp/>This<sp/>is<sp/>only<sp/>here<sp/>for<sp/>Unreal&apos;s<sp/>reflection<sp/>system.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>FObjectInfoStoreCopyBuilder()</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="struct_f_object_info_store_copy_builder_1a64df1b003f38dfcb1ea1f3f7dea14e93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_copy_builder_1a64df1b003f38dfcb1ea1f3f7dea14e93" kindref="member">FObjectInfoStoreCopyBuilder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FObjectInfoStore&amp;<sp/>CopyFrom);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h"/>
+  </compounddef>
+</doxygen>

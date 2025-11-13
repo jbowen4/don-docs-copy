@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_59d96f77407b6d5ebafda3e626ba4b2b" kind="dir">
+    <compoundname>Source/DONToUnreal/Private/Tests/Util</compoundname>
+    <innerdir refid="dir_83b80d16d9347cfd58393988c56fb5d0">Source/DONToUnreal/Private/Tests/Util/Types</innerdir>
+    <innerfile refid="_collections_utils_8spec_8cpp">CollectionsUtils.spec.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Private/Tests/Util/"/>
+  </compounddef>
+</doxygen>

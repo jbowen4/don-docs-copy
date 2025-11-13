@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_object_info_store_copy_builder" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectInfoStoreCopyBuilder</compoundname>
+    <basecompoundref refid="struct_f_object_info_store_builder" prot="public" virt="non-virtual">FObjectInfoStoreBuilder</basecompoundref>
+    <includes refid="_object_info_store_8h" local="no">ObjectInfoStore.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_object_info_store_copy_builder_1aa0171e4cd7755c0487b72496a0db0f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FObjectInfoStoreCopyBuilder::UpdateInfo</definition>
+        <argsstring>(const FName &amp;Name, TOptRef&lt; TOptional&lt; FName &gt; &gt; ParentName, TOptRef&lt; const FVector &gt; Position, TOptRef&lt; const FQuat &gt; Orientation, TOptional&lt; bool &gt; Visibility)</argsstring>
+        <name>UpdateInfo</name>
+        <qualifiedname>FObjectInfoStoreCopyBuilder::UpdateInfo</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>TOptRef&lt; TOptional&lt; FName &gt; &gt;</type>
+          <declname>ParentName</declname>
+        </param>
+        <param>
+          <type>TOptRef&lt; const FVector &gt;</type>
+          <declname>Position</declname>
+        </param>
+        <param>
+          <type>TOptRef&lt; const FQuat &gt;</type>
+          <declname>Orientation</declname>
+        </param>
+        <param>
+          <type>TOptional&lt; bool &gt;</type>
+          <declname>Visibility</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add information to an object by name. The object may or may not already have data from the copy constructor, hence why every parameter is optional. This is why C++ needs optional arguments...</para>
+<para>If the object has not already been added to this builder, a new object will be queued. Else the information provided will be overlaid over the EXISTING entry with this name.</para>
+<para>For example, <computeroutput>Builder(storeWithEarth).<ref refid="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" kindref="member">AddObject</ref>(Earth, TOptRef(), FVector(0,1,2), TOptRef(), TOptional())</computeroutput> will keep all information from &quot;storeWithEarth &gt; Earth&quot;, but replace its position with FVector(0,1,2).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ParentName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the Reference is empty, that means you don&apos;t wish to overwrite the existing data. If the internal Optional is empty, that means the parent is the ORIGIN. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Visibility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if data was set successfully. False when Name does not exist in this builder (and by extension the copied-from ObjectInfoStore). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="262" column="6" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="161" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_copy_builder_1a0023a11581ef9d7d46da0c2b2b6077e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStoreCopyBuilder::FObjectInfoStoreCopyBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>FObjectInfoStoreCopyBuilder</name>
+        <qualifiedname>FObjectInfoStoreCopyBuilder::FObjectInfoStoreCopyBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="266" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_copy_builder_1a64df1b003f38dfcb1ea1f3f7dea14e93" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStoreCopyBuilder::FObjectInfoStoreCopyBuilder</definition>
+        <argsstring>(const FObjectInfoStore &amp;CopyFrom)</argsstring>
+        <name>FObjectInfoStoreCopyBuilder</name>
+        <qualifiedname>FObjectInfoStoreCopyBuilder::FObjectInfoStoreCopyBuilder</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+          <declname>CopyFrom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new ObjectInfoStore builder with the initial values from the provided store.</para>
+<para>Add everything from the original store to this builder, to potentially be overwritten by calls to <ref refid="" kindref="compound">later. </ref></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="273" column="10" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="147" bodyend="159"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Creates an ObjectInfoStore based on the values from a previously-defined ObjectInfoStore. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FObjectInfoStoreBuilder</label>
+        <link refid="struct_f_object_info_store_builder"/>
+      </node>
+      <node id="1">
+        <label>FObjectInfoStoreCopyBuilder</label>
+        <link refid="struct_f_object_info_store_copy_builder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FObjectInfoStoreBuilder</label>
+        <link refid="struct_f_object_info_store_builder"/>
+      </node>
+      <node id="1">
+        <label>FObjectInfoStoreCopyBuilder</label>
+        <link refid="struct_f_object_info_store_copy_builder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="242" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="243" bodyend="274"/>
+    <listofallmembers>
+      <member refid="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>AddObject</name></member>
+      <member refid="struct_f_object_info_store_builder_1aa70eb6ea2a83e44bce74f0a832be0a74" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>AddObject</name></member>
+      <member refid="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>Build</name></member>
+      <member refid="struct_f_object_info_store_builder_1a4e63defb1d2ea77331384cbd9afd19c3" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>Build</name></member>
+      <member refid="struct_f_object_info_store_builder_1a10244285864a2ef5f875a4ce4733b7d3" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>Contains</name></member>
+      <member refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>FObjectInfoStoreBuilder</name></member>
+      <member refid="struct_f_object_info_store_copy_builder_1a0023a11581ef9d7d46da0c2b2b6077e1" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>FObjectInfoStoreCopyBuilder</name></member>
+      <member refid="struct_f_object_info_store_copy_builder_1a64df1b003f38dfcb1ea1f3f7dea14e93" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>FObjectInfoStoreCopyBuilder</name></member>
+      <member refid="struct_f_object_info_store_builder_1aac8722ae710a15a9a6072a1417c6aaec" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>SetOrigin</name></member>
+      <member refid="struct_f_object_info_store_builder_1a8115418e70ee8bb0227bf21f0b29d84d" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>Size</name></member>
+      <member refid="struct_f_object_info_store_builder_1ac4bf1fcb5a69505d300ed60bdd5e7b8b" prot="protected" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>toAdd</name></member>
+      <member refid="struct_f_object_info_store_copy_builder_1aa0171e4cd7755c0487b72496a0db0f14" prot="public" virt="non-virtual"><scope>FObjectInfoStoreCopyBuilder</scope><name>UpdateInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

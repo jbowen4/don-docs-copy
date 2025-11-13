@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_time_snapshot" kind="struct" language="C++" prot="public">
+    <compoundname>FTimeSnapshot</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_time_snapshot_1adab224bbadde662b0ed3c114f4cb9ec1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FTimeSnapshot::TimeValue</definition>
+        <argsstring></argsstring>
+        <name>TimeValue</name>
+        <qualifiedname>FTimeSnapshot::TimeValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="158" column="12" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_time_snapshot_1aa9e6576b08a5322a8ab4f6242bcdd48f" prot="public" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="struct_f_object_state" kindref="compound">FObjectState</ref> &gt;</type>
+        <definition>TMap&lt;FString, FObjectState&gt; FTimeSnapshot::ObjectStates</definition>
+        <argsstring></argsstring>
+        <name>ObjectStates</name>
+        <qualifiedname>FTimeSnapshot::ObjectStates</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="160" column="10" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/DataTypes.h" line="154" column="1" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="155" bodyend="161"/>
+    <listofallmembers>
+      <member refid="struct_f_time_snapshot_1aa9e6576b08a5322a8ab4f6242bcdd48f" prot="public" virt="non-virtual"><scope>FTimeSnapshot</scope><name>ObjectStates</name></member>
+      <member refid="struct_f_time_snapshot_1adab224bbadde662b0ed3c114f4cb9ec1" prot="public" virt="non-virtual"><scope>FTimeSnapshot</scope><name>TimeValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

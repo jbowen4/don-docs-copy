@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_collections_utils_1_1_map" kind="namespace" language="C++">
+    <compoundname>CollectionsUtils::Map</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_collections_utils_8h_1a9c3f969b040775b37a947c8298c40e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename K</type>
+          </param>
+          <param>
+            <type>typename V</type>
+          </param>
+          <param>
+            <type>typename _Factory</type>
+          </param>
+          <param>
+            <type>std::enable_if_t&lt; std::is_invocable_r_v&lt; V, _Factory &gt;, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>FORCEINLINE V &amp;</type>
+        <definition>FORCEINLINE V &amp; CollectionsUtils::Map::computeIfAbsent</definition>
+        <argsstring>(TMap&lt; K, V &gt; &amp;map, const K &amp;key, const _Factory computer)</argsstring>
+        <name>computeIfAbsent</name>
+        <qualifiedname>CollectionsUtils::Map::computeIfAbsent</qualifiedname>
+        <param>
+          <type>TMap&lt; K, V &gt; &amp;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const _Factory</type>
+          <declname>computer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the value is present, returns a reference to it. If the value is absent, calls the provided function with signature <computeroutput>V()</computeroutput> to generate the value.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>_Factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Creater of the new value. Returns V and accepts no params. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Private/Util/CollectionsUtils.h" line="79" column="15" bodyfile="Source/DONToUnreal/Private/Util/CollectionsUtils.h" bodystart="79" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Private/Util/CollectionsUtils.h" line="70" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_class_macros_8h" kind="file" language="C++">
+    <compoundname>ClassMacros.h</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_class_macros_8h_1afe1fa3859412affc9292cd3086c770f1" prot="public" static="no">
+        <name>GETTER</name>
+        <param><defname>fieldType</defname></param>
+        <param><defname>fieldName</defname></param>
+        <initializer>        USE_RET FORCEINLINE const fieldType&amp; Get##fieldName() const noexcept { return fieldName; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a getter for a field that passes by const reference with the name <computeroutput>Get&lt;FieldName&gt;()</computeroutput>.</para>
+<para>Assumes no exceptions can be thrown by the method.</para>
+<para>Example: <computeroutput>GETTER(int, Foo)</computeroutput> becomes <computeroutput>const int&amp; GetFoo() const noexcept { return Foo; }</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Util/ClassMacros.h" line="11" column="10" bodyfile="Source/DONToUnreal/Public/Util/ClassMacros.h" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="define" id="_class_macros_8h_1afc8fc3de5c9293079c88f6bb80fa6014" prot="public" static="no">
+        <name>USE_RET</name>
+        <initializer>[[nodiscard]]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Marks that the return value of this function should always be used in some way, and it is an error to not use it.</para>
+<para>It could be because this function&apos;s sole purpose is to return a value with no side effects, or because this function returns an error type that must be accounted for. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Util/ClassMacros.h" line="21" column="10" bodyfile="Source/DONToUnreal/Public/Util/ClassMacros.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GETTER</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>GETTER(fieldType,<sp/>fieldName)<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USE_RET<sp/>FORCEINLINE<sp/>const<sp/>fieldType&amp;<sp/>Get##fieldName()<sp/>const<sp/>noexcept<sp/>{<sp/>return<sp/>fieldName;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USE_RET</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USE_RET<sp/>[[nodiscard]]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Public/Util/ClassMacros.h"/>
+  </compounddef>
+</doxygen>

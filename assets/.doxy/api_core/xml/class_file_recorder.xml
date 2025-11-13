@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_file_recorder" kind="class" language="C++" prot="public">
+    <compoundname>FileRecorder</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_file_recorder_1a07ffd21bb41696f00a6ad6ffb3c97078" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FileRecorder::FilePath</definition>
+        <argsstring></argsstring>
+        <name>FilePath</name>
+        <qualifiedname>FileRecorder::FilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="13" column="9" bodyfile="Source/DONToUnreal/Public/FileRecorder.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_file_recorder_1a6169e038cecb0c5b90b46d6412d29036" prot="private" static="no" mutable="no">
+        <type>IFileHandle *</type>
+        <definition>IFileHandle* FileRecorder::FileHandle</definition>
+        <argsstring></argsstring>
+        <name>FileHandle</name>
+        <qualifiedname>FileRecorder::FileHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="14" column="13" bodyfile="Source/DONToUnreal/Public/FileRecorder.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_file_recorder_1a56cc2dc65d28f97d86ade9a2c5aefe0c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FileRecorder::FileRecorder</definition>
+        <argsstring>(const FString &amp;inFilename, const FString &amp;RecordingDirectory)</argsstring>
+        <name>FileRecorder</name>
+        <qualifiedname>FileRecorder::FileRecorder</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>inFilename</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>RecordingDirectory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="16" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_recorder_1a7e487cfabc6f7d2e18ddd917cec23073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FileRecorder::~FileRecorder</definition>
+        <argsstring>()</argsstring>
+        <name>~FileRecorder</name>
+        <qualifiedname>FileRecorder::~FileRecorder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_recorder_1a956caa9ab10f64b8a806c8d9e8b60595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FileRecorder::AppendXML</definition>
+        <argsstring>(const FString &amp;XMLChunk)</argsstring>
+        <name>AppendXML</name>
+        <qualifiedname>FileRecorder::AppendXML</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>XMLChunk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="19" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_recorder_1a255a00ca431fb9b47bcb531a2f39de07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FileRecorder::FormatXML</definition>
+        <argsstring>(const FString &amp;XMLChunk)</argsstring>
+        <name>FormatXML</name>
+        <qualifiedname>FileRecorder::FormatXML</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>XMLChunk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_recorder_1abfff94f5c9b607f9ba968b9df88691ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string FileRecorder::formatXMLWithTinyXML2</definition>
+        <argsstring>(const std::string &amp;inputXML)</argsstring>
+        <name>formatXMLWithTinyXML2</name>
+        <qualifiedname>FileRecorder::formatXMLWithTinyXML2</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>inputXML</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="21" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_recorder_1aa79daaf39bf884e05ddc1cb734de0432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FileRecorder::ConvertTxtToXML</definition>
+        <argsstring>(FString inputPath, FString outPath)</argsstring>
+        <name>ConvertTxtToXML</name>
+        <qualifiedname>FileRecorder::ConvertTxtToXML</qualifiedname>
+        <param>
+          <type>FString</type>
+          <declname>inputPath</declname>
+        </param>
+        <param>
+          <type>FString</type>
+          <declname>outPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="22" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_recorder_1a15822d397e940fd0b9ba56df3b93a350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FileRecorder::CloseWriter</definition>
+        <argsstring>()</argsstring>
+        <name>CloseWriter</name>
+        <qualifiedname>FileRecorder::CloseWriter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/FileRecorder.h" line="23" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/FileRecorder.h" line="10" column="1" bodyfile="Source/DONToUnreal/Public/FileRecorder.h" bodystart="11" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_file_recorder_1a956caa9ab10f64b8a806c8d9e8b60595" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>AppendXML</name></member>
+      <member refid="class_file_recorder_1a15822d397e940fd0b9ba56df3b93a350" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>CloseWriter</name></member>
+      <member refid="class_file_recorder_1aa79daaf39bf884e05ddc1cb734de0432" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>ConvertTxtToXML</name></member>
+      <member refid="class_file_recorder_1a6169e038cecb0c5b90b46d6412d29036" prot="private" virt="non-virtual"><scope>FileRecorder</scope><name>FileHandle</name></member>
+      <member refid="class_file_recorder_1a07ffd21bb41696f00a6ad6ffb3c97078" prot="private" virt="non-virtual"><scope>FileRecorder</scope><name>FilePath</name></member>
+      <member refid="class_file_recorder_1a56cc2dc65d28f97d86ade9a2c5aefe0c" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>FileRecorder</name></member>
+      <member refid="class_file_recorder_1a255a00ca431fb9b47bcb531a2f39de07" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>FormatXML</name></member>
+      <member refid="class_file_recorder_1abfff94f5c9b607f9ba968b9df88691ac" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>formatXMLWithTinyXML2</name></member>
+      <member refid="class_file_recorder_1a7e487cfabc6f7d2e18ddd917cec23073" prot="public" virt="non-virtual"><scope>FileRecorder</scope><name>~FileRecorder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

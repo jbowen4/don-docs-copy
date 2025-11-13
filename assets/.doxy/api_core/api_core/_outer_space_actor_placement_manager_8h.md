@@ -1,0 +1,90 @@
+
+
+# File OuterSpaceActorPlacementManager.h
+
+
+
+[**FileList**](files.md) **>** [**DONToUnreal**](dir_7e70b7b4a1df651b2af4c8dca0b54b92.md) **>** [**Public**](dir_c336ec6675be099178e02bcdcfb186ce.md) **>** [**Level**](dir_f752106aec1708221047f68d9fed8822.md) **>** [**Placement**](dir_f8149d1e01a7524d424599d29091c4b7.md) **>** [**OuterSpace**](dir_f1c1f71ebe1f4e07b55e7acb7697c7cd.md) **>** [**OuterSpaceActorPlacementManager.h**](_outer_space_actor_placement_manager_8h.md)
+
+[Go to the source code of this file](_outer_space_actor_placement_manager_8h_source.md)
+
+
+
+* `#include "CoreMinimal.h"`
+* `#include "Level/Placement/ActorPlacementManager.h"`
+* `#include "UObject/Object.h"`
+* `#include "OuterSpaceActorPlacementManager.generated.h"`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Classes
+
+| Type | Name |
+| ---: | :--- |
+| class | [**UOuterSpaceActorPlacementManager**](class_u_outer_space_actor_placement_manager.md) <br> |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------
+The documentation for this class was generated from the following file `Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h`
+

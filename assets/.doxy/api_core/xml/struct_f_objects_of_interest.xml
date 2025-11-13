@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_objects_of_interest" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectsOfInterest</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_objects_of_interest_1ac2d0f8ab818a860b66b0d199209c16b6" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FObjectsOfInterest::Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>FObjectsOfInterest::Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="54" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_objects_of_interest_1a7a58e2136079402701f17650b31760e7" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FObjectsOfInterest::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>FObjectsOfInterest::Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="56" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/DataTypes.h" line="50" column="1" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="51" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_f_objects_of_interest_1ac2d0f8ab818a860b66b0d199209c16b6" prot="public" virt="non-virtual"><scope>FObjectsOfInterest</scope><name>Id</name></member>
+      <member refid="struct_f_objects_of_interest_1a7a58e2136079402701f17650b31760e7" prot="public" virt="non-virtual"><scope>FObjectsOfInterest</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

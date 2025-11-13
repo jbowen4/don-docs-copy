@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_object_state" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectState</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_object_state_1a98516e2b737358ed5758fd62150fbdaf" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FObjectState::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>FObjectState::ID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="132" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_state_1af2152d98bc97bef8bacfb846f4b4aeb2" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector FObjectState::Velocity</definition>
+        <argsstring></argsstring>
+        <name>Velocity</name>
+        <qualifiedname>FObjectState::Velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="134" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_state_1a45c8ceb7dcbacdf7bd15c6139a105254" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector FObjectState::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>FObjectState::Position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="136" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_state_1a880c5d9ae1f2196a73f671a4e1c9cedd" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector FObjectState::Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <qualifiedname>FObjectState::Scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="138" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_state_1abeb121ab6a3da25c363baf4f6ef6cfda" prot="public" static="no" mutable="no">
+        <type>FQuat</type>
+        <definition>FQuat FObjectState::Rotation</definition>
+        <argsstring></argsstring>
+        <name>Rotation</name>
+        <qualifiedname>FObjectState::Rotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="140" column="11" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_state_1ae0833a75c9f5cbc2369ad23df068ff96" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FObjectState::ParentID</definition>
+        <argsstring></argsstring>
+        <name>ParentID</name>
+        <qualifiedname>FObjectState::ParentID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="142" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_state_1ac3619ad3965755632e1c0bd70b4bd0b8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FObjectState::bIsVisible</definition>
+        <argsstring></argsstring>
+        <name>bIsVisible</name>
+        <qualifiedname>FObjectState::bIsVisible</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="144" column="10" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_object_state_1ac4487169fd91b6c8f7ac36aeeaf9e71c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FVector</type>
+        <definition>FVector FObjectState::ConvertPositionToUnreal</definition>
+        <argsstring>() const</argsstring>
+        <name>ConvertPositionToUnreal</name>
+        <qualifiedname>FObjectState::ConvertPositionToUnreal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="148" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_state_1ad8359c7220caaa63ee0944e6c393bb63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FVector</type>
+        <definition>FVector FObjectState::ConvertVelocityToUnreal</definition>
+        <argsstring>() const</argsstring>
+        <name>ConvertVelocityToUnreal</name>
+        <qualifiedname>FObjectState::ConvertVelocityToUnreal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="149" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_state_1a32cde9c62426a8602cc532c4d310c759" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FQuat</type>
+        <definition>FQuat FObjectState::ConvertRotationToUnreal</definition>
+        <argsstring>() const</argsstring>
+        <name>ConvertRotationToUnreal</name>
+        <qualifiedname>FObjectState::ConvertRotationToUnreal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="150" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/DataTypes.h" line="128" column="1" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="129" bodyend="151"/>
+    <listofallmembers>
+      <member refid="struct_f_object_state_1ac3619ad3965755632e1c0bd70b4bd0b8" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>bIsVisible</name></member>
+      <member refid="struct_f_object_state_1ac4487169fd91b6c8f7ac36aeeaf9e71c" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>ConvertPositionToUnreal</name></member>
+      <member refid="struct_f_object_state_1a32cde9c62426a8602cc532c4d310c759" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>ConvertRotationToUnreal</name></member>
+      <member refid="struct_f_object_state_1ad8359c7220caaa63ee0944e6c393bb63" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>ConvertVelocityToUnreal</name></member>
+      <member refid="struct_f_object_state_1a98516e2b737358ed5758fd62150fbdaf" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>ID</name></member>
+      <member refid="struct_f_object_state_1ae0833a75c9f5cbc2369ad23df068ff96" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>ParentID</name></member>
+      <member refid="struct_f_object_state_1a45c8ceb7dcbacdf7bd15c6139a105254" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>Position</name></member>
+      <member refid="struct_f_object_state_1abeb121ab6a3da25c363baf4f6ef6cfda" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>Rotation</name></member>
+      <member refid="struct_f_object_state_1a880c5d9ae1f2196a73f671a4e1c9cedd" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>Scale</name></member>
+      <member refid="struct_f_object_state_1af2152d98bc97bef8bacfb846f4b4aeb2" prot="public" virt="non-virtual"><scope>FObjectState</scope><name>Velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

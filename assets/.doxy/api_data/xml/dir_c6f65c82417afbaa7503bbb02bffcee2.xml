@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_c6f65c82417afbaa7503bbb02bffcee2" kind="dir">
+    <compoundname>Source/DONToUnreal/Private/Data</compoundname>
+    <innerfile refid="_object_info_8cpp">ObjectInfo.cpp</innerfile>
+    <innerfile refid="_object_info_store_8cpp">ObjectInfoStore.cpp</innerfile>
+    <innerfile refid="_object_info_store___builder_8cpp">ObjectInfoStore_Builder.cpp</innerfile>
+    <innerfile refid="_relative_position_8cpp">RelativePosition.cpp</innerfile>
+    <innerfile refid="_timeline_8cpp">Timeline.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Private/Data/"/>
+  </compounddef>
+</doxygen>

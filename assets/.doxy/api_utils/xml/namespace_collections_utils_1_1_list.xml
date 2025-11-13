@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_collections_utils_1_1_list" kind="namespace" language="C++">
+    <compoundname>CollectionsUtils::List</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_collections_utils_8h_1a4812e8b8a598c2ccc0e6bbda5fee9624" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>TOptional&lt; T &gt;</type>
+        <definition>TOptional&lt; T &gt; CollectionsUtils::List::PopHeadAndGet</definition>
+        <argsstring>(std::list&lt; T &gt; &amp;stack)</argsstring>
+        <name>PopHeadAndGet</name>
+        <qualifiedname>CollectionsUtils::List::PopHeadAndGet</qualifiedname>
+        <param>
+          <type>std::list&lt; T &gt; &amp;</type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pops and returns the first element of the linkedlist in a single operation.</para>
+<para>Returns empty if the list is empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Private/Util/CollectionsUtils.h" line="22" column="18" bodyfile="Source/DONToUnreal/Private/Util/CollectionsUtils.h" bodystart="22" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="_collections_utils_8h_1a2ef7cda0853ebe9331d5dfdccaf9791d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>FORCEINLINE TOptional&lt; T &gt;</type>
+        <definition>static FORCEINLINE TOptional&lt; T &gt; CollectionsUtils::List::RemoveFirstMatchingAndGet</definition>
+        <argsstring>(std::list&lt; T &gt; &amp;list, std::function&lt; bool(const T &amp;)&gt; predicate)</argsstring>
+        <name>RemoveFirstMatchingAndGet</name>
+        <qualifiedname>CollectionsUtils::List::RemoveFirstMatchingAndGet</qualifiedname>
+        <param>
+          <type>std::list&lt; T &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>std::function&lt; bool(const T &amp;)&gt;</type>
+          <declname>predicate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Searches the list sequentially, removing the first item found that matches the predicate and returning it.</para>
+<para>Returns empty if no matching item was found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Private/Util/CollectionsUtils.h" line="38" column="30" bodyfile="Source/DONToUnreal/Private/Util/CollectionsUtils.h" bodystart="38" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Private/Util/CollectionsUtils.h" line="14" column="1"/>
+  </compounddef>
+</doxygen>

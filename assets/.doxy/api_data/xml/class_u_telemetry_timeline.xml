@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_u_telemetry_timeline" kind="class" language="C++" prot="public">
+    <compoundname>UTelemetryTimeline</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_telemetry_timeline_1a006b4704bfabc6969eaa7572a2ae7d33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UTelemetryTimeline::numTlmElements</definition>
+        <argsstring></argsstring>
+        <name>numTlmElements</name>
+        <qualifiedname>UTelemetryTimeline::numTlmElements</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="57" column="9" bodyfile="Source/DONToUnreal/Public/Data/Timeline.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_telemetry_timeline_1a6c73c1168054d4ef2cbc14fbafc6f831" prot="private" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref> * &gt;</type>
+        <definition>TArray&lt;FTelemetryFrame*&gt; UTelemetryTimeline::Timeline</definition>
+        <argsstring></argsstring>
+        <name>Timeline</name>
+        <qualifiedname>UTelemetryTimeline::Timeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="60" column="12" bodyfile="Source/DONToUnreal/Public/Data/Timeline.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_telemetry_timeline_1a3223f85bbb806be3503c8cfba532e199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UTelemetryTimeline::UTelemetryTimeline</definition>
+        <argsstring>()</argsstring>
+        <name>UTelemetryTimeline</name>
+        <qualifiedname>UTelemetryTimeline::UTelemetryTimeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for Timeline object</para>
+<para>Called once, object to be attached to SimulationGameInstance</para>
+<para>Constructor for Timeline object</para>
+<para>Initializes member variables </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="26" column="5" bodyfile="Source/DONToUnreal/Private/Data/Timeline.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_telemetry_timeline_1a18c9a6978cd9b2e931d01d485a03066f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UTelemetryTimeline::PushTelemetryData</definition>
+        <argsstring>(TMap&lt; FString, FObjectState &gt; ObjectStates)</argsstring>
+        <name>PushTelemetryData</name>
+        <qualifiedname>UTelemetryTimeline::PushTelemetryData</qualifiedname>
+        <param>
+          <type>TMap&lt; FString, FObjectState &gt;</type>
+          <declname>ObjectStates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a batch of telemetry data to the Timeline at the next index (sequential ordering)</para>
+<para>Called from MPC2Loader.cpp while parsing incoming telemetry data</para>
+<para>Add a batch of telemetry data to the Timeline at the next index (sequential ordering)</para>
+<para>Called from MPC2Loader.cpp while parsing incoming telemetry data Potential behavior is moving telemetry index forward </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="33" column="10" bodyfile="Source/DONToUnreal/Private/Data/Timeline.cpp" bodystart="19" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_telemetry_timeline_1a3962b90b28461ef0c44d94d39a41a9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> *</type>
+        <definition>FObjectInfoStore * UTelemetryTimeline::FetchTelemetryData</definition>
+        <argsstring>(int tlmIndex)</argsstring>
+        <name>FetchTelemetryData</name>
+        <qualifiedname>UTelemetryTimeline::FetchTelemetryData</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tlmIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a telemetry frame with the specified index</para>
+<para>Throws out-of-range exception with illegal tlmIndex</para>
+<para>Access functions for telemetry data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="40" column="22" bodyfile="Source/DONToUnreal/Private/Data/Timeline.cpp" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_telemetry_timeline_1a137d61d259ff5e17ced144c6ea3d9c1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref> *</type>
+        <definition>FTelemetryFrame * UTelemetryTimeline::FetchTelemetryFrame</definition>
+        <argsstring>(int tlmIndex)</argsstring>
+        <name>FetchTelemetryFrame</name>
+        <qualifiedname>UTelemetryTimeline::FetchTelemetryFrame</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tlmIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a specified telemetry frame</para>
+<para>Throws out-of-range exception with illegal tlmIndex </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="47" column="21" bodyfile="Source/DONToUnreal/Private/Data/Timeline.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_telemetry_timeline_1a6f766b39e2dc5559ff95d81229403e2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref> *</type>
+        <definition>FTelemetryFrame * UTelemetryTimeline::BuildInitialTelemetryFrame</definition>
+        <argsstring>(TMap&lt; FString, FObjectState &gt; &amp;ObjectStates)</argsstring>
+        <name>BuildInitialTelemetryFrame</name>
+        <qualifiedname>UTelemetryTimeline::BuildInitialTelemetryFrame</qualifiedname>
+        <param>
+          <type>TMap&lt; FString, FObjectState &gt; &amp;</type>
+          <declname>ObjectStates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the first telemetry frame using ObjectInfoStore builder </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="51" column="21" bodyfile="Source/DONToUnreal/Private/Data/Timeline.cpp" bodystart="65" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_telemetry_timeline_1a616eb5206ca6891f5997f551d918effd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref> *</type>
+        <definition>FTelemetryFrame * UTelemetryTimeline::ConstructTelemetryFrame</definition>
+        <argsstring>(TMap&lt; FString, FObjectState &gt; &amp;ObjectStates)</argsstring>
+        <name>ConstructTelemetryFrame</name>
+        <qualifiedname>UTelemetryTimeline::ConstructTelemetryFrame</qualifiedname>
+        <param>
+          <type>TMap&lt; FString, FObjectState &gt; &amp;</type>
+          <declname>ObjectStates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create all subsequent telemetry frames: Copy the previous telemetry frame, Update any subsequent frames as needed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="53" column="21" bodyfile="Source/DONToUnreal/Private/Data/Timeline.cpp" bodystart="106" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="18" column="1" bodyfile="Source/DONToUnreal/Public/Data/Timeline.h" bodystart="19" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_u_telemetry_timeline_1a6f766b39e2dc5559ff95d81229403e2d" prot="private" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>BuildInitialTelemetryFrame</name></member>
+      <member refid="class_u_telemetry_timeline_1a616eb5206ca6891f5997f551d918effd" prot="private" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>ConstructTelemetryFrame</name></member>
+      <member refid="class_u_telemetry_timeline_1a3962b90b28461ef0c44d94d39a41a9a2" prot="public" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>FetchTelemetryData</name></member>
+      <member refid="class_u_telemetry_timeline_1a137d61d259ff5e17ced144c6ea3d9c1e" prot="public" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>FetchTelemetryFrame</name></member>
+      <member refid="class_u_telemetry_timeline_1a006b4704bfabc6969eaa7572a2ae7d33" prot="public" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>numTlmElements</name></member>
+      <member refid="class_u_telemetry_timeline_1a18c9a6978cd9b2e931d01d485a03066f" prot="public" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>PushTelemetryData</name></member>
+      <member refid="class_u_telemetry_timeline_1a6c73c1168054d4ef2cbc14fbafc6f831" prot="private" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>Timeline</name></member>
+      <member refid="class_u_telemetry_timeline_1a3223f85bbb806be3503c8cfba532e199" prot="public" virt="non-virtual"><scope>UTelemetryTimeline</scope><name>UTelemetryTimeline</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

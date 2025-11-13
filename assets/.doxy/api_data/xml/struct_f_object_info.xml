@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_object_info" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectInfo</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">FRelativePosition</basecompoundref>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_f_object_info_1ae5c45644a6b32c8ec4e78a185c50ae87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct FObjectInfoStore</definition>
+        <argsstring></argsstring>
+        <name>FObjectInfoStore</name>
+        <qualifiedname>FObjectInfo::FObjectInfoStore</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="18" column="15" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_f_object_info_1a7f115484ade2ade205f74e7b438b0dab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const FObjectInfo &amp;lhs, const FObjectInfo &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>FObjectInfo::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="109" column="13" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="109" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_f_object_info_1a0dfb89f0da75dc1fe8d1b2bcad4a9877" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const FObjectInfo &amp;lhs, const FObjectInfo &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>FObjectInfo::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="121" column="13" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_1a6b0e562fe3f817401040727592a45a75" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref></type>
+        <definition>FObjectInfo FObjectInfo::ORIGIN</definition>
+        <argsstring></argsstring>
+        <name>ORIGIN</name>
+        <qualifiedname>FObjectInfo::ORIGIN</qualifiedname>
+        <initializer>= <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="21" column="20" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_1a8838ef312924368f76f42ab833aa197f" prot="protected" static="no" mutable="no">
+        <type>FName</type>
+        <definition>FName FObjectInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>FObjectInfo::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="25" column="7" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_info_1a9c6160b44b52be960f2b82ab9b503718" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FObjectInfo::isVisible</definition>
+        <argsstring></argsstring>
+        <name>isVisible</name>
+        <qualifiedname>FObjectInfo::isVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="28" column="6" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_1af37d6c0428eb0dfc5175401f8a59bd0d" prot="private" static="no" mutable="no">
+        <type>TOptRef&lt; const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt;</type>
+        <definition>TOptRef&lt;const FObjectInfo&gt; FObjectInfo::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>FObjectInfo::parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference to the parent of this object. If empty, this is the origin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="34" column="9" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="struct_f_object_info_1acdbf534df64ddbce5ffb55eb95d711da" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE void</type>
+        <definition>FORCEINLINE void FObjectInfo::SetParentRef</definition>
+        <argsstring>(TOptRef&lt; const FObjectInfo &gt; NewParent)</argsstring>
+        <name>SetParentRef</name>
+        <qualifiedname>FObjectInfo::SetParentRef</qualifiedname>
+        <param>
+          <type>TOptRef&lt; const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt;</type>
+          <declname>NewParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="37" column="18" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_object_info_1a31e2de6c060d4ac838b7c7bca60ca1d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE const ObjID &amp;</type>
+        <definition>FORCEINLINE const ObjID &amp; FObjectInfo::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <qualifiedname>FObjectInfo::GetName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="45" column="25" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a6cb70a3bc531c13e9e523c9a70a85962" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE bool</type>
+        <definition>FORCEINLINE bool FObjectInfo::IsVisible</definition>
+        <argsstring>() const</argsstring>
+        <name>IsVisible</name>
+        <qualifiedname>FObjectInfo::IsVisible</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="47" column="18" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a3eb4c7b22eeecd42b1c5d380b5955da4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE const TOptRef&lt; const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt; &amp;</type>
+        <definition>FORCEINLINE const TOptRef&lt; const FObjectInfo &gt; &amp; FObjectInfo::GetParent</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParent</name>
+        <qualifiedname>FObjectInfo::GetParent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="49" column="27" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a8fbc060c4eb0c9d8fa087146c7b5b527" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::FObjectInfo</definition>
+        <argsstring>(const ObjID &amp;Name, const bool Visibility, const TOptRef&lt; const FObjectInfo &gt; &amp;ParentIn, const FVector &amp;Position, const FQuat &amp;Orientation)</argsstring>
+        <name>FObjectInfo</name>
+        <qualifiedname>FObjectInfo::FObjectInfo</qualifiedname>
+        <param>
+          <type>const ObjID &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>Visibility</declname>
+        </param>
+        <param>
+          <type>const TOptRef&lt; const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt; &amp;</type>
+          <declname>ParentIn</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>Position</declname>
+        </param>
+        <param>
+          <type>const FQuat &amp;</type>
+          <declname>Orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="51" column="8" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1ac1aa2d260ad43c015a9d807088a69ea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::FObjectInfo</definition>
+        <argsstring>()</argsstring>
+        <name>FObjectInfo</name>
+        <qualifiedname>FObjectInfo::FObjectInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="56" column="8" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1ab34e33518a7baf756f4745d6c90ec4b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FObjectInfo::ToString</definition>
+        <argsstring>() const</argsstring>
+        <name>ToString</name>
+        <qualifiedname>FObjectInfo::ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="62" column="16" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a15229c6218ff0d7483ec281191a7432a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::FObjectInfo</definition>
+        <argsstring>(const FObjectInfo &amp;other)</argsstring>
+        <name>FObjectInfo</name>
+        <qualifiedname>FObjectInfo::FObjectInfo</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="68" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="68" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a4533b42b892bb11a69e9480aa81a6990" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::FObjectInfo</definition>
+        <argsstring>(FObjectInfo &amp;&amp;other) noexcept</argsstring>
+        <name>FObjectInfo</name>
+        <qualifiedname>FObjectInfo::FObjectInfo</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="76" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1af2a473883d89f4dd291efde8cb994b30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+        <definition>FObjectInfo &amp; FObjectInfo::operator=</definition>
+        <argsstring>(const FObjectInfo &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FObjectInfo::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="84" column="13" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="84" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1aac53bbbe9d689b9d258c025992d78a68" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+        <definition>FObjectInfo &amp; FObjectInfo::operator=</definition>
+        <argsstring>(FObjectInfo &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FObjectInfo::operator=</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="95" column="13" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1ac708b5768b12f894ad1f1272888007d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::_WITH</definition>
+        <argsstring>(FName, Name)</argsstring>
+        <name>_WITH</name>
+        <qualifiedname>FObjectInfo::_WITH</qualifiedname>
+        <param>
+          <type>FName</type>
+        </param>
+        <param>
+          <type>Name</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="131" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a60daeb1400dcc5019bdd8549a4730a29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::_WITH</definition>
+        <argsstring>(bool, Visibility)</argsstring>
+        <name>_WITH</name>
+        <qualifiedname>FObjectInfo::_WITH</qualifiedname>
+        <param>
+          <type>bool</type>
+        </param>
+        <param>
+          <type>Visibility</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="135" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1ad7536d36eaa4779a3aa333762d9be357" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::_WITH</definition>
+        <argsstring>(TOptRef&lt; const FObjectInfo &gt;, Parent)</argsstring>
+        <name>_WITH</name>
+        <qualifiedname>FObjectInfo::_WITH</qualifiedname>
+        <param>
+          <type>TOptRef&lt; const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &gt;</type>
+        </param>
+        <param>
+          <type>Parent</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="139" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a642e1a7b08ab14477014e42a6dd3823b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::_WITH</definition>
+        <argsstring>(FVector, RelativePos)</argsstring>
+        <name>_WITH</name>
+        <qualifiedname>FObjectInfo::_WITH</qualifiedname>
+        <param>
+          <type>FVector</type>
+        </param>
+        <param>
+          <type>RelativePos</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="143" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_1a3d1acd1c8045ead69801bb38679ae2e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfo::_WITH</definition>
+        <argsstring>(FQuat, Orientation)</argsstring>
+        <name>_WITH</name>
+        <qualifiedname>FObjectInfo::_WITH</qualifiedname>
+        <param>
+          <type>FQuat</type>
+        </param>
+        <param>
+          <type>Orientation</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="147" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="147" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FObjectInfo</label>
+        <link refid="struct_f_object_info"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FRelativePosition</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FObjectInfo</label>
+        <link refid="struct_f_object_info"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ORIGIN</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FRelativePosition</label>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/Data/ObjectInfo.h" line="13" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfo.h" bodystart="14" bodyend="154"/>
+    <listofallmembers>
+      <member refid="struct_f_object_info_1ac708b5768b12f894ad1f1272888007d1" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>_WITH</name></member>
+      <member refid="struct_f_object_info_1a60daeb1400dcc5019bdd8549a4730a29" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>_WITH</name></member>
+      <member refid="struct_f_object_info_1ad7536d36eaa4779a3aa333762d9be357" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>_WITH</name></member>
+      <member refid="struct_f_object_info_1a642e1a7b08ab14477014e42a6dd3823b" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>_WITH</name></member>
+      <member refid="struct_f_object_info_1a3d1acd1c8045ead69801bb38679ae2e2" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>_WITH</name></member>
+      <member refid="struct_f_object_info_1a8fbc060c4eb0c9d8fa087146c7b5b527" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>FObjectInfo</name></member>
+      <member refid="struct_f_object_info_1ac1aa2d260ad43c015a9d807088a69ea8" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>FObjectInfo</name></member>
+      <member refid="struct_f_object_info_1a15229c6218ff0d7483ec281191a7432a" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>FObjectInfo</name></member>
+      <member refid="struct_f_object_info_1a4533b42b892bb11a69e9480aa81a6990" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>FObjectInfo</name></member>
+      <member refid="struct_f_object_info_1ae5c45644a6b32c8ec4e78a185c50ae87" prot="private" virt="non-virtual"><scope>FObjectInfo</scope><name>FObjectInfoStore</name></member>
+      <member refid="struct_f_object_info_1a31e2de6c060d4ac838b7c7bca60ca1d0" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>GetName</name></member>
+      <member refid="struct_f_object_info_1a3eb4c7b22eeecd42b1c5d380b5955da4" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>GetParent</name></member>
+      <member refid="struct_f_object_info_1a6cb70a3bc531c13e9e523c9a70a85962" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>IsVisible</name></member>
+      <member refid="struct_f_object_info_1a9c6160b44b52be960f2b82ab9b503718" prot="protected" virt="non-virtual"><scope>FObjectInfo</scope><name>isVisible</name></member>
+      <member refid="struct_f_object_info_1a8838ef312924368f76f42ab833aa197f" prot="protected" virt="non-virtual"><scope>FObjectInfo</scope><name>name</name></member>
+      <member refid="struct_f_object_info_1a0dfb89f0da75dc1fe8d1b2bcad4a9877" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>operator!=</name></member>
+      <member refid="struct_f_object_info_1af2a473883d89f4dd291efde8cb994b30" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>operator=</name></member>
+      <member refid="struct_f_object_info_1aac53bbbe9d689b9d258c025992d78a68" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>operator=</name></member>
+      <member refid="struct_f_object_info_1a7f115484ade2ade205f74e7b438b0dab" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>operator==</name></member>
+      <member refid="struct_f_object_info_1a6b0e562fe3f817401040727592a45a75" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>ORIGIN</name></member>
+      <member refid="struct_f_object_info_1af37d6c0428eb0dfc5175401f8a59bd0d" prot="private" virt="non-virtual"><scope>FObjectInfo</scope><name>parent</name></member>
+      <member refid="struct_f_object_info_1acdbf534df64ddbce5ffb55eb95d711da" prot="protected" virt="non-virtual"><scope>FObjectInfo</scope><name>SetParentRef</name></member>
+      <member refid="struct_f_object_info_1ab34e33518a7baf756f4745d6c90ec4b2" prot="public" virt="non-virtual"><scope>FObjectInfo</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

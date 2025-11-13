@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_c336ec6675be099178e02bcdcfb186ce" kind="dir">
+    <compoundname>Source/DONToUnreal/Public</compoundname>
+    <innerdir refid="dir_436819c72972a51f013170f2c377a0ea">Source/DONToUnreal/Public/Data</innerdir>
+    <innerdir refid="dir_f752106aec1708221047f68d9fed8822">Source/DONToUnreal/Public/Level</innerdir>
+    <innerdir refid="dir_91e92cab0a0b5df2370f6d3ddd515cf6">Source/DONToUnreal/Public/Util</innerdir>
+    <innerfile refid="_data_types_8h">DataTypes.h</innerfile>
+    <innerfile refid="_file_recorder_8h">FileRecorder.h</innerfile>
+    <innerfile refid="_m_p_c2_loader_8h">MPC2Loader.h</innerfile>
+    <innerfile refid="_m_p_c3_loader_8h">MPC3Loader.h</innerfile>
+    <innerfile refid="_object_actor_8h">ObjectActor.h</innerfile>
+    <innerfile refid="_simulation_game_instance_8h">SimulationGameInstance.h</innerfile>
+    <innerfile refid="_simulation_loader_8h">SimulationLoader.h</innerfile>
+    <innerfile refid="tinyxml2_8h">tinyxml2.h</innerfile>
+    <innerfile refid="_u_m_p_c_socket_client_8h">UMPCSocketClient.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/"/>
+  </compounddef>
+</doxygen>

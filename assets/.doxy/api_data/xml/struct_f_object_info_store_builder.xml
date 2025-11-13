@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_object_info_store_builder" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectInfoStoreBuilder</compoundname>
+    <derivedcompoundref refid="struct_f_object_info_store_copy_builder" prot="public" virt="non-virtual">FObjectInfoStoreCopyBuilder</derivedcompoundref>
+    <includes refid="_object_info_store_8h" local="no">ObjectInfoStore.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_store_builder_1a7bacd977c9eb31997b9bf8e4289ee2d4" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref></type>
+        <definition>FObjectInfo FObjectInfoStoreBuilder::origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <qualifiedname>FObjectInfoStoreBuilder::origin</qualifiedname>
+        <initializer>= FObjectInfo::ORIGIN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="163" column="13" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_f_object_info_store_builder_1ae5c45644a6b32c8ec4e78a185c50ae87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>friend struct FObjectInfoStore</definition>
+        <argsstring></argsstring>
+        <name>FObjectInfoStore</name>
+        <qualifiedname>FObjectInfoStoreBuilder::FObjectInfoStore</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="166" column="15" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_store_builder_1ac4bf1fcb5a69505d300ed60bdd5e7b8b" prot="protected" static="no" mutable="no">
+        <type>TMap&lt; FName, <ref refid="struct_f_object_info_tmp" kindref="compound">FObjectInfoTmp</ref> &gt;</type>
+        <definition>TMap&lt;FName, FObjectInfoTmp&gt; FObjectInfoStoreBuilder::toAdd</definition>
+        <argsstring></argsstring>
+        <name>toAdd</name>
+        <qualifiedname>FObjectInfoStoreBuilder::toAdd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="235" column="6" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FObjectInfoStoreBuilder::AddObject</definition>
+        <argsstring>(const FName &amp;Name, const TOptional&lt; FName &gt; &amp;ParentName, const FVector &amp;Position, const FQuat &amp;Orientation, const bool Visibility)</argsstring>
+        <name>AddObject</name>
+        <qualifiedname>FObjectInfoStoreBuilder::AddObject</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>const TOptional&lt; FName &gt; &amp;</type>
+          <declname>ParentName</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>Position</declname>
+        </param>
+        <param>
+          <type>const FQuat &amp;</type>
+          <declname>Orientation</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>Visibility</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an object&apos;s information to this builder, to be added to the resulting store.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier of this object. Each object&apos;s name must be unique, and any successive calls with an already-given name will overwrite the previous. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ParentName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier of the parent to this object. If empty, will default to <ref refid="" kindref="compound">.  Position The position of this object relative to the parent.  Orientation The orientation of this object relative to the parent.  Visibility Whether or not this object should be visible. </ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="176" column="6" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1aa70eb6ea2a83e44bce74f0a832be0a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FObjectInfoStoreBuilder::AddObject</definition>
+        <argsstring>(const FObjectInfo &amp;ToCopy)</argsstring>
+        <name>AddObject</name>
+        <qualifiedname>FObjectInfoStoreBuilder::AddObject</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>ToCopy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add this existing object&apos;s information, to be copied to the resulting store. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="181" column="6" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="9" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1aac8722ae710a15a9a6072a1417c6aaec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>USE_RET bool</type>
+        <definition>USE_RET bool FObjectInfoStoreBuilder::SetOrigin</definition>
+        <argsstring>(const FObjectInfo &amp;Origin)</argsstring>
+        <name>SetOrigin</name>
+        <qualifiedname>FObjectInfoStoreBuilder::SetOrigin</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref> &amp;</type>
+          <declname>Origin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the position for the new coordinate system that all positions will be based on. Must not have a parent.</para>
+<para>Defaults to <ref refid="" kindref="compound">.  False if Origin is not a valid origin. </ref></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="191" column="14" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1a10244285864a2ef5f875a4ce4733b7d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FObjectInfoStoreBuilder::Contains</definition>
+        <argsstring>(const FName &amp;Name) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>FObjectInfoStoreBuilder::Contains</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if Name is already defined in this builder, false otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="196" column="6" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FObjectInfoStoreBuilder::Build</definition>
+        <argsstring>(FObjectInfoStore &amp;out)</argsstring>
+        <name>Build</name>
+        <qualifiedname>FObjectInfoStoreBuilder::Build</qualifiedname>
+        <param>
+          <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the ObjectInfoStore with the provided data.</para>
+<para>Generated <ref refid="" kindref="compound">instances will be owned by the provided struct, with pointers to their parents within this ObjectInfoStore. This method may only be called once per builder. What we do is we first just associate all of the FNames with completely empty FObjectInfos, so we get all of the hashing and reorganizing out of the way. Now that we have a map that will never change, we can save pointers within the map. However, even though we can get the pointers, we still need to add parents before children so the children can get the right NestIndex. </ref></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="205" column="6" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="62" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1a4e63defb1d2ea77331384cbd9afd19c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCEINLINE <ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref></type>
+        <definition>FORCEINLINE FObjectInfoStore FObjectInfoStoreBuilder::Build</definition>
+        <argsstring>()</argsstring>
+        <name>Build</name>
+        <qualifiedname>FObjectInfoStoreBuilder::Build</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the ObjectInfoStore with the provided data.</para>
+<para>Generated <ref refid="" kindref="compound">instances will be owned by the returned struct, each with pointers to their parents that are also stored within this ObjectInfoStore. This method may only be called once per builder. </ref></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="214" column="30" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="214" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1a8115418e70ee8bb0227bf21f0b29d84d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 FObjectInfoStoreBuilder::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <qualifiedname>FObjectInfoStoreBuilder::Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get how many items are in this builder. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="224" column="7" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoStoreBuilder::FObjectInfoStoreBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>FObjectInfoStoreBuilder</name>
+        <qualifiedname>FObjectInfoStoreBuilder::FObjectInfoStoreBuilder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new builder to construct a new ObjectInfoStore from scratch.</para>
+<para>To only update pre-existing data, see <ref refid="" kindref="compound">FObjectInfoStoreCopyBuilder@endlink</ref></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="231" column="1" bodyfile="Source/DONToUnreal/Private/Data/ObjectInfoStore_Builder.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Used on the first sim-tick to establish all objects&apos; initial states. Use <ref refid="" kindref="compound">to update the positions for later ticks. </ref></para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FObjectInfoStoreBuilder</label>
+        <link refid="struct_f_object_info_store_builder"/>
+      </node>
+      <node id="2">
+        <label>FObjectInfoStoreCopyBuilder</label>
+        <link refid="struct_f_object_info_store_copy_builder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="158" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="159" bodyend="236"/>
+    <listofallmembers>
+      <member refid="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>AddObject</name></member>
+      <member refid="struct_f_object_info_store_builder_1aa70eb6ea2a83e44bce74f0a832be0a74" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>AddObject</name></member>
+      <member refid="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>Build</name></member>
+      <member refid="struct_f_object_info_store_builder_1a4e63defb1d2ea77331384cbd9afd19c3" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>Build</name></member>
+      <member refid="struct_f_object_info_store_builder_1a10244285864a2ef5f875a4ce4733b7d3" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>Contains</name></member>
+      <member refid="struct_f_object_info_store_builder_1ae5c45644a6b32c8ec4e78a185c50ae87" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>FObjectInfoStore</name></member>
+      <member refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>FObjectInfoStoreBuilder</name></member>
+      <member refid="struct_f_object_info_store_builder_1a7bacd977c9eb31997b9bf8e4289ee2d4" prot="private" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>origin</name></member>
+      <member refid="struct_f_object_info_store_builder_1aac8722ae710a15a9a6072a1417c6aaec" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>SetOrigin</name></member>
+      <member refid="struct_f_object_info_store_builder_1a8115418e70ee8bb0227bf21f0b29d84d" prot="public" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>Size</name></member>
+      <member refid="struct_f_object_info_store_builder_1ac4bf1fcb5a69505d300ed60bdd5e7b8b" prot="protected" virt="non-virtual"><scope>FObjectInfoStoreBuilder</scope><name>toAdd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

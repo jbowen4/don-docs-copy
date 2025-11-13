@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="struct_f_object_info" kind="struct"><name>FObjectInfo</name>
+    <member refid="struct_f_object_info_1ae5c45644a6b32c8ec4e78a185c50ae87" kind="friend"><name>FObjectInfoStore</name></member>
+    <member refid="struct_f_object_info_1a7f115484ade2ade205f74e7b438b0dab" kind="friend"><name>operator==</name></member>
+    <member refid="struct_f_object_info_1a0dfb89f0da75dc1fe8d1b2bcad4a9877" kind="friend"><name>operator!=</name></member>
+    <member refid="struct_f_object_info_1a6b0e562fe3f817401040727592a45a75" kind="variable"><name>ORIGIN</name></member>
+    <member refid="struct_f_object_info_1a8838ef312924368f76f42ab833aa197f" kind="variable"><name>name</name></member>
+    <member refid="struct_f_object_info_1a9c6160b44b52be960f2b82ab9b503718" kind="variable"><name>isVisible</name></member>
+    <member refid="struct_f_object_info_1af37d6c0428eb0dfc5175401f8a59bd0d" kind="variable"><name>parent</name></member>
+    <member refid="struct_f_object_info_1acdbf534df64ddbce5ffb55eb95d711da" kind="function"><name>SetParentRef</name></member>
+    <member refid="struct_f_object_info_1a31e2de6c060d4ac838b7c7bca60ca1d0" kind="function"><name>GetName</name></member>
+    <member refid="struct_f_object_info_1a6cb70a3bc531c13e9e523c9a70a85962" kind="function"><name>IsVisible</name></member>
+    <member refid="struct_f_object_info_1a3eb4c7b22eeecd42b1c5d380b5955da4" kind="function"><name>GetParent</name></member>
+    <member refid="struct_f_object_info_1a8fbc060c4eb0c9d8fa087146c7b5b527" kind="function"><name>FObjectInfo</name></member>
+    <member refid="struct_f_object_info_1ac1aa2d260ad43c015a9d807088a69ea8" kind="function"><name>FObjectInfo</name></member>
+    <member refid="struct_f_object_info_1ab34e33518a7baf756f4745d6c90ec4b2" kind="function"><name>ToString</name></member>
+    <member refid="struct_f_object_info_1a15229c6218ff0d7483ec281191a7432a" kind="function"><name>FObjectInfo</name></member>
+    <member refid="struct_f_object_info_1a4533b42b892bb11a69e9480aa81a6990" kind="function"><name>FObjectInfo</name></member>
+    <member refid="struct_f_object_info_1af2a473883d89f4dd291efde8cb994b30" kind="function"><name>operator=</name></member>
+    <member refid="struct_f_object_info_1aac53bbbe9d689b9d258c025992d78a68" kind="function"><name>operator=</name></member>
+    <member refid="struct_f_object_info_1ac708b5768b12f894ad1f1272888007d1" kind="function"><name>_WITH</name></member>
+    <member refid="struct_f_object_info_1a60daeb1400dcc5019bdd8549a4730a29" kind="function"><name>_WITH</name></member>
+    <member refid="struct_f_object_info_1ad7536d36eaa4779a3aa333762d9be357" kind="function"><name>_WITH</name></member>
+    <member refid="struct_f_object_info_1a642e1a7b08ab14477014e42a6dd3823b" kind="function"><name>_WITH</name></member>
+    <member refid="struct_f_object_info_1a3d1acd1c8045ead69801bb38679ae2e2" kind="function"><name>_WITH</name></member>
+  </compound>
+  <compound refid="struct_f_object_info_store" kind="struct"><name>FObjectInfoStore</name>
+    <member refid="struct_f_object_info_store_1a234c255a7d975f60158ae1b46cc013d1" kind="friend"><name>FObjectInfoStoreBuilder</name></member>
+    <member refid="struct_f_object_info_store_1af6c918bc2eee61cc24f5d0638fca43c4" kind="friend"><name>FObjectInfoStoreCopyBuilder</name></member>
+    <member refid="struct_f_object_info_store_1a966e9205566fc63f1a3bb6a8d9b46b07" kind="variable"><name>Origin</name></member>
+    <member refid="struct_f_object_info_store_1a3e6c1535df16991de301b549c51607f8" kind="variable"><name>objects</name></member>
+    <member refid="struct_f_object_info_store_1a1d36332394b9e829db7ce47ed8a56312" kind="function"><name>Builder</name></member>
+    <member refid="struct_f_object_info_store_1afda60b7988c532b855815d14059e9ad9" kind="function"><name>CopyBuilder</name></member>
+    <member refid="struct_f_object_info_store_1adfac55f8dc2cdcbcf58fbc9d1044b8fa" kind="function"><name>GETTER</name></member>
+    <member refid="struct_f_object_info_store_1ac53373886244e0d8662fa5366b718022" kind="function"><name>Get</name></member>
+    <member refid="struct_f_object_info_store_1a45c09cdeb31935091156d8afbd7ffd4a" kind="function"><name>Keys</name></member>
+    <member refid="struct_f_object_info_store_1aa21a1017cf4cc5a01d9fcb99194368a3" kind="function"><name>Keys</name></member>
+    <member refid="struct_f_object_info_store_1a834b1a3473daf652d5a9e2b5c00ef450" kind="function"><name>Size</name></member>
+    <member refid="struct_f_object_info_store_1a0da00b55fc88fa4c6fc4dd49c8e8afe1" kind="function"><name>ToString</name></member>
+    <member refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kind="function"><name>FObjectInfoStore</name></member>
+    <member refid="struct_f_object_info_store_1a40994f23aa17e86deba5efc0dbe131be" kind="function"><name>FObjectInfoStore</name></member>
+    <member refid="struct_f_object_info_store_1a5b7f88a1af503706f63e3c39825f3e86" kind="function"><name>FObjectInfoStore</name></member>
+    <member refid="struct_f_object_info_store_1a99f0bb5d81c882cd371f6238a3a60f7a" kind="function"><name>FObjectInfoStore</name></member>
+    <member refid="struct_f_object_info_store_1a084c9852862d62180902bda1172d8dca" kind="function"><name>operator=</name></member>
+    <member refid="struct_f_object_info_store_1a44d5558e9eb0f4fc085654759efcd335" kind="function"><name>operator=</name></member>
+    <member refid="struct_f_object_info_store_1a7eefaa8a4ca94edef13a515935911f08" kind="function"><name>getUnchecked</name></member>
+  </compound>
+  <compound refid="struct_f_object_info_store_builder" kind="struct"><name>FObjectInfoStoreBuilder</name>
+    <member refid="struct_f_object_info_store_builder_1a7bacd977c9eb31997b9bf8e4289ee2d4" kind="variable"><name>origin</name></member>
+    <member refid="struct_f_object_info_store_builder_1ae5c45644a6b32c8ec4e78a185c50ae87" kind="friend"><name>FObjectInfoStore</name></member>
+    <member refid="struct_f_object_info_store_builder_1ac4bf1fcb5a69505d300ed60bdd5e7b8b" kind="variable"><name>toAdd</name></member>
+    <member refid="struct_f_object_info_store_builder_1ab3c10f0541fb8c961c8c597a5aaa379b" kind="function"><name>AddObject</name></member>
+    <member refid="struct_f_object_info_store_builder_1aa70eb6ea2a83e44bce74f0a832be0a74" kind="function"><name>AddObject</name></member>
+    <member refid="struct_f_object_info_store_builder_1aac8722ae710a15a9a6072a1417c6aaec" kind="function"><name>SetOrigin</name></member>
+    <member refid="struct_f_object_info_store_builder_1a10244285864a2ef5f875a4ce4733b7d3" kind="function"><name>Contains</name></member>
+    <member refid="struct_f_object_info_store_builder_1a63508eedadfbad400bac8a85e4d99796" kind="function"><name>Build</name></member>
+    <member refid="struct_f_object_info_store_builder_1a4e63defb1d2ea77331384cbd9afd19c3" kind="function"><name>Build</name></member>
+    <member refid="struct_f_object_info_store_builder_1a8115418e70ee8bb0227bf21f0b29d84d" kind="function"><name>Size</name></member>
+    <member refid="struct_f_object_info_store_builder_1a54319d8ab5af1888793a39c0e0583653" kind="function"><name>FObjectInfoStoreBuilder</name></member>
+  </compound>
+  <compound refid="struct_f_object_info_store_copy_builder" kind="struct"><name>FObjectInfoStoreCopyBuilder</name>
+    <member refid="struct_f_object_info_store_copy_builder_1aa0171e4cd7755c0487b72496a0db0f14" kind="function"><name>UpdateInfo</name></member>
+    <member refid="struct_f_object_info_store_copy_builder_1a0023a11581ef9d7d46da0c2b2b6077e1" kind="function"><name>FObjectInfoStoreCopyBuilder</name></member>
+    <member refid="struct_f_object_info_store_copy_builder_1a64df1b003f38dfcb1ea1f3f7dea14e93" kind="function"><name>FObjectInfoStoreCopyBuilder</name></member>
+  </compound>
+  <compound refid="struct_f_object_info_tmp" kind="struct"><name>FObjectInfoTmp</name>
+    <member refid="struct_f_object_info_tmp_1aa5feb74994a6b7b0f8812358e458d65f" kind="variable"><name>Name</name></member>
+    <member refid="struct_f_object_info_tmp_1a5175a128574aeca505cff2aa9f935347" kind="variable"><name>ParentName</name></member>
+    <member refid="struct_f_object_info_tmp_1a3c03483b484b2a67c115b5726d7e509b" kind="variable"><name>Position</name></member>
+    <member refid="struct_f_object_info_tmp_1a41d1640385bdf197b623def7879b74d3" kind="variable"><name>Orientation</name></member>
+    <member refid="struct_f_object_info_tmp_1a5c564b1fbec2f0c8f6f2d5fe274eff49" kind="variable"><name>Visibility</name></member>
+    <member refid="struct_f_object_info_tmp_1a93daefe391d350f36c5b977ec7723e57" kind="function"><name>FObjectInfoTmp</name></member>
+    <member refid="struct_f_object_info_tmp_1ac394e321cd094c6b9a05cbb4b4033e1b" kind="function"><name>FObjectInfoTmp</name></member>
+    <member refid="struct_f_object_info_tmp_1ae86dde1597892103e61f4754f900e41e" kind="function"><name>~FObjectInfoTmp</name></member>
+    <member refid="struct_f_object_info_tmp_1ac016913d6dc0ce832a0c220be90b0ba5" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="struct_f_telemetry_frame" kind="struct"><name>FTelemetryFrame</name>
+    <member refid="struct_f_telemetry_frame_1afa3972155b11c2c9808ad2974b6c88e4" kind="variable"><name>TelemetryData</name></member>
+  </compound>
+  <compound refid="class_u_telemetry_timeline" kind="class"><name>UTelemetryTimeline</name>
+    <member refid="class_u_telemetry_timeline_1a006b4704bfabc6969eaa7572a2ae7d33" kind="variable"><name>numTlmElements</name></member>
+    <member refid="class_u_telemetry_timeline_1a6c73c1168054d4ef2cbc14fbafc6f831" kind="variable"><name>Timeline</name></member>
+    <member refid="class_u_telemetry_timeline_1a3223f85bbb806be3503c8cfba532e199" kind="function"><name>UTelemetryTimeline</name></member>
+    <member refid="class_u_telemetry_timeline_1a18c9a6978cd9b2e931d01d485a03066f" kind="function"><name>PushTelemetryData</name></member>
+    <member refid="class_u_telemetry_timeline_1a3962b90b28461ef0c44d94d39a41a9a2" kind="function"><name>FetchTelemetryData</name></member>
+    <member refid="class_u_telemetry_timeline_1a137d61d259ff5e17ced144c6ea3d9c1e" kind="function"><name>FetchTelemetryFrame</name></member>
+    <member refid="class_u_telemetry_timeline_1a6f766b39e2dc5559ff95d81229403e2d" kind="function"><name>BuildInitialTelemetryFrame</name></member>
+    <member refid="class_u_telemetry_timeline_1a616eb5206ca6891f5997f551d918effd" kind="function"><name>ConstructTelemetryFrame</name></member>
+  </compound>
+  <compound refid="_object_info_8cpp" kind="file"><name>ObjectInfo.cpp</name>
+  </compound>
+  <compound refid="_object_info_store_8cpp" kind="file"><name>ObjectInfoStore.cpp</name>
+  </compound>
+  <compound refid="_object_info_store___builder_8cpp" kind="file"><name>ObjectInfoStore_Builder.cpp</name>
+  </compound>
+  <compound refid="_relative_position_8cpp" kind="file"><name>RelativePosition.cpp</name>
+  </compound>
+  <compound refid="_timeline_8cpp" kind="file"><name>Timeline.cpp</name>
+  </compound>
+  <compound refid="_object_info_8h" kind="file"><name>ObjectInfo.h</name>
+    <member refid="_object_info_8h_1a3115501ae6bc633e022bf58b1676e1f2" kind="define"><name>_WITH</name></member>
+    <member refid="_object_info_8h_1a4bf67221d6ad54201e1fd70b1233439d" kind="typedef"><name>ObjID</name></member>
+  </compound>
+  <compound refid="_object_info_store_8h" kind="file"><name>ObjectInfoStore.h</name>
+  </compound>
+  <compound refid="_relative_position_8h" kind="file"><name>RelativePosition.h</name>
+    <member refid="_relative_position_8h_1a3115501ae6bc633e022bf58b1676e1f2" kind="define"><name>_WITH</name></member>
+  </compound>
+  <compound refid="_timeline_8h" kind="file"><name>Timeline.h</name>
+  </compound>
+  <compound refid="dir_c6f65c82417afbaa7503bbb02bffcee2" kind="dir"><name>Source/DONToUnreal/Private/Data</name>
+  </compound>
+  <compound refid="dir_436819c72972a51f013170f2c377a0ea" kind="dir"><name>Source/DONToUnreal/Public/Data</name>
+  </compound>
+  <compound refid="dir_7e70b7b4a1df651b2af4c8dca0b54b92" kind="dir"><name>Source/DONToUnreal</name>
+  </compound>
+  <compound refid="dir_2c3ab2caebe6f83b4fac8c870e601c85" kind="dir"><name>Source/DONToUnreal/Private</name>
+  </compound>
+  <compound refid="dir_c336ec6675be099178e02bcdcfb186ce" kind="dir"><name>Source/DONToUnreal/Public</name>
+  </compound>
+  <compound refid="dir_74389ed8173ad57b461b9d623a1f3867" kind="dir"><name>Source</name>
+  </compound>
+</doxygenindex>

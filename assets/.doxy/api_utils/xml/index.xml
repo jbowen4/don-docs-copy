@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="struct_planet_util_statics" kind="struct"><name>PlanetUtilStatics</name>
+    <member refid="struct_planet_util_statics_1a8ae6d6f0f20d3b519472f466adf6951f" kind="function"><name>GetAngularDiameter_Sphere</name></member>
+  </compound>
+  <compound refid="class_t_opt_ref" kind="class"><name>TOptRef</name>
+    <member refid="class_t_opt_ref_1a32ed303aabc85e550ba58665a518837b" kind="variable"><name>ptr</name></member>
+    <member refid="class_t_opt_ref_1aa56016a1dd44de0bd878672b2b29f4aa" kind="function"><name>TOptRef</name></member>
+    <member refid="class_t_opt_ref_1a9679ebcbb8e591c63032f9ec3effb5d9" kind="function"><name>TOptRef</name></member>
+    <member refid="class_t_opt_ref_1a0f74b71b5917a4c5e6bafcc95ef208d8" kind="function"><name>TOptRef</name></member>
+    <member refid="class_t_opt_ref_1a156a170db9f169f01325ac3c6624e570" kind="function"><name>TOptRef</name></member>
+    <member refid="class_t_opt_ref_1a84ffb13c3920c51197e9c2349f822aa9" kind="function"><name>IsPresent</name></member>
+    <member refid="class_t_opt_ref_1a9b47ab26f114025b0fb381641f55861c" kind="function"><name>IsAbsent</name></member>
+    <member refid="class_t_opt_ref_1a3dc743843189e9871240666825f3d966" kind="function"><name>operator bool</name></member>
+    <member refid="class_t_opt_ref_1af4201f958c1d1e94dc7a66fd24187654" kind="function"><name>GetOrThrow</name></member>
+    <member refid="class_t_opt_ref_1ae7397f4e9d7068bf1c30b87cd5ccbccf" kind="function"><name>GetOrThrow</name></member>
+    <member refid="class_t_opt_ref_1a5f951fd9dbff9807f950b4ff89877590" kind="function"><name>GetOrThrow</name></member>
+    <member refid="class_t_opt_ref_1a4957f2b787751731a9fdc91c07efa495" kind="function"><name>GetOrDefault</name></member>
+    <member refid="class_t_opt_ref_1a05a83aa61596f23adb68527a3a1658ab" kind="function"><name>GetOrCompute</name></member>
+    <member refid="class_t_opt_ref_1a27cd73704eb5ea88b4eec8a94c5d3199" kind="function"><name>GetPtrOrNull</name></member>
+    <member refid="class_t_opt_ref_1ac8cee5d28098ca4fdcf4356b0a9442c2" kind="function"><name>GetUnchecked</name></member>
+    <member refid="class_t_opt_ref_1a7293eed17c4eb659701bb7f3136e09ce" kind="function"><name>IfPresent</name></member>
+    <member refid="class_t_opt_ref_1a1dae279b45fce7334dacee74d35327d6" kind="function"><name>IfAbsent</name></member>
+    <member refid="class_t_opt_ref_1a9a861932ffbbd6377cde20b2aebe02e7" kind="function"><name>MapRef</name></member>
+    <member refid="class_t_opt_ref_1adf1099e338972547da0563ee5351740d" kind="function"><name>FlatMapRef</name></member>
+    <member refid="class_t_opt_ref_1a4fbb624882f1c14c3af0e9e43bbcce79" kind="function"><name>Filter</name></member>
+    <member refid="class_t_opt_ref_1ac347e0a187b4f72ce6caa5408b6871a0" kind="function"><name>MapOwned</name></member>
+    <member refid="class_t_opt_ref_1ab5d28c77bb4de4208ce243cf16bae19a" kind="function"><name>FlatMapOwned</name></member>
+    <member refid="class_t_opt_ref_1a35dadcbc4587d3df3e059a707ea8e3c7" kind="function"><name>ToOwned</name></member>
+    <member refid="class_t_opt_ref_1a9ddaf93eda5e02d13024a0876b6dc0e8" kind="function"><name>ToOwnedOrCompute</name></member>
+    <member refid="class_t_opt_ref_1a13d0b9643067b6b855ba093234f336d6" kind="function"><name>ToOwned</name></member>
+    <member refid="class_t_opt_ref_1a1cec093d72cdeab5a61cbd4a001131c3" kind="function"><name>operator*</name></member>
+    <member refid="class_t_opt_ref_1ae24825a8cf4a61cfcad11343b550fa5c" kind="function"><name>operator-&gt;</name></member>
+    <member refid="class_t_opt_ref_1a24c011fa67975cab3524f60e3b9f7389" kind="function"><name>TOptRef</name></member>
+    <member refid="class_t_opt_ref_1acd0ea3210a6422cfd8c3832e6fc8a85c" kind="function"><name>TOptRef</name></member>
+    <member refid="class_t_opt_ref_1ad597e62d4cfeafe177727166961cbfd1" kind="function"><name>operator=</name></member>
+    <member refid="class_t_opt_ref_1acaaac53a3ef39ec552657586474e614c" kind="function"><name>operator=</name></member>
+    <member refid="class_t_opt_ref_1ac0e3a28440798946e9cbd78c490ffa69" kind="function"><name>operator==</name></member>
+    <member refid="class_t_opt_ref_1ac0e3a28440798946e9cbd78c490ffa69" kind="function"><name>operator==</name></member>
+    <member refid="class_t_opt_ref_1ab0042d7878115deabae1bea1c3044894" kind="function"><name>operator==</name></member>
+    <member refid="class_t_opt_ref_1ab60b25e46d385b02597a50b5873a3f24" kind="function"><name>operator==</name></member>
+    <member refid="class_t_opt_ref_1add4f00456f9a7c58db23099b69e0b157" kind="function"><name>operator!=</name></member>
+    <member refid="class_t_opt_ref_1acfcb205fe5e9abf3bcea379679970a56" kind="function"><name>operator!=</name></member>
+    <member refid="class_t_opt_ref_1a81b729da9f5a72fcfa7f1cdb09074d0a" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="namespace_collections_utils" kind="namespace"><name>CollectionsUtils</name>
+  </compound>
+  <compound refid="namespace_collections_utils_1_1_list" kind="namespace"><name>CollectionsUtils::List</name>
+    <member refid="_collections_utils_8h_1a4812e8b8a598c2ccc0e6bbda5fee9624" kind="function"><name>PopHeadAndGet</name></member>
+    <member refid="_collections_utils_8h_1a2ef7cda0853ebe9331d5dfdccaf9791d" kind="function"><name>RemoveFirstMatchingAndGet</name></member>
+  </compound>
+  <compound refid="namespace_collections_utils_1_1_map" kind="namespace"><name>CollectionsUtils::Map</name>
+    <member refid="_collections_utils_8h_1a9c3f969b040775b37a947c8298c40e0b" kind="function"><name>computeIfAbsent</name></member>
+  </compound>
+  <compound refid="namespace_collections_utils_1_1_stack" kind="namespace"><name>CollectionsUtils::Stack</name>
+    <member refid="_collections_utils_8h_1aff9c99480400836704293a14d4343f6c" kind="function"><name>PopHeadAndGet</name></member>
+  </compound>
+  <compound refid="_collections_utils_8h" kind="file"><name>CollectionsUtils.h</name>
+  </compound>
+  <compound refid="_planet_util_statics_8cpp" kind="file"><name>PlanetUtilStatics.cpp</name>
+  </compound>
+  <compound refid="_planet_util_statics_8h" kind="file"><name>PlanetUtilStatics.h</name>
+  </compound>
+  <compound refid="_class_macros_8h" kind="file"><name>ClassMacros.h</name>
+    <member refid="_class_macros_8h_1afe1fa3859412affc9292cd3086c770f1" kind="define"><name>GETTER</name></member>
+    <member refid="_class_macros_8h_1afc8fc3de5c9293079c88f6bb80fa6014" kind="define"><name>USE_RET</name></member>
+  </compound>
+  <compound refid="_t_opt_ref_8h" kind="file"><name>TOptRef.h</name>
+  </compound>
+  <compound refid="dir_7e70b7b4a1df651b2af4c8dca0b54b92" kind="dir"><name>Source/DONToUnreal</name>
+  </compound>
+  <compound refid="dir_2c3ab2caebe6f83b4fac8c870e601c85" kind="dir"><name>Source/DONToUnreal/Private</name>
+  </compound>
+  <compound refid="dir_c336ec6675be099178e02bcdcfb186ce" kind="dir"><name>Source/DONToUnreal/Public</name>
+  </compound>
+  <compound refid="dir_74389ed8173ad57b461b9d623a1f3867" kind="dir"><name>Source</name>
+  </compound>
+  <compound refid="dir_0b672cd9ffed74d397856df63ef6d83a" kind="dir"><name>Source/DONToUnreal/Public/Util/Types</name>
+  </compound>
+  <compound refid="dir_3a690fa77d5963354acc6a5ac4ebb1d1" kind="dir"><name>Source/DONToUnreal/Private/Util</name>
+  </compound>
+  <compound refid="dir_91e92cab0a0b5df2370f6d3ddd515cf6" kind="dir"><name>Source/DONToUnreal/Public/Util</name>
+  </compound>
+</doxygenindex>

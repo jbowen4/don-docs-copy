@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_telemetry_frame" kind="struct" language="C++" prot="public">
+    <compoundname>FTelemetryFrame</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_telemetry_frame_1afa3972155b11c2c9808ad2974b6c88e4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref></type>
+        <definition>FObjectInfoStore FTelemetryFrame::TelemetryData</definition>
+        <argsstring></argsstring>
+        <name>TelemetryData</name>
+        <qualifiedname>FTelemetryFrame::TelemetryData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="15" column="22" bodyfile="Source/DONToUnreal/Public/Data/Timeline.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>FObjectInfoStore</label>
+        <link refid="struct_f_object_info_store"/>
+      </node>
+      <node id="1">
+        <label>FTelemetryFrame</label>
+        <link refid="struct_f_telemetry_frame"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TelemetryData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/Data/Timeline.h" line="10" column="1" bodyfile="Source/DONToUnreal/Public/Data/Timeline.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="struct_f_telemetry_frame_1afa3972155b11c2c9808ad2974b6c88e4" prot="public" virt="non-virtual"><scope>FTelemetryFrame</scope><name>TelemetryData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

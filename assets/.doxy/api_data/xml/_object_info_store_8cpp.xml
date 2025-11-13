@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_object_info_store_8cpp" kind="file" language="C++">
+    <compoundname>ObjectInfoStore.cpp</compoundname>
+    <includes refid="_object_info_store_8h" local="yes">Data/ObjectInfoStore.h</includes>
+    <includes local="yes">Util/Types/TOptRef.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp</label>
+        <link refid="_object_info_store_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ObjectInfo.h</label>
+        <link refid="_object_info_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Data/ObjectInfoStore.h</label>
+        <link refid="_object_info_store_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RelativePosition.h</label>
+        <link refid="_relative_position_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="9">
+        <label>ObjectInfo.generated.h</label>
+      </node>
+      <node id="11">
+        <label>ObjectInfoStore.generated.h</label>
+      </node>
+      <node id="8">
+        <label>RelativePosition.generated.h</label>
+      </node>
+      <node id="10">
+        <label>UObject/Object.h</label>
+      </node>
+      <node id="7">
+        <label>Util/ClassMacros.h</label>
+      </node>
+      <node id="6">
+        <label>Util/Types/TOptRef.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Data/ObjectInfoStore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Util/Types/TOptRef.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="struct_f_object_info_store_builder" kindref="compound">FObjectInfoStoreBuilder</ref><sp/><ref refid="struct_f_object_info_store_1a1d36332394b9e829db7ce47ed8a56312" kindref="member">FObjectInfoStore::Builder</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FObjectInfoStoreBuilder();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="struct_f_object_info_store_copy_builder" kindref="compound">FObjectInfoStoreCopyBuilder</ref><sp/><ref refid="struct_f_object_info_store_1afda60b7988c532b855815d14059e9ad9" kindref="member">FObjectInfoStore::CopyBuilder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;<sp/>CopyFrom)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FObjectInfoStoreCopyBuilder(CopyFrom);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">TOptRef&lt;const<sp/>FObjectInfo&gt;<sp/><ref refid="struct_f_object_info_store_1ac53373886244e0d8662fa5366b718022" kindref="member">FObjectInfoStore::Get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="19"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>gotten<sp/>=<sp/>getUnchecked(Name);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gotten<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(*gotten);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store_1aa21a1017cf4cc5a01d9fcb99194368a3" kindref="member">FObjectInfoStore::Keys</ref>(TArray&lt;FName&gt;&amp;<sp/>Out)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="28"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;objects.GetKeys(Out);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore::FObjectInfoStore</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Origin(<ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>::ORIGIN)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore::FObjectInfoStore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>&amp;<sp/>Origin)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Origin(Origin)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="struct_f_object_info_store_1a5761cab04719c966087e780882799699" kindref="member">FObjectInfoStore::FObjectInfoStore</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;<sp/>copyFrom)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>Origin(copyFrom.Origin),<sp/>objects(copyFrom.objects)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fix<sp/>parent<sp/>pointers<sp/>to<sp/>point<sp/>to<sp/>locations<sp/>in<sp/>the<sp/>new<sp/>map.<sp/>Shouldn&apos;t<sp/>need<sp/>to<sp/>modify<sp/>nest<sp/>indices.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TPair&lt;FName,<sp/>FObjectInfo&gt;&amp;<sp/>name_object<sp/>:<sp/>copyFrom.objects)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>FObjectInfo&amp;<sp/>object<sp/>=<sp/>name_object.Value;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>object.parent.IfPresent([&amp;object,<sp/>&amp;copyFrom](const<sp/>FObjectInfo&amp;<sp/>parent)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;<sp/>parentInNewMap<sp/>=<sp/>copyFrom.Get(parent.GetName());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(parentInNewMap.IsAbsent())<sp/></highlight><highlight class="comment">//<sp/>if<sp/>parent<sp/>doesn&apos;t<sp/>exist<sp/>in<sp/>old<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UE_LOG(LogCore,<sp/>Fatal,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Illegal<sp/>state:<sp/>object<sp/>&apos;%ls&apos;<sp/>references<sp/>parent<sp/>&apos;%ls&apos;<sp/>that<sp/>does<sp/>not<sp/>exist<sp/>in<sp/>FObjectInfoStore.&quot;</highlight><highlight class="normal">),<sp/>*FName::SafeString(object.GetName().GetDisplayIndex()),<sp/>*FName::SafeString(parent.GetName().GetDisplayIndex()));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>I<sp/>get<sp/>why<sp/>the<sp/>PAIR<sp/>can&apos;t<sp/>be<sp/>modified,<sp/>but<sp/>the<sp/>value<sp/>still<sp/>needs<sp/>to<sp/>be<sp/>modifiable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const_cast&lt;FObjectInfo&amp;&gt;(object).parent<sp/>=<sp/>parentInNewMap;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>*<sp/>FObjectInfoStore::getUnchecked(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FName&amp;<sp/>Name)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="63"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal">FObjectInfo*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;objects.Find(Name));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">FString<sp/><ref refid="struct_f_object_info_store_1a0da00b55fc88fa4c6fc4dd49c8e8afe1" kindref="member">FObjectInfoStore::ToString</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="69"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>FString<sp/>outString;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>element<sp/>:<sp/>objects)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outString<sp/>+=<sp/>element.Value.ToString();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outString<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outString;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Private/Data/ObjectInfoStore.cpp"/>
+  </compounddef>
+</doxygen>

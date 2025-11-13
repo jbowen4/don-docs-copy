@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_outer_space_actor_placement_manager_8h" kind="file" language="C++">
+    <compoundname>OuterSpaceActorPlacementManager.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes refid="_actor_placement_manager_8h" local="yes">Level/Placement/ActorPlacementManager.h</includes>
+    <includes local="yes">UObject/Object.h</includes>
+    <includes local="yes">OuterSpaceActorPlacementManager.generated.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>ObjectInfo.h</label>
+        <link refid="_object_info_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Data/ObjectInfoStore.h</label>
+        <link refid="_object_info_store_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>RelativePosition.h</label>
+        <link refid="_relative_position_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Level/Placement/ActorPlacementManager.h</label>
+        <link refid="_actor_placement_manager_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h</label>
+        <link refid="_outer_space_actor_placement_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Util/ClassMacros.h</label>
+        <link refid="_class_macros_8h_source"/>
+      </node>
+      <node id="7">
+        <label>Util/Types/TOptRef.h</label>
+        <link refid="_t_opt_ref_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ActorPlacementManager.generated.h</label>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="10">
+        <label>ObjectInfo.generated.h</label>
+      </node>
+      <node id="12">
+        <label>ObjectInfoStore.generated.h</label>
+      </node>
+      <node id="15">
+        <label>OuterSpaceActorPlacementManager.generated.h</label>
+      </node>
+      <node id="9">
+        <label>RelativePosition.generated.h</label>
+      </node>
+      <node id="13">
+        <label>UObject/Interface.h</label>
+      </node>
+      <node id="11">
+        <label>UObject/Object.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_u_outer_space_actor_placement_manager" prot="public">UOuterSpaceActorPlacementManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Level/Placement/ActorPlacementManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;UObject/Object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;OuterSpaceActorPlacementManager.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">UCLASS()</highlight></codeline>
+<codeline lineno="14" refid="class_u_outer_space_actor_placement_manager" refkind="compound"><highlight class="normal">class<sp/>DONTOUNREAL_API<sp/><ref refid="class_u_outer_space_actor_placement_manager" kindref="compound">UOuterSpaceActorPlacementManager</ref><sp/>:<sp/>public<sp/>UWorldSubsystem,<sp/>public<sp/><ref refid="class_i_actor_placement_manager" kindref="compound">IActorPlacementManager</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_u_outer_space_actor_placement_manager_1a2a3f40bf611ef1852321e76525f4ab62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1a2a3f40bf611ef1852321e76525f4ab62" kindref="member">Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;ObjID,<sp/>SpawnerFunc&gt;&amp;<sp/>HighResSpawners,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;ObjID,<sp/>SpawnerFunc&gt;&amp;<sp/>LowResSpawners)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20" refid="class_u_outer_space_actor_placement_manager_1ab99366a68b58d48d078789c49ae35b80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1ab99366a68b58d48d078789c49ae35b80" kindref="member">Update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>&amp;<sp/>NewPositions)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28" refid="class_u_outer_space_actor_placement_manager_1af0b8bc9bf68b63e366af280f95e69f37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1af0b8bc9bf68b63e366af280f95e69f37" kindref="member">UpdateCameraPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FRelativePosition&amp;<sp/>NewPosition)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_u_outer_space_actor_placement_manager_1a264c0ec603238311f674ad4c5874f2d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1a264c0ec603238311f674ad4c5874f2d6" kindref="member">SetTargetedObject</ref>(<ref refid="class_t_opt_ref" kindref="compound">TOptRef&lt;const ObjID&gt;</ref><sp/>TargetName);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FName,<sp/>AActor*&gt;<sp/>lowResActors;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>TMap&lt;FName,<sp/>AActor*&gt;<sp/>highResActors;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>AActor*<sp/>camera;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_u_simulation_game_instance" kind="class" language="C++" prot="public">
+    <compoundname>USimulationGameInstance</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UGameInstance</basecompoundref>
+    <includes refid="_simulation_game_instance_8h" local="no">SimulationGameInstance.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1aac636965222d3f855ab4c2ac55b4e543" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_simulation_metadata" kindref="compound">FSimulationMetadata</ref></type>
+        <definition>FSimulationMetadata USimulationGameInstance::SimulationData</definition>
+        <argsstring></argsstring>
+        <name>SimulationData</name>
+        <qualifiedname>USimulationGameInstance::SimulationData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="28" column="25" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1ab89bd5e74daa0326eb394ea19f433697" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString USimulationGameInstance::SimulationDirectory</definition>
+        <argsstring></argsstring>
+        <name>SimulationDirectory</name>
+        <qualifiedname>USimulationGameInstance::SimulationDirectory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="31" column="13" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a1c11335a004ca421fee06504f180bb9b" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString USimulationGameInstance::SimulationFilePath</definition>
+        <argsstring></argsstring>
+        <name>SimulationFilePath</name>
+        <qualifiedname>USimulationGameInstance::SimulationFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="34" column="13" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a8f3b6db6ab2bcf44bc7dd7fe2fa83f70" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::StartTime</definition>
+        <argsstring></argsstring>
+        <name>StartTime</name>
+        <qualifiedname>USimulationGameInstance::StartTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="37" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1ab3700bbd36cd1c738edabba06c0efc08" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::EndTime</definition>
+        <argsstring></argsstring>
+        <name>EndTime</name>
+        <qualifiedname>USimulationGameInstance::EndTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="40" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a6b06b9fa159ae064dede5f0ad1516999" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::TimeUnit</definition>
+        <argsstring></argsstring>
+        <name>TimeUnit</name>
+        <qualifiedname>USimulationGameInstance::TimeUnit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="43" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1ad66f66f1902ae526ee44912c4c3bfef7" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString USimulationGameInstance::MPCProtocol</definition>
+        <argsstring></argsstring>
+        <name>MPCProtocol</name>
+        <qualifiedname>USimulationGameInstance::MPCProtocol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="46" column="13" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a7441861e40d243902da4530806625d32" prot="public" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="struct_f_objects_of_interest" kindref="compound">FObjectsOfInterest</ref> &gt;</type>
+        <definition>TArray&lt;FObjectsOfInterest&gt; USimulationGameInstance::ObjectsOfInterest</definition>
+        <argsstring></argsstring>
+        <name>ObjectsOfInterest</name>
+        <qualifiedname>USimulationGameInstance::ObjectsOfInterest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="49" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1acbdee64a900764a09f3626c730077cd7" prot="public" static="no" mutable="no">
+        <type>TMap&lt; double, <ref refid="struct_f_time_snapshot" kindref="compound">FTimeSnapshot</ref> &gt;</type>
+        <definition>TMap&lt;double, FTimeSnapshot&gt; USimulationGameInstance::TelemetryData</definition>
+        <argsstring></argsstring>
+        <name>TelemetryData</name>
+        <qualifiedname>USimulationGameInstance::TelemetryData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="52" column="6" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a95d36a5411c550419f3674fd0deb17a4" prot="public" static="no" mutable="no">
+        <type>TArray&lt; float &gt;</type>
+        <definition>TArray&lt;float&gt; USimulationGameInstance::TelemetryTimeIndexes</definition>
+        <argsstring></argsstring>
+        <name>TelemetryTimeIndexes</name>
+        <qualifiedname>USimulationGameInstance::TelemetryTimeIndexes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="55" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1afe01254770c5fe0587cdd8f0c52e33cc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_u_telemetry_timeline" kindref="compound">UTelemetryTimeline</ref> *</type>
+        <definition>UTelemetryTimeline* USimulationGameInstance::Timeline</definition>
+        <argsstring></argsstring>
+        <name>Timeline</name>
+        <qualifiedname>USimulationGameInstance::Timeline</qualifiedname>
+        <initializer>= new <ref refid="class_u_telemetry_timeline" kindref="compound">UTelemetryTimeline</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="57" column="24" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a33128d1a36b27eaf418caaec5ef60671" prot="public" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> * &gt;</type>
+        <definition>TMap&lt;FString, AObjectActor*&gt; USimulationGameInstance::SpawnedActors</definition>
+        <argsstring></argsstring>
+        <name>SpawnedActors</name>
+        <qualifiedname>USimulationGameInstance::SpawnedActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="88" column="10" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a71968ee04469ae814af9152c7c86235a" prot="public" static="no" mutable="no">
+        <type>FOnTelemetryUpdated</type>
+        <definition>FOnTelemetryUpdated USimulationGameInstance::OnTelemetryUpdated</definition>
+        <argsstring></argsstring>
+        <name>OnTelemetryUpdated</name>
+        <qualifiedname>USimulationGameInstance::OnTelemetryUpdated</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="132" column="25" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a5dd5a9a9b0ea4de982834a3295d7312c" prot="public" static="no" mutable="no">
+        <type>TMap&lt; float, <ref refid="struct_f_telemetry_data_values" kindref="compound">FTelemetryDataValues</ref> &gt;</type>
+        <definition>TMap&lt;float, FTelemetryDataValues&gt; USimulationGameInstance::GI_TelemetryData</definition>
+        <argsstring></argsstring>
+        <name>GI_TelemetryData</name>
+        <qualifiedname>USimulationGameInstance::GI_TelemetryData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="139" column="10" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1ad49889ada3e87f5d25df6761105055db" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString USimulationGameInstance::GI_ModelID</definition>
+        <argsstring></argsstring>
+        <name>GI_ModelID</name>
+        <qualifiedname>USimulationGameInstance::GI_ModelID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="142" column="13" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1ad7cbc857505c2388431ec00c70048a30" prot="public" static="no" mutable="no">
+        <type>TArray&lt; float &gt;</type>
+        <definition>TArray&lt;float&gt; USimulationGameInstance::GI_TelemetryTimeIndexes</definition>
+        <argsstring></argsstring>
+        <name>GI_TelemetryTimeIndexes</name>
+        <qualifiedname>USimulationGameInstance::GI_TelemetryTimeIndexes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="145" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1aa4f66a906d21728374073bd2a94ea5a8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::GI_StartTime</definition>
+        <argsstring></argsstring>
+        <name>GI_StartTime</name>
+        <qualifiedname>USimulationGameInstance::GI_StartTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="148" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a75f626d3dce60f7c06c768b1ba2f3443" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::GI_EndTime</definition>
+        <argsstring></argsstring>
+        <name>GI_EndTime</name>
+        <qualifiedname>USimulationGameInstance::GI_EndTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="151" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a6b34e277ce66f6896bbfc5b6d837b1d5" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString USimulationGameInstance::GI_SimFilePath</definition>
+        <argsstring></argsstring>
+        <name>GI_SimFilePath</name>
+        <qualifiedname>USimulationGameInstance::GI_SimFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="154" column="13" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a602444ae12fe93e9b9045325643b6128" prot="public" static="no" mutable="no">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt;FString&gt; USimulationGameInstance::GI_BookmarksName</definition>
+        <argsstring></argsstring>
+        <name>GI_BookmarksName</name>
+        <qualifiedname>USimulationGameInstance::GI_BookmarksName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="157" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a80afb9a0880495cb167229b2080331ed" prot="public" static="no" mutable="no">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt;FString&gt; USimulationGameInstance::GI_BookmarksNotes</definition>
+        <argsstring></argsstring>
+        <name>GI_BookmarksNotes</name>
+        <qualifiedname>USimulationGameInstance::GI_BookmarksNotes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="160" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a51baab9ee3f29628e0aee7df18a4f0d6" prot="public" static="no" mutable="no">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt;FString&gt; USimulationGameInstance::GI_BookmarksTime</definition>
+        <argsstring></argsstring>
+        <name>GI_BookmarksTime</name>
+        <qualifiedname>USimulationGameInstance::GI_BookmarksTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="163" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1abd9f9d71cb068e1fc2d52057e72ada66" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::GI_CurrentTime</definition>
+        <argsstring></argsstring>
+        <name>GI_CurrentTime</name>
+        <qualifiedname>USimulationGameInstance::GI_CurrentTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="166" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_simulation_game_instance_1a3fdf15aa1e51bc0edc6cdb4d683b66a9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float USimulationGameInstance::GI_BookmarkTime</definition>
+        <argsstring></argsstring>
+        <name>GI_BookmarkTime</name>
+        <qualifiedname>USimulationGameInstance::GI_BookmarkTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="169" column="11" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a82b65a683381e41c58f0c37e3769edb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetTelemetryDataBroadcast</definition>
+        <argsstring>(const double time, TMap&lt; FString, FObjectState &gt; ObjectStates)</argsstring>
+        <name>SetTelemetryDataBroadcast</name>
+        <qualifiedname>USimulationGameInstance::SetTelemetryDataBroadcast</qualifiedname>
+        <param>
+          <type>const double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>TMap&lt; FString, <ref refid="struct_f_object_state" kindref="compound">FObjectState</ref> &gt;</type>
+          <declname>ObjectStates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1abea28a6c6ec8dc84ee370a0cca4dc6b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetTelemetryData</definition>
+        <argsstring>(const double time, TMap&lt; FString, FObjectState &gt; ObjectStates)</argsstring>
+        <name>SetTelemetryData</name>
+        <qualifiedname>USimulationGameInstance::SetTelemetryData</qualifiedname>
+        <param>
+          <type>const double</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>TMap&lt; FString, <ref refid="struct_f_object_state" kindref="compound">FObjectState</ref> &gt;</type>
+          <declname>ObjectStates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a8951782dc9cefef357b9431785146534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetTelemetryName</definition>
+        <argsstring>(const FString &amp;Name)</argsstring>
+        <name>SetTelemetryName</name>
+        <qualifiedname>USimulationGameInstance::SetTelemetryName</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a3c5b6bcce23751b2b51bd6de9557e4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetSimulationData</definition>
+        <argsstring>(const FSimulationMetadata &amp;InData)</argsstring>
+        <name>SetSimulationData</name>
+        <qualifiedname>USimulationGameInstance::SetSimulationData</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_f_simulation_metadata" kindref="compound">FSimulationMetadata</ref> &amp;</type>
+          <declname>InData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1aea79cf462d16606ac921dbb96f510859" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_f_simulation_metadata" kindref="compound">FSimulationMetadata</ref></type>
+        <definition>FSimulationMetadata USimulationGameInstance::GetSimulationData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSimulationData</name>
+        <qualifiedname>USimulationGameInstance::GetSimulationData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="75" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a9ec059cc703b295a6012ddb065193f1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_model_metadata" kindref="compound">FModelMetadata</ref> &gt;</type>
+        <definition>TArray&lt; FModelMetadata &gt; USimulationGameInstance::GetModelData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModelData</name>
+        <qualifiedname>USimulationGameInstance::GetModelData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="78" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a8e094d36b676a243d12a30810a23b6c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_terrain_metadata" kindref="compound">FTerrainMetadata</ref> &gt;</type>
+        <definition>TArray&lt; FTerrainMetadata &gt; USimulationGameInstance::GetTerrainData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTerrainData</name>
+        <qualifiedname>USimulationGameInstance::GetTerrainData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="81" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1ab939837b195a2d0c56520a0c6b6e395d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_light_data" kindref="compound">FLightData</ref> &gt;</type>
+        <definition>TArray&lt; FLightData &gt; USimulationGameInstance::GetLightData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLightData</name>
+        <qualifiedname>USimulationGameInstance::GetLightData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="84" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a2b2639198a53a84ebeabff97fcf466ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::AddSpawnedActor</definition>
+        <argsstring>(const FString &amp;ActorID, AObjectActor *Actor)</argsstring>
+        <name>AddSpawnedActor</name>
+        <qualifiedname>USimulationGameInstance::AddSpawnedActor</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ActorID</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a41c6de4b5ff8e70d4d7142829e5c8265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::RemoveSpawnedActor</definition>
+        <argsstring>(const FString &amp;ActorID)</argsstring>
+        <name>RemoveSpawnedActor</name>
+        <qualifiedname>USimulationGameInstance::RemoveSpawnedActor</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ActorID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a16091d2503636a25786a80605e73f8f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+        <definition>AObjectActor * USimulationGameInstance::GetSpawnedActorByID</definition>
+        <argsstring>(const FString &amp;ActorID) const</argsstring>
+        <name>GetSpawnedActorByID</name>
+        <qualifiedname>USimulationGameInstance::GetSpawnedActorByID</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ActorID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="98" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1acc8eddb05aa29c84e711e44f8f732e3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TMap&lt; FString, <ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> * &gt;</type>
+        <definition>TMap&lt; FString, AObjectActor * &gt; USimulationGameInstance::GetAllSpawnedActors</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllSpawnedActors</name>
+        <qualifiedname>USimulationGameInstance::GetAllSpawnedActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a8b4c9e611b7087d87c6a26bcd99e97d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::ClearAllSpawnedActors</definition>
+        <argsstring>()</argsstring>
+        <name>ClearAllSpawnedActors</name>
+        <qualifiedname>USimulationGameInstance::ClearAllSpawnedActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1aa20523ff1cfed450c649073a89d10ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetStartTime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetStartTime</name>
+        <qualifiedname>USimulationGameInstance::SetStartTime</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a0b99ad98ac25d5f79b665c61ccb8e655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetEndTime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetEndTime</name>
+        <qualifiedname>USimulationGameInstance::SetEndTime</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a1567b953383762af8b1be831168483ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::AddTelemetryIndex</definition>
+        <argsstring>(float time)</argsstring>
+        <name>AddTelemetryIndex</name>
+        <qualifiedname>USimulationGameInstance::AddTelemetryIndex</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a064d1fc848793d641c2a459635c8cee0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USimulationGameInstance::HasSpawnedActor</definition>
+        <argsstring>(const FString &amp;ActorID) const</argsstring>
+        <name>HasSpawnedActor</name>
+        <qualifiedname>USimulationGameInstance::HasSpawnedActor</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ActorID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1aef0c51831c34f6e9ab2512f51747220e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int USimulationGameInstance::GetSpawnedActorCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpawnedActorCount</name>
+        <qualifiedname>USimulationGameInstance::GetSpawnedActorCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="119" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a0c348b7b8e489ff414740f89fef35bf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TArray&lt; <ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> * &gt;</type>
+        <definition>TArray&lt; AObjectActor * &gt; USimulationGameInstance::GetAllSpawnedActorsAsArray</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllSpawnedActorsAsArray</name>
+        <qualifiedname>USimulationGameInstance::GetAllSpawnedActorsAsArray</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="122" column="12" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a412692e958c4021056166550a25a9f1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; <ref refid="struct_f_objects_of_interest" kindref="compound">FObjectsOfInterest</ref> &gt;</type>
+        <definition>TArray&lt; FObjectsOfInterest &gt; USimulationGameInstance::GetObjectsOfInterest</definition>
+        <argsstring>() const</argsstring>
+        <name>GetObjectsOfInterest</name>
+        <qualifiedname>USimulationGameInstance::GetObjectsOfInterest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="129" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_simulation_game_instance_1a1b71f3369b85e8f43ac3ab5555a11fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USimulationGameInstance::SetObjectActorVis</definition>
+        <argsstring>(bool vis, AObjectActor *Actor)</argsstring>
+        <name>SetObjectActorVis</name>
+        <qualifiedname>USimulationGameInstance::SetObjectActorVis</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>vis</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+          <declname>Actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="135" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_u_simulation_game_instance" kindref="compound">USimulationGameInstance</ref></para>
+<para>This class is responsible for managing the simulation data and state within the game instance. It stores metadata about the simulation, including models, terrains, lights, and telemetry data. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UGameInstance</label>
+      </node>
+      <node id="1">
+        <label>USimulationGameInstance</label>
+        <link refid="class_u_simulation_game_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>FSimulationMetadata</label>
+        <link refid="struct_f_simulation_metadata"/>
+      </node>
+      <node id="2">
+        <label>UGameInstance</label>
+      </node>
+      <node id="1">
+        <label>USimulationGameInstance</label>
+        <link refid="class_u_simulation_game_instance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>SimulationData</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Timeline</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UTelemetryTimeline</label>
+        <link refid="class_u_telemetry_timeline"/>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/SimulationGameInstance.h" line="21" column="1" bodyfile="Source/DONToUnreal/Public/SimulationGameInstance.h" bodystart="22" bodyend="170"/>
+    <listofallmembers>
+      <member refid="class_u_simulation_game_instance_1a2b2639198a53a84ebeabff97fcf466ac" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>AddSpawnedActor</name></member>
+      <member refid="class_u_simulation_game_instance_1a1567b953383762af8b1be831168483ab" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>AddTelemetryIndex</name></member>
+      <member refid="class_u_simulation_game_instance_1a8b4c9e611b7087d87c6a26bcd99e97d6" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>ClearAllSpawnedActors</name></member>
+      <member refid="class_u_simulation_game_instance_1ab3700bbd36cd1c738edabba06c0efc08" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>EndTime</name></member>
+      <member refid="class_u_simulation_game_instance_1acc8eddb05aa29c84e711e44f8f732e3d" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetAllSpawnedActors</name></member>
+      <member refid="class_u_simulation_game_instance_1a0c348b7b8e489ff414740f89fef35bf1" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetAllSpawnedActorsAsArray</name></member>
+      <member refid="class_u_simulation_game_instance_1ab939837b195a2d0c56520a0c6b6e395d" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetLightData</name></member>
+      <member refid="class_u_simulation_game_instance_1a9ec059cc703b295a6012ddb065193f1b" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetModelData</name></member>
+      <member refid="class_u_simulation_game_instance_1a412692e958c4021056166550a25a9f1e" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetObjectsOfInterest</name></member>
+      <member refid="class_u_simulation_game_instance_1aea79cf462d16606ac921dbb96f510859" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetSimulationData</name></member>
+      <member refid="class_u_simulation_game_instance_1a16091d2503636a25786a80605e73f8f0" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetSpawnedActorByID</name></member>
+      <member refid="class_u_simulation_game_instance_1aef0c51831c34f6e9ab2512f51747220e" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetSpawnedActorCount</name></member>
+      <member refid="class_u_simulation_game_instance_1a8e094d36b676a243d12a30810a23b6c8" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GetTerrainData</name></member>
+      <member refid="class_u_simulation_game_instance_1a602444ae12fe93e9b9045325643b6128" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_BookmarksName</name></member>
+      <member refid="class_u_simulation_game_instance_1a80afb9a0880495cb167229b2080331ed" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_BookmarksNotes</name></member>
+      <member refid="class_u_simulation_game_instance_1a51baab9ee3f29628e0aee7df18a4f0d6" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_BookmarksTime</name></member>
+      <member refid="class_u_simulation_game_instance_1a3fdf15aa1e51bc0edc6cdb4d683b66a9" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_BookmarkTime</name></member>
+      <member refid="class_u_simulation_game_instance_1abd9f9d71cb068e1fc2d52057e72ada66" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_CurrentTime</name></member>
+      <member refid="class_u_simulation_game_instance_1a75f626d3dce60f7c06c768b1ba2f3443" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_EndTime</name></member>
+      <member refid="class_u_simulation_game_instance_1ad49889ada3e87f5d25df6761105055db" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_ModelID</name></member>
+      <member refid="class_u_simulation_game_instance_1a6b34e277ce66f6896bbfc5b6d837b1d5" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_SimFilePath</name></member>
+      <member refid="class_u_simulation_game_instance_1aa4f66a906d21728374073bd2a94ea5a8" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_StartTime</name></member>
+      <member refid="class_u_simulation_game_instance_1a5dd5a9a9b0ea4de982834a3295d7312c" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_TelemetryData</name></member>
+      <member refid="class_u_simulation_game_instance_1ad7cbc857505c2388431ec00c70048a30" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>GI_TelemetryTimeIndexes</name></member>
+      <member refid="class_u_simulation_game_instance_1a064d1fc848793d641c2a459635c8cee0" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>HasSpawnedActor</name></member>
+      <member refid="class_u_simulation_game_instance_1ad66f66f1902ae526ee44912c4c3bfef7" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>MPCProtocol</name></member>
+      <member refid="class_u_simulation_game_instance_1a7441861e40d243902da4530806625d32" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>ObjectsOfInterest</name></member>
+      <member refid="class_u_simulation_game_instance_1a71968ee04469ae814af9152c7c86235a" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>OnTelemetryUpdated</name></member>
+      <member refid="class_u_simulation_game_instance_1a41c6de4b5ff8e70d4d7142829e5c8265" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>RemoveSpawnedActor</name></member>
+      <member refid="class_u_simulation_game_instance_1a0b99ad98ac25d5f79b665c61ccb8e655" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetEndTime</name></member>
+      <member refid="class_u_simulation_game_instance_1a1b71f3369b85e8f43ac3ab5555a11fc8" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetObjectActorVis</name></member>
+      <member refid="class_u_simulation_game_instance_1a3c5b6bcce23751b2b51bd6de9557e4bb" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetSimulationData</name></member>
+      <member refid="class_u_simulation_game_instance_1aa20523ff1cfed450c649073a89d10ddd" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetStartTime</name></member>
+      <member refid="class_u_simulation_game_instance_1abea28a6c6ec8dc84ee370a0cca4dc6b0" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetTelemetryData</name></member>
+      <member refid="class_u_simulation_game_instance_1a82b65a683381e41c58f0c37e3769edb5" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetTelemetryDataBroadcast</name></member>
+      <member refid="class_u_simulation_game_instance_1a8951782dc9cefef357b9431785146534" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SetTelemetryName</name></member>
+      <member refid="class_u_simulation_game_instance_1aac636965222d3f855ab4c2ac55b4e543" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SimulationData</name></member>
+      <member refid="class_u_simulation_game_instance_1ab89bd5e74daa0326eb394ea19f433697" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SimulationDirectory</name></member>
+      <member refid="class_u_simulation_game_instance_1a1c11335a004ca421fee06504f180bb9b" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SimulationFilePath</name></member>
+      <member refid="class_u_simulation_game_instance_1a33128d1a36b27eaf418caaec5ef60671" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>SpawnedActors</name></member>
+      <member refid="class_u_simulation_game_instance_1a8f3b6db6ab2bcf44bc7dd7fe2fa83f70" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>StartTime</name></member>
+      <member refid="class_u_simulation_game_instance_1acbdee64a900764a09f3626c730077cd7" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>TelemetryData</name></member>
+      <member refid="class_u_simulation_game_instance_1a95d36a5411c550419f3674fd0deb17a4" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>TelemetryTimeIndexes</name></member>
+      <member refid="class_u_simulation_game_instance_1afe01254770c5fe0587cdd8f0c52e33cc" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>Timeline</name></member>
+      <member refid="class_u_simulation_game_instance_1a6b06b9fa159ae064dede5f0ad1516999" prot="public" virt="non-virtual"><scope>USimulationGameInstance</scope><name>TimeUnit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

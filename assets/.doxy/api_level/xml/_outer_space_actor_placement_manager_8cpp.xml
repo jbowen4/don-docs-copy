@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_outer_space_actor_placement_manager_8cpp" kind="file" language="C++">
+    <compoundname>OuterSpaceActorPlacementManager.cpp</compoundname>
+    <includes refid="_outer_space_actor_placement_manager_8h" local="yes">Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Source/DONToUnreal/Private/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.cpp</label>
+        <link refid="_outer_space_actor_placement_manager_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Level/Placement/ActorPlacementManager.h</label>
+        <link refid="_actor_placement_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h</label>
+        <link refid="_outer_space_actor_placement_manager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ActorPlacementManager.generated.h</label>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="5">
+        <label>Data/ObjectInfoStore.h</label>
+      </node>
+      <node id="9">
+        <label>OuterSpaceActorPlacementManager.generated.h</label>
+      </node>
+      <node id="6">
+        <label>UObject/Interface.h</label>
+      </node>
+      <node id="8">
+        <label>UObject/Object.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1acfeabc57ee2f0672206775f45fbf8eb2" kindref="member">UOuterSpaceActorPlacementManager::Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;ObjID,<sp/>SpawnerFunc&gt;&amp;<sp/>HighResSpawners,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TMap&lt;ObjID,<sp/>SpawnerFunc&gt;&amp;<sp/>LowResSpawners)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TPair&lt;ObjID,<sp/>SpawnerFunc&gt;&amp;<sp/>high_res_spawner<sp/>:<sp/>HighResSpawners)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this-&gt;highResActors[high_res_spawner.Key]<sp/>=<sp/>high_res_spawner.Value()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1a6e478d6dcfa6ddf5ee45102946a64afd" kindref="member">UOuterSpaceActorPlacementManager::Update</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FObjectInfoStore&amp;<sp/>NewPositions)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_outer_space_actor_placement_manager_1a563066bd978047ffb9d072aadb890084" kindref="member">UOuterSpaceActorPlacementManager::UpdateCameraPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FRelativePosition&amp;<sp/>NewPosition)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Private/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.cpp"/>
+  </compounddef>
+</doxygen>

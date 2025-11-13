@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_timeline_8h" kind="file" language="C++">
+    <compoundname>Timeline.h</compoundname>
+    <includes local="yes">CoreMinimal.h</includes>
+    <includes refid="_object_info_store_8h" local="yes">Data/ObjectInfoStore.h</includes>
+    <includes refid="_object_info_8h" local="yes">Data/ObjectInfo.h</includes>
+    <includes refid="_data_types_8h" local="yes">DataTypes.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stdexcept</includes>
+    <includedby refid="_simulation_game_instance_8h" local="yes">Source/DONToUnreal/Public/SimulationGameInstance.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>ObjectInfo.h</label>
+        <link refid="_object_info_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Data/ObjectInfoStore.h</label>
+        <link refid="_object_info_store_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RelativePosition.h</label>
+        <link refid="_relative_position_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Source/DONToUnreal/Public/Data/Timeline.h</label>
+        <link refid="_timeline_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>DataTypes.h</label>
+        <link refid="_data_types_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Util/ClassMacros.h</label>
+        <link refid="_class_macros_8h_source"/>
+      </node>
+      <node id="6">
+        <label>Util/Types/TOptRef.h</label>
+        <link refid="_t_opt_ref_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="13">
+        <label>DataTypes.generated.h</label>
+      </node>
+      <node id="9">
+        <label>ObjectInfo.generated.h</label>
+      </node>
+      <node id="11">
+        <label>ObjectInfoStore.generated.h</label>
+      </node>
+      <node id="8">
+        <label>RelativePosition.generated.h</label>
+      </node>
+      <node id="10">
+        <label>UObject/Object.h</label>
+      </node>
+      <node id="15">
+        <label>stdexcept</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Source/DONToUnreal/Public/Data/Timeline.h</label>
+        <link refid="_timeline_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Source/DONToUnreal/Public/MPC2Loader.h</label>
+        <link refid="_m_p_c2_loader_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Source/DONToUnreal/Public/SimulationGameInstance.h</label>
+        <link refid="_simulation_game_instance_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Source/DONToUnreal/Public/SimulationLoader.h</label>
+        <link refid="_simulation_loader_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_f_telemetry_frame" prot="public">FTelemetryFrame</innerclass>
+    <innerclass refid="class_u_telemetry_timeline" prot="public">UTelemetryTimeline</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CoreMinimal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Data/ObjectInfoStore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Data/ObjectInfo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DataTypes.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="struct_f_telemetry_frame" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Currently<sp/>just<sp/>a<sp/>wrapper<sp/>to<sp/>ObjectInfoStore</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allows<sp/>extensibility.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref><sp/>TelemetryData;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_u_telemetry_timeline" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DONTOUNREAL_API<sp/><ref refid="class_u_telemetry_timeline_1a3223f85bbb806be3503c8cfba532e199" kindref="member">UTelemetryTimeline</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_u_telemetry_timeline_1a3223f85bbb806be3503c8cfba532e199" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_telemetry_timeline_1a3223f85bbb806be3503c8cfba532e199" kindref="member">UTelemetryTimeline</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_u_telemetry_timeline_1a18c9a6978cd9b2e931d01d485a03066f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_telemetry_timeline_1a18c9a6978cd9b2e931d01d485a03066f" kindref="member">PushTelemetryData</ref>(TMap&lt;FString,<sp/>FObjectState&gt;<sp/>ObjectStates);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="class_u_telemetry_timeline_1a3962b90b28461ef0c44d94d39a41a9a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_object_info_store" kindref="compound">FObjectInfoStore</ref>*<sp/><ref refid="class_u_telemetry_timeline_1a3962b90b28461ef0c44d94d39a41a9a2" kindref="member">FetchTelemetryData</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tlmIndex);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_u_telemetry_timeline_1a137d61d259ff5e17ced144c6ea3d9c1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref>*<sp/><ref refid="class_u_telemetry_timeline_1a137d61d259ff5e17ced144c6ea3d9c1e" kindref="member">FetchTelemetryFrame</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tlmIndex);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Internals<sp/>for<sp/>use<sp/>ObjectInfoStore<sp/>is<sp/>indev</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref>*<sp/>UTelemetryTimeline::BuildInitialTelemetryFrame(TMap&lt;FString,<sp/>FObjectState&gt;&amp;<sp/>ObjectStates);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_telemetry_frame" kindref="compound">FTelemetryFrame</ref>*<sp/>UTelemetryTimeline::ConstructTelemetryFrame(TMap&lt;FString,<sp/>FObjectState&gt;&amp;<sp/>ObjectStates);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Instance<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numTlmElements;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FTelemetryFrame*&gt;<sp/>Timeline;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Public/Data/Timeline.h"/>
+  </compounddef>
+</doxygen>

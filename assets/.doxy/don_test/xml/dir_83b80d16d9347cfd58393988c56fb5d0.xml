@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_83b80d16d9347cfd58393988c56fb5d0" kind="dir">
+    <compoundname>Source/DONToUnreal/Private/Tests/Util/Types</compoundname>
+    <innerfile refid="_t_opt_ref_8spec_8cpp">TOptRef.spec.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Private/Tests/Util/Types/"/>
+  </compounddef>
+</doxygen>

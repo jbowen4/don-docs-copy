@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_object_info_8cpp" kind="file" language="C++">
+    <compoundname>ObjectInfo.cpp</compoundname>
+    <includes refid="_object_info_8h" local="yes">Data/ObjectInfo.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Source/DONToUnreal/Private/Data/ObjectInfo.cpp</label>
+        <link refid="_object_info_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Data/ObjectInfo.h</label>
+        <link refid="_object_info_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>RelativePosition.h</label>
+        <link refid="_relative_position_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CoreMinimal.h</label>
+      </node>
+      <node id="8">
+        <label>ObjectInfo.generated.h</label>
+      </node>
+      <node id="7">
+        <label>RelativePosition.generated.h</label>
+      </node>
+      <node id="6">
+        <label>Util/ClassMacros.h</label>
+      </node>
+      <node id="5">
+        <label>Util/Types/TOptRef.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Data/ObjectInfo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref><sp/>FObjectInfo::ORIGIN<sp/>=<sp/><ref refid="struct_f_object_info" kindref="compound">FObjectInfo</ref>();</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Private/Data/ObjectInfo.cpp"/>
+  </compounddef>
+</doxygen>

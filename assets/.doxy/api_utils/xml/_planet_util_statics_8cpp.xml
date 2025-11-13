@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_planet_util_statics_8cpp" kind="file" language="C++">
+    <compoundname>PlanetUtilStatics.cpp</compoundname>
+    <includes refid="_planet_util_statics_8h" local="yes">PlanetUtilStatics.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Source/DONToUnreal/Private/Util/PlanetUtilStatics.cpp</label>
+        <link refid="_planet_util_statics_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PlanetUtilStatics.h</label>
+        <link refid="_planet_util_statics_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;PlanetUtilStatics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Private/Util/PlanetUtilStatics.cpp"/>
+  </compounddef>
+</doxygen>

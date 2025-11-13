@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_a_simulation_loader" kind="class" language="C++" prot="public">
+    <compoundname>ASimulationLoader</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_simulation_loader_1adb93c07a79b7dd26914c2c074b001648" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_f_simulation_metadata" kindref="compound">FSimulationMetadata</ref></type>
+        <definition>FSimulationMetadata ASimulationLoader::SimulationData</definition>
+        <argsstring></argsstring>
+        <name>SimulationData</name>
+        <qualifiedname>ASimulationLoader::SimulationData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="45" column="25" bodyfile="Source/DONToUnreal/Public/SimulationLoader.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_simulation_loader_1a6c041b0f6d6bdd7c924b3645b27e7471" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FString, <ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> * &gt;</type>
+        <definition>TMap&lt;FString, AObjectActor*&gt; ASimulationLoader::SpawnedActors</definition>
+        <argsstring></argsstring>
+        <name>SpawnedActors</name>
+        <qualifiedname>ASimulationLoader::SpawnedActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="54" column="10" bodyfile="Source/DONToUnreal/Public/SimulationLoader.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_simulation_loader_1a5b01f7f5b591f484ced9beedbf848305" prot="private" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString ASimulationLoader::CurrentConfigPath</definition>
+        <argsstring></argsstring>
+        <name>CurrentConfigPath</name>
+        <qualifiedname>ASimulationLoader::CurrentConfigPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="58" column="13" bodyfile="Source/DONToUnreal/Public/SimulationLoader.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_simulation_loader_1a25fe04e65c076ad777c2bcc73b1ddccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASimulationLoader::SpawnObjects</definition>
+        <argsstring>()</argsstring>
+        <name>SpawnObjects</name>
+        <qualifiedname>ASimulationLoader::SpawnObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="22" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_simulation_loader_1a0ccc3757d3fcd29a48370fbb55008dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+        <definition>AObjectActor * ASimulationLoader::GetSpawnedActorById</definition>
+        <argsstring>(const FString &amp;ActorId)</argsstring>
+        <name>GetSpawnedActorById</name>
+        <qualifiedname>ASimulationLoader::GetSpawnedActorById</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>ActorId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="26" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_simulation_loader_1a6374987d257e8a827d1baa093215554e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TMap&lt; FString, <ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> * &gt;</type>
+        <definition>TMap&lt; FString, AObjectActor * &gt; ASimulationLoader::GetAllSpawnedActors</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllSpawnedActors</name>
+        <qualifiedname>ASimulationLoader::GetAllSpawnedActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="29" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_simulation_loader_1af4b9344e7b1a3786459a56a46eb00072" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 ASimulationLoader::GetSpawnedActorCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpawnedActorCount</name>
+        <qualifiedname>ASimulationLoader::GetSpawnedActorCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="33" column="11" bodyfile="Source/DONToUnreal/Public/SimulationLoader.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_simulation_loader_1adfdfaf114ee9a344340bf4ac742234c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TArray&lt; FString &gt;</type>
+        <definition>TArray&lt; FString &gt; ASimulationLoader::GetAllModelIds</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllModelIds</name>
+        <qualifiedname>ASimulationLoader::GetAllModelIds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="37" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_a_simulation_loader_1a59f13ba189e9293e65baebf0c461203c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ASimulationLoader::TeleportToObject</definition>
+        <argsstring>(AObjectActor *TargetObject, APawn *PlayerPawn)</argsstring>
+        <name>TeleportToObject</name>
+        <qualifiedname>ASimulationLoader::TeleportToObject</qualifiedname>
+        <param>
+          <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+          <declname>TargetObject</declname>
+        </param>
+        <param>
+          <type>APawn *</type>
+          <declname>PlayerPawn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="40" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_simulation_loader_1ae85b2b3e4c5478533f00d5a0d11588f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ASimulationLoader::InitializeSimulation</definition>
+        <argsstring>(bool bImportObjects, const FString &amp;InSimulationPath, const FString &amp;InTelemetryName, const FString &amp;MPCProtocol, const FString &amp;TimeUnit, USimulationGameInstance *MyGameInstance)</argsstring>
+        <name>InitializeSimulation</name>
+        <qualifiedname>ASimulationLoader::InitializeSimulation</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bImportObjects</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InSimulationPath</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>InTelemetryName</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MPCProtocol</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TimeUnit</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_simulation_game_instance" kindref="compound">USimulationGameInstance</ref> *</type>
+          <declname>MyGameInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="43" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_simulation_loader_1a907080f8ce021fa117fd5774236571d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+        <definition>AObjectActor * ASimulationLoader::SpawnModelActor</definition>
+        <argsstring>(UWorld *World, const FModelMetadata &amp;Model, USimulationGameInstance *GameInstance)</argsstring>
+        <name>SpawnModelActor</name>
+        <qualifiedname>ASimulationLoader::SpawnModelActor</qualifiedname>
+        <param>
+          <type>UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_f_model_metadata" kindref="compound">FModelMetadata</ref> &amp;</type>
+          <declname>Model</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_simulation_game_instance" kindref="compound">USimulationGameInstance</ref> *</type>
+          <declname>GameInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_simulation_loader_1a271baaeab27a9a1b78bdb302091ae807" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_a_object_actor" kindref="compound">AObjectActor</ref> *</type>
+        <definition>AObjectActor * ASimulationLoader::SetActorParents</definition>
+        <argsstring>(UWorld *World, const FModelMetadata &amp;Model)</argsstring>
+        <name>SetActorParents</name>
+        <qualifiedname>ASimulationLoader::SetActorParents</qualifiedname>
+        <param>
+          <type>UWorld *</type>
+          <declname>World</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_f_model_metadata" kindref="compound">FModelMetadata</ref> &amp;</type>
+          <declname>Model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="50" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ASimulationLoader</label>
+        <link refid="class_a_simulation_loader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>ASimulationLoader</label>
+        <link refid="class_a_simulation_loader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/SimulationLoader.h" line="15" column="1" bodyfile="Source/DONToUnreal/Public/SimulationLoader.h" bodystart="16" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_a_simulation_loader_1a5b01f7f5b591f484ced9beedbf848305" prot="private" virt="non-virtual"><scope>ASimulationLoader</scope><name>CurrentConfigPath</name></member>
+      <member refid="class_a_simulation_loader_1adfdfaf114ee9a344340bf4ac742234c0" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>GetAllModelIds</name></member>
+      <member refid="class_a_simulation_loader_1a6374987d257e8a827d1baa093215554e" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>GetAllSpawnedActors</name></member>
+      <member refid="class_a_simulation_loader_1a0ccc3757d3fcd29a48370fbb55008dd2" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>GetSpawnedActorById</name></member>
+      <member refid="class_a_simulation_loader_1af4b9344e7b1a3786459a56a46eb00072" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>GetSpawnedActorCount</name></member>
+      <member refid="class_a_simulation_loader_1ae85b2b3e4c5478533f00d5a0d11588f2" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>InitializeSimulation</name></member>
+      <member refid="class_a_simulation_loader_1a271baaeab27a9a1b78bdb302091ae807" prot="private" virt="non-virtual"><scope>ASimulationLoader</scope><name>SetActorParents</name></member>
+      <member refid="class_a_simulation_loader_1adb93c07a79b7dd26914c2c074b001648" prot="private" virt="non-virtual"><scope>ASimulationLoader</scope><name>SimulationData</name></member>
+      <member refid="class_a_simulation_loader_1a6c041b0f6d6bdd7c924b3645b27e7471" prot="private" virt="non-virtual"><scope>ASimulationLoader</scope><name>SpawnedActors</name></member>
+      <member refid="class_a_simulation_loader_1a907080f8ce021fa117fd5774236571d7" prot="private" virt="non-virtual"><scope>ASimulationLoader</scope><name>SpawnModelActor</name></member>
+      <member refid="class_a_simulation_loader_1a25fe04e65c076ad777c2bcc73b1ddccd" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>SpawnObjects</name></member>
+      <member refid="class_a_simulation_loader_1a59f13ba189e9293e65baebf0c461203c" prot="public" virt="non-virtual"><scope>ASimulationLoader</scope><name>TeleportToObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

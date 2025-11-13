@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_91e92cab0a0b5df2370f6d3ddd515cf6" kind="dir">
+    <compoundname>Source/DONToUnreal/Public/Util</compoundname>
+    <innerdir refid="dir_0b672cd9ffed74d397856df63ef6d83a">Source/DONToUnreal/Public/Util/Types</innerdir>
+    <innerfile refid="_class_macros_8h">ClassMacros.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/Util/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
+  <compound refid="_object_info_8spec_8cpp" kind="file"><name>ObjectInfo.spec.cpp</name>
+  </compound>
+  <compound refid="_object_info_store_8spec_8cpp" kind="file"><name>ObjectInfoStore.spec.cpp</name>
+  </compound>
+  <compound refid="_relative_position_8spec_8cpp" kind="file"><name>RelativePosition.spec.cpp</name>
+  </compound>
+  <compound refid="_test_utils_8h" kind="file"><name>TestUtils.h</name>
+  </compound>
+  <compound refid="_test_utils_8spec_8cpp" kind="file"><name>TestUtils.spec.cpp</name>
+  </compound>
+  <compound refid="_collections_utils_8spec_8cpp" kind="file"><name>CollectionsUtils.spec.cpp</name>
+  </compound>
+  <compound refid="_t_opt_ref_8spec_8cpp" kind="file"><name>TOptRef.spec.cpp</name>
+  </compound>
+  <compound refid="dir_53973666c712440193fe66b45b3a91b2" kind="dir"><name>Source/DONToUnreal/Private/Tests/Data</name>
+  </compound>
+  <compound refid="dir_7e70b7b4a1df651b2af4c8dca0b54b92" kind="dir"><name>Source/DONToUnreal</name>
+  </compound>
+  <compound refid="dir_2c3ab2caebe6f83b4fac8c870e601c85" kind="dir"><name>Source/DONToUnreal/Private</name>
+  </compound>
+  <compound refid="dir_74389ed8173ad57b461b9d623a1f3867" kind="dir"><name>Source</name>
+  </compound>
+  <compound refid="dir_f8e4318645a26694362a16079825ea46" kind="dir"><name>Source/DONToUnreal/Private/Tests</name>
+  </compound>
+  <compound refid="dir_fee5a461400eb662b5aad75c093acd23" kind="dir"><name>Source/DONToUnreal/Private/Tests/TestUtils</name>
+  </compound>
+  <compound refid="dir_83b80d16d9347cfd58393988c56fb5d0" kind="dir"><name>Source/DONToUnreal/Private/Tests/Util/Types</name>
+  </compound>
+  <compound refid="dir_59d96f77407b6d5ebafda3e626ba4b2b" kind="dir"><name>Source/DONToUnreal/Private/Tests/Util</name>
+  </compound>
+</doxygenindex>

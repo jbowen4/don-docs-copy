@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_u_m_p_c_socket_client" kind="class" language="C++" prot="public">
+    <compoundname>UMPCSocketClient</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UGameInstanceSubsystem</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_m_p_c_socket_client_1a4f8ba24f341c217e22568b55a97da3c4" prot="private" static="no" mutable="no">
+        <type>class FSocketClientThread *</type>
+        <definition>class FSocketClientThread* UMPCSocketClient::ClientThread</definition>
+        <argsstring></argsstring>
+        <name>ClientThread</name>
+        <qualifiedname>UMPCSocketClient::ClientThread</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="29" column="31" bodyfile="Source/DONToUnreal/Public/UMPCSocketClient.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_m_p_c_socket_client_1a1226c4be0321f39c2d8f1656e6c20132" prot="private" static="no" mutable="no">
+        <type>FRunnableThread *</type>
+        <definition>FRunnableThread* UMPCSocketClient::Thread</definition>
+        <argsstring></argsstring>
+        <name>Thread</name>
+        <qualifiedname>UMPCSocketClient::Thread</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="30" column="21" bodyfile="Source/DONToUnreal/Public/UMPCSocketClient.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_m_p_c_socket_client_1a737c90709420a1b93594c1c40ee353ec" prot="private" static="no" mutable="no">
+        <type>FCriticalSection</type>
+        <definition>FCriticalSection UMPCSocketClient::ConnectionMutex</definition>
+        <argsstring></argsstring>
+        <name>ConnectionMutex</name>
+        <qualifiedname>UMPCSocketClient::ConnectionMutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="31" column="22" bodyfile="Source/DONToUnreal/Public/UMPCSocketClient.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_m_p_c_socket_client_1ad54bacbb88e69c32db776dfe90394227" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UMPCSocketClient::bIsConnectingOrConnected</definition>
+        <argsstring></argsstring>
+        <name>bIsConnectingOrConnected</name>
+        <qualifiedname>UMPCSocketClient::bIsConnectingOrConnected</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="32" column="10" bodyfile="Source/DONToUnreal/Public/UMPCSocketClient.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_m_p_c_socket_client_1ad87d80fa982336493cb37794a324f927" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UMPCSocketClient::bImportModels</definition>
+        <argsstring></argsstring>
+        <name>bImportModels</name>
+        <qualifiedname>UMPCSocketClient::bImportModels</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="33" column="10" bodyfile="Source/DONToUnreal/Public/UMPCSocketClient.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_m_p_c_socket_client_1aaa1035f41998babe213e95a774cae5b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UMPCSocketClient::Initialize</definition>
+        <argsstring>(FSubsystemCollectionBase &amp;Collection) override</argsstring>
+        <name>Initialize</name>
+        <qualifiedname>UMPCSocketClient::Initialize</qualifiedname>
+        <param>
+          <type>FSubsystemCollectionBase &amp;</type>
+          <declname>Collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="16" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c_socket_client_1a46316214f554138c04f6cbc5ef2e7ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UMPCSocketClient::Deinitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>Deinitialize</name>
+        <qualifiedname>UMPCSocketClient::Deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="17" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c_socket_client_1ae01d97400e2a35681eaac08965fc5544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UMPCSocketClient::ConnectToServer</definition>
+        <argsstring>(const FString &amp;IPAddress, const FString &amp;FileName, int32 Port, bool bImportModels, const FString &amp;RecordingDirectory)</argsstring>
+        <name>ConnectToServer</name>
+        <qualifiedname>UMPCSocketClient::ConnectToServer</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>IPAddress</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bImportModels</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>RecordingDirectory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="19" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c_socket_client_1a9b351317235ce0aa292bb01f0bd6a8fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UMPCSocketClient::DisconnectFromServer</definition>
+        <argsstring>()</argsstring>
+        <name>DisconnectFromServer</name>
+        <qualifiedname>UMPCSocketClient::DisconnectFromServer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="22" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_m_p_c_socket_client_1a724045f54496e8cd9c8b9e560cece48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UMPCSocketClient::InitializeNetworkSimulation</definition>
+        <argsstring>(const FString &amp;IPAddress, const FString &amp;FileName, int32 Port, bool bImportObjects, const FString &amp;SimulationDirectory, const FString &amp;RecordingDirectory, const FString &amp;MPCProtocol, const FString &amp;TimeUnit)</argsstring>
+        <name>InitializeNetworkSimulation</name>
+        <qualifiedname>UMPCSocketClient::InitializeNetworkSimulation</qualifiedname>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>IPAddress</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>FileName</declname>
+        </param>
+        <param>
+          <type>int32</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bImportObjects</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>SimulationDirectory</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>RecordingDirectory</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>MPCProtocol</declname>
+        </param>
+        <param>
+          <type>const FString &amp;</type>
+          <declname>TimeUnit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="25" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>UGameInstanceSubsystem</label>
+      </node>
+      <node id="1">
+        <label>UMPCSocketClient</label>
+        <link refid="class_u_m_p_c_socket_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>UGameInstanceSubsystem</label>
+      </node>
+      <node id="1">
+        <label>UMPCSocketClient</label>
+        <link refid="class_u_m_p_c_socket_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/UMPCSocketClient.h" line="11" column="1" bodyfile="Source/DONToUnreal/Public/UMPCSocketClient.h" bodystart="12" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_u_m_p_c_socket_client_1ad87d80fa982336493cb37794a324f927" prot="private" virt="non-virtual"><scope>UMPCSocketClient</scope><name>bImportModels</name></member>
+      <member refid="class_u_m_p_c_socket_client_1ad54bacbb88e69c32db776dfe90394227" prot="private" virt="non-virtual"><scope>UMPCSocketClient</scope><name>bIsConnectingOrConnected</name></member>
+      <member refid="class_u_m_p_c_socket_client_1a4f8ba24f341c217e22568b55a97da3c4" prot="private" virt="non-virtual"><scope>UMPCSocketClient</scope><name>ClientThread</name></member>
+      <member refid="class_u_m_p_c_socket_client_1a737c90709420a1b93594c1c40ee353ec" prot="private" virt="non-virtual"><scope>UMPCSocketClient</scope><name>ConnectionMutex</name></member>
+      <member refid="class_u_m_p_c_socket_client_1ae01d97400e2a35681eaac08965fc5544" prot="public" virt="non-virtual"><scope>UMPCSocketClient</scope><name>ConnectToServer</name></member>
+      <member refid="class_u_m_p_c_socket_client_1a46316214f554138c04f6cbc5ef2e7ded" prot="public" virt="non-virtual"><scope>UMPCSocketClient</scope><name>Deinitialize</name></member>
+      <member refid="class_u_m_p_c_socket_client_1a9b351317235ce0aa292bb01f0bd6a8fe" prot="public" virt="non-virtual"><scope>UMPCSocketClient</scope><name>DisconnectFromServer</name></member>
+      <member refid="class_u_m_p_c_socket_client_1aaa1035f41998babe213e95a774cae5b1" prot="public" virt="non-virtual"><scope>UMPCSocketClient</scope><name>Initialize</name></member>
+      <member refid="class_u_m_p_c_socket_client_1a724045f54496e8cd9c8b9e560cece48f" prot="public" virt="non-virtual"><scope>UMPCSocketClient</scope><name>InitializeNetworkSimulation</name></member>
+      <member refid="class_u_m_p_c_socket_client_1a1226c4be0321f39c2d8f1656e6c20132" prot="private" virt="non-virtual"><scope>UMPCSocketClient</scope><name>Thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_1324367273f8b464363f32e1ae17f7ba" kind="dir">
+    <compoundname>Source/DONToUnreal/Private/Level/Placement/OuterSpace</compoundname>
+    <innerfile refid="_outer_space_actor_placement_manager_8cpp">OuterSpaceActorPlacementManager.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Private/Level/Placement/OuterSpace/"/>
+  </compounddef>
+</doxygen>

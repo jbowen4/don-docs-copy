@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_u_outer_space_actor_placement_manager" kind="class" language="C++" prot="public">
+    <compoundname>UOuterSpaceActorPlacementManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UWorldSubsystem</basecompoundref>
+    <basecompoundref refid="class_i_actor_placement_manager" prot="public" virt="non-virtual">IActorPlacementManager</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_outer_space_actor_placement_manager_1a42eeb517f416e7039e98572afbb5fce2" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FName, AActor * &gt;</type>
+        <definition>TMap&lt;FName, AActor*&gt; UOuterSpaceActorPlacementManager::lowResActors</definition>
+        <argsstring></argsstring>
+        <name>lowResActors</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::lowResActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Low-poly representations of each sim object for when they&apos;re outside of placement distance. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="42" column="6" bodyfile="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_outer_space_actor_placement_manager_1ae56dee40820810465b2b97e803f97c60" prot="private" static="no" mutable="no">
+        <type>TMap&lt; FName, AActor * &gt;</type>
+        <definition>TMap&lt;FName, AActor*&gt; UOuterSpaceActorPlacementManager::highResActors</definition>
+        <argsstring></argsstring>
+        <name>highResActors</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::highResActors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>High-poly representations of each sim object that can be inside of placement range. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="48" column="6" bodyfile="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_outer_space_actor_placement_manager_1a66343496c8cca9936919f5e2fe6ac80d" prot="private" static="no" mutable="no">
+        <type>AActor *</type>
+        <definition>AActor* UOuterSpaceActorPlacementManager::camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="51" column="8" bodyfile="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_outer_space_actor_placement_manager_1acfeabc57ee2f0672206775f45fbf8eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UOuterSpaceActorPlacementManager::Init</definition>
+        <argsstring>(const TMap&lt; ObjID, SpawnerFunc &gt; &amp;HighResSpawners, const TMap&lt; ObjID, SpawnerFunc &gt; &amp;LowResSpawners) override</argsstring>
+        <name>Init</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::Init</qualifiedname>
+        <reimplements refid="class_i_actor_placement_manager_1a61ec4284478d86f5e38e0f23b2722932">Init</reimplements>
+        <param>
+          <type>const TMap&lt; ObjID, <ref refid="class_i_actor_placement_manager_1a44dd0eccdbf072f6b08cb64e381fd5c5" kindref="member">SpawnerFunc</ref> &gt; &amp;</type>
+          <declname>HighResSpawners</declname>
+        </param>
+        <param>
+          <type>const TMap&lt; ObjID, <ref refid="class_i_actor_placement_manager_1a44dd0eccdbf072f6b08cb64e381fd5c5" kindref="member">SpawnerFunc</ref> &gt; &amp;</type>
+          <declname>LowResSpawners</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called at the beginning of the sim to tell the level to spawn high-poly and low-poly actors for every object. E.g. a high-poly Earth for when it&apos;s within render distance, and a low-poly Earth when it should be billboarded.</para>
+<para>Any objects that don&apos;t need a low-res object or don&apos;t need a high-res object should be left out of the corresponding maps. For example, if we&apos;re only billboarding planets and will never render them locally, the caller should put every planet in the LowResSpawners map only and everything else in the HighResSpawners map only.</para>
+<para>TODO figure out if there&apos;s even any cases where we&apos;d have something visible in distant rendering that doesn&apos;t have its own level when it would be close, or even like a buggy that would be distantly-rendered or something... Oh ok we could always have a jupiter-sized duck that&apos;s both &quot;able to be distantly rendered&quot; and &quot;doesn&apos;t have its own map&quot; So, it would be better to just have the loader say whether or not a high-res or low-res object is needed. Also it would probably be better to just use LOD but honestly idk how to do that <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HighResSpawners</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LowResSpawners</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="19" column="14" bodyfile="Source/DONToUnreal/Private/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.cpp" bodystart="6" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_outer_space_actor_placement_manager_1a6e478d6dcfa6ddf5ee45102946a64afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UOuterSpaceActorPlacementManager::Update</definition>
+        <argsstring>(const FObjectInfoStore &amp;NewPositions) override</argsstring>
+        <name>Update</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::Update</qualifiedname>
+        <reimplements refid="class_i_actor_placement_manager_1a7e8d1d3ed594d65189afeeaa3e461536">Update</reimplements>
+        <param>
+          <type>const FObjectInfoStore &amp;</type>
+          <declname>NewPositions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Moves the actors representing each object to the new positions on this simulation tick.</para>
+<para>It should be safe to cache this reference between calls of this method.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewPositions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object information for the current simulation tick. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="20" column="14" bodyfile="Source/DONToUnreal/Private/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_outer_space_actor_placement_manager_1a563066bd978047ffb9d072aadb890084" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UOuterSpaceActorPlacementManager::UpdateCameraPosition</definition>
+        <argsstring>(const FRelativePosition &amp;NewPosition) override</argsstring>
+        <name>UpdateCameraPosition</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::UpdateCameraPosition</qualifiedname>
+        <reimplements refid="class_i_actor_placement_manager_1a47749a4337d25c2f2c85531f820d8679">UpdateCameraPosition</reimplements>
+        <param>
+          <type>const FRelativePosition &amp;</type>
+          <declname>NewPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called every game-tick to update the camera&apos;s position.</para>
+<para>For OuterSpace, this will recalculate the billboards for the camera&apos;s new position every tick.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NewPosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new &quot;Real-World&quot; position of the camera for the given tick. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="28" column="14" bodyfile="Source/DONToUnreal/Private/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_outer_space_actor_placement_manager_1a264c0ec603238311f674ad4c5874f2d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UOuterSpaceActorPlacementManager::SetTargetedObject</definition>
+        <argsstring>(TOptRef&lt; const ObjID &gt; TargetName)</argsstring>
+        <name>SetTargetedObject</name>
+        <qualifiedname>UOuterSpaceActorPlacementManager::SetTargetedObject</qualifiedname>
+        <param>
+          <type>TOptRef&lt; const ObjID &gt;</type>
+          <declname>TargetName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the currently-targeted object, which will be used as the basis for the Outer Space coordinate system.</para>
+<para>If empty, the camera will be set as the origin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="35" column="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IActorPlacementManager</label>
+        <link refid="class_i_actor_placement_manager"/>
+      </node>
+      <node id="1">
+        <label>UOuterSpaceActorPlacementManager</label>
+        <link refid="class_u_outer_space_actor_placement_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UWorldSubsystem</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IActorPlacementManager</label>
+        <link refid="class_i_actor_placement_manager"/>
+      </node>
+      <node id="1">
+        <label>UOuterSpaceActorPlacementManager</label>
+        <link refid="class_u_outer_space_actor_placement_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UWorldSubsystem</label>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" line="14" column="1" bodyfile="Source/DONToUnreal/Public/Level/Placement/OuterSpace/OuterSpaceActorPlacementManager.h" bodystart="15" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_u_outer_space_actor_placement_manager_1a66343496c8cca9936919f5e2fe6ac80d" prot="private" virt="non-virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>camera</name></member>
+      <member refid="class_u_outer_space_actor_placement_manager_1ae56dee40820810465b2b97e803f97c60" prot="private" virt="non-virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>highResActors</name></member>
+      <member refid="class_u_outer_space_actor_placement_manager_1acfeabc57ee2f0672206775f45fbf8eb2" prot="public" virt="virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>Init</name></member>
+      <member refid="class_u_outer_space_actor_placement_manager_1a42eeb517f416e7039e98572afbb5fce2" prot="private" virt="non-virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>lowResActors</name></member>
+      <member refid="class_u_outer_space_actor_placement_manager_1a264c0ec603238311f674ad4c5874f2d6" prot="public" virt="non-virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>SetTargetedObject</name></member>
+      <member refid="class_i_actor_placement_manager_1a44dd0eccdbf072f6b08cb64e381fd5c5" prot="public" virt="non-virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>SpawnerFunc</name></member>
+      <member refid="class_u_outer_space_actor_placement_manager_1a6e478d6dcfa6ddf5ee45102946a64afd" prot="public" virt="virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>Update</name></member>
+      <member refid="class_u_outer_space_actor_placement_manager_1a563066bd978047ffb9d072aadb890084" prot="public" virt="virtual"><scope>UOuterSpaceActorPlacementManager</scope><name>UpdateCameraPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

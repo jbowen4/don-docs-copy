@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_simulation_metadata" kind="struct" language="C++" prot="public">
+    <compoundname>FSimulationMetadata</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a080686591a24740496b1bb6aed324c9a" prot="public" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="struct_f_model_metadata" kindref="compound">FModelMetadata</ref> &gt;</type>
+        <definition>TArray&lt;FModelMetadata&gt; FSimulationMetadata::Models</definition>
+        <argsstring></argsstring>
+        <name>Models</name>
+        <qualifiedname>FSimulationMetadata::Models</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="100" column="12" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a7a6694a2089fbf819abbd0b9604a4f8d" prot="public" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="struct_f_terrain_metadata" kindref="compound">FTerrainMetadata</ref> &gt;</type>
+        <definition>TArray&lt;FTerrainMetadata&gt; FSimulationMetadata::Terrains</definition>
+        <argsstring></argsstring>
+        <name>Terrains</name>
+        <qualifiedname>FSimulationMetadata::Terrains</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="102" column="12" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a4c259cc01521da7ed219c527b68932a0" prot="public" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="struct_f_light_data" kindref="compound">FLightData</ref> &gt;</type>
+        <definition>TArray&lt;FLightData&gt; FSimulationMetadata::Lights</definition>
+        <argsstring></argsstring>
+        <name>Lights</name>
+        <qualifiedname>FSimulationMetadata::Lights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="104" column="12" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a1fbd9d14b37995c23d32d1a78be44280" prot="public" static="no" mutable="no">
+        <type>TArray&lt; <ref refid="struct_f_objects_of_interest" kindref="compound">FObjectsOfInterest</ref> &gt;</type>
+        <definition>TArray&lt;FObjectsOfInterest&gt; FSimulationMetadata::ObjectsOfInterest</definition>
+        <argsstring></argsstring>
+        <name>ObjectsOfInterest</name>
+        <qualifiedname>FSimulationMetadata::ObjectsOfInterest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="106" column="12" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a387951d9ab8eacb732d98e7000f95b31" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FSimulationMetadata::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>FSimulationMetadata::Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="108" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a74b55dcbe4c20b76b36102877c48c80d" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FSimulationMetadata::TelemetryName</definition>
+        <argsstring></argsstring>
+        <name>TelemetryName</name>
+        <qualifiedname>FSimulationMetadata::TelemetryName</qualifiedname>
+        <initializer>= &quot;Network&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="110" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a82530349a1567bbac4a83415237ba907" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FSimulationMetadata::TimeUnit</definition>
+        <argsstring></argsstring>
+        <name>TimeUnit</name>
+        <qualifiedname>FSimulationMetadata::TimeUnit</qualifiedname>
+        <initializer>= &quot;Seconds&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="112" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a05fedf42a21cff906e618b1e81166e26" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FSimulationMetadata::SpaceUnit</definition>
+        <argsstring></argsstring>
+        <name>SpaceUnit</name>
+        <qualifiedname>FSimulationMetadata::SpaceUnit</qualifiedname>
+        <initializer>= &quot;Meters&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="114" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a1b736857b0a6eec05a4b2d77e28289ba" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FSimulationMetadata::Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>FSimulationMetadata::Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="116" column="9" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a0a7c9e39390637c761f0e0cee0e756ab" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FSimulationMetadata::Author</definition>
+        <argsstring></argsstring>
+        <name>Author</name>
+        <qualifiedname>FSimulationMetadata::Author</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="118" column="9" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1ace561e50d0c64596f03cd9b8596fb71f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FSimulationMetadata::StartTime</definition>
+        <argsstring></argsstring>
+        <name>StartTime</name>
+        <qualifiedname>FSimulationMetadata::StartTime</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="120" column="11" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1aa386bb9896d1169be4f88f56d1fa9532" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FSimulationMetadata::EndTime</definition>
+        <argsstring></argsstring>
+        <name>EndTime</name>
+        <qualifiedname>FSimulationMetadata::EndTime</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="122" column="11" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_simulation_metadata_1a2bc399b86cdb17da4fb87f78724fedca" prot="public" static="no" mutable="no">
+        <type>TArray&lt; float &gt;</type>
+        <definition>TArray&lt;float&gt; FSimulationMetadata::TelemetryTimeIndexes</definition>
+        <argsstring></argsstring>
+        <name>TelemetryTimeIndexes</name>
+        <qualifiedname>FSimulationMetadata::TelemetryTimeIndexes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="124" column="8" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/DataTypes.h" line="96" column="1" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="97" bodyend="125"/>
+    <listofallmembers>
+      <member refid="struct_f_simulation_metadata_1a0a7c9e39390637c761f0e0cee0e756ab" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>Author</name></member>
+      <member refid="struct_f_simulation_metadata_1a1b736857b0a6eec05a4b2d77e28289ba" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>Description</name></member>
+      <member refid="struct_f_simulation_metadata_1aa386bb9896d1169be4f88f56d1fa9532" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>EndTime</name></member>
+      <member refid="struct_f_simulation_metadata_1a4c259cc01521da7ed219c527b68932a0" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>Lights</name></member>
+      <member refid="struct_f_simulation_metadata_1a080686591a24740496b1bb6aed324c9a" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>Models</name></member>
+      <member refid="struct_f_simulation_metadata_1a387951d9ab8eacb732d98e7000f95b31" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>Name</name></member>
+      <member refid="struct_f_simulation_metadata_1a1fbd9d14b37995c23d32d1a78be44280" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>ObjectsOfInterest</name></member>
+      <member refid="struct_f_simulation_metadata_1a05fedf42a21cff906e618b1e81166e26" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>SpaceUnit</name></member>
+      <member refid="struct_f_simulation_metadata_1ace561e50d0c64596f03cd9b8596fb71f" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>StartTime</name></member>
+      <member refid="struct_f_simulation_metadata_1a74b55dcbe4c20b76b36102877c48c80d" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>TelemetryName</name></member>
+      <member refid="struct_f_simulation_metadata_1a2bc399b86cdb17da4fb87f78724fedca" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>TelemetryTimeIndexes</name></member>
+      <member refid="struct_f_simulation_metadata_1a7a6694a2089fbf819abbd0b9604a4f8d" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>Terrains</name></member>
+      <member refid="struct_f_simulation_metadata_1a82530349a1567bbac4a83415237ba907" prot="public" virt="non-virtual"><scope>FSimulationMetadata</scope><name>TimeUnit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

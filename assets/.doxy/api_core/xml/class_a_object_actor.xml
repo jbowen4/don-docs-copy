@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_a_object_actor" kind="class" language="C++" prot="public">
+    <compoundname>AObjectActor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_object_actor_1a76ded249ccfe0fc1adaea36c45a1a102" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AObjectActor::ObjectId</definition>
+        <argsstring></argsstring>
+        <name>ObjectId</name>
+        <qualifiedname>AObjectActor::ObjectId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/ObjectActor.h" line="16" column="13" bodyfile="Source/DONToUnreal/Public/ObjectActor.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_object_actor_1a23ab23f7f23f3191171ae61ddafa51ef" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString AObjectActor::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>AObjectActor::Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/ObjectActor.h" line="19" column="13" bodyfile="Source/DONToUnreal/Public/ObjectActor.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_object_actor_1a2f6a4306309b0a52877e838cebb4b2ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AObjectActor::IsObjectOfInterest</definition>
+        <argsstring></argsstring>
+        <name>IsObjectOfInterest</name>
+        <qualifiedname>AObjectActor::IsObjectOfInterest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/ObjectActor.h" line="22" column="10" bodyfile="Source/DONToUnreal/Public/ObjectActor.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_object_actor_1abff65827ad6b7e498d42df0c769cf777" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AObjectActor::vis</definition>
+        <argsstring></argsstring>
+        <name>vis</name>
+        <qualifiedname>AObjectActor::vis</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/ObjectActor.h" line="25" column="10" bodyfile="Source/DONToUnreal/Public/ObjectActor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_object_actor_1a429e781ea35c04aefc696995bf15f40a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AObjectActor::isStatic</definition>
+        <argsstring></argsstring>
+        <name>isStatic</name>
+        <qualifiedname>AObjectActor::isStatic</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/ObjectActor.h" line="28" column="10" bodyfile="Source/DONToUnreal/Public/ObjectActor.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_object_actor_1aeebc974f57c5f5cb0f3b2b4014e128c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void AObjectActor::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <qualifiedname>AObjectActor::BeginPlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/ObjectActor.h" line="31" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AObjectActor</label>
+        <link refid="class_a_object_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AActor</label>
+      </node>
+      <node id="1">
+        <label>AObjectActor</label>
+        <link refid="class_a_object_actor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Source/DONToUnreal/Public/ObjectActor.h" line="9" column="1" bodyfile="Source/DONToUnreal/Public/ObjectActor.h" bodystart="10" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_a_object_actor_1aeebc974f57c5f5cb0f3b2b4014e128c3" prot="protected" virt="virtual"><scope>AObjectActor</scope><name>BeginPlay</name></member>
+      <member refid="class_a_object_actor_1a2f6a4306309b0a52877e838cebb4b2ba" prot="public" virt="non-virtual"><scope>AObjectActor</scope><name>IsObjectOfInterest</name></member>
+      <member refid="class_a_object_actor_1a429e781ea35c04aefc696995bf15f40a" prot="public" virt="non-virtual"><scope>AObjectActor</scope><name>isStatic</name></member>
+      <member refid="class_a_object_actor_1a23ab23f7f23f3191171ae61ddafa51ef" prot="public" virt="non-virtual"><scope>AObjectActor</scope><name>Name</name></member>
+      <member refid="class_a_object_actor_1a76ded249ccfe0fc1adaea36c45a1a102" prot="public" virt="non-virtual"><scope>AObjectActor</scope><name>ObjectId</name></member>
+      <member refid="class_a_object_actor_1abff65827ad6b7e498d42df0c769cf777" prot="public" virt="non-virtual"><scope>AObjectActor</scope><name>vis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

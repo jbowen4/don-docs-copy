@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_object_info_8spec_8cpp" kind="file" language="C++">
+    <compoundname>ObjectInfo.spec.cpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>WITH_DEV_AUTOMATION_TESTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Data/ObjectInfo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Misc/AutomationTest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Tests/TestUtils/TestUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">DEFINE_SPEC(FObjectInfoSpec,<sp/></highlight><highlight class="stringliteral">&quot;Data.State.ObjectInfo&quot;</highlight><highlight class="normal">,<sp/>EAutomationTestFlags::ApplicationContextMask<sp/>|<sp/>EAutomationTestFlags::ProductFilter);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FObjectInfoSpec::Define()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Describe(</highlight><highlight class="stringliteral">&quot;Equality<sp/>operator&quot;</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>It(</highlight><highlight class="stringliteral">&quot;Is<sp/>equal<sp/>when<sp/>parents<sp/>only<sp/>have<sp/>same<sp/>name&quot;</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent1(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(1),<sp/>FQuat(2));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent2(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(3),<sp/>FQuat(5));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RequireEqual(</highlight><highlight class="stringliteral">&quot;Parent<sp/>names<sp/>are<sp/>equal&quot;</highlight><highlight class="normal">,<sp/>parent1.GetName(),<sp/>parent2.GetName());</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>child1(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Bar&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(parent1),<sp/>FVector(2),<sp/>FQuat(3));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>child2(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Bar&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(parent2),<sp/>FVector(2),<sp/>FQuat(3));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TestEqual(</highlight><highlight class="stringliteral">&quot;Children<sp/>are<sp/>equal&quot;</highlight><highlight class="normal">,<sp/>child1,<sp/>child2);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>It(</highlight><highlight class="stringliteral">&quot;Is<sp/>equal<sp/>when<sp/>both<sp/>parents<sp/>are<sp/>absent&quot;</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent1(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(1),<sp/>FQuat(2));</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent2(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(1),<sp/>FQuat(2));</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TestEqual(</highlight><highlight class="stringliteral">&quot;Considered<sp/>equal&quot;</highlight><highlight class="normal">,<sp/>parent1,<sp/>parent2);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>It(</highlight><highlight class="stringliteral">&quot;Not<sp/>equal<sp/>when<sp/>one<sp/>parent<sp/>is<sp/>present<sp/>and<sp/>the<sp/>other<sp/>is<sp/>not&quot;</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>tested1(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(1),<sp/>FQuat(2));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Bar&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(4),<sp/>FQuat(5));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>tested2(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(parent),<sp/>FVector(1),<sp/>FQuat(2));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TestNotEqual(</highlight><highlight class="stringliteral">&quot;Not<sp/>considered<sp/>equal&quot;</highlight><highlight class="normal">,<sp/>tested1,<sp/>tested2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>It(</highlight><highlight class="stringliteral">&quot;Not<sp/>equal<sp/>when<sp/>parents<sp/>have<sp/>different<sp/>names&quot;</highlight><highlight class="normal">,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent1(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Foo&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(1),<sp/>FQuat(2));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>parent2(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Baz&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(),<sp/>FVector(3),<sp/>FQuat(5));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>child1(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Bar&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(parent1),<sp/>FVector(2),<sp/>FQuat(3));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FObjectInfo<sp/>child2(FName(TEXT(</highlight><highlight class="stringliteral">&quot;Bar&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>TOptRef&lt;const<sp/>FObjectInfo&gt;(parent2),<sp/>FVector(2),<sp/>FQuat(3));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TestNotEqual(</highlight><highlight class="stringliteral">&quot;Not<sp/>considered<sp/>equal&quot;</highlight><highlight class="normal">,<sp/>child1,<sp/>child2);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Source/DONToUnreal/Private/Tests/Data/ObjectInfo.spec.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+
+
+# File ClassMacros.h
+
+[**File List**](files.md) **>** [**DONToUnreal**](dir_7e70b7b4a1df651b2af4c8dca0b54b92.md) **>** [**Public**](dir_c336ec6675be099178e02bcdcfb186ce.md) **>** [**Util**](dir_91e92cab0a0b5df2370f6d3ddd515cf6.md) **>** [**ClassMacros.h**](_class_macros_8h.md)
+
+[Go to the documentation of this file](_class_macros_8h.md)
+
+
+```C++
+#pragma once
+
+#ifndef GETTER
+    #define GETTER(fieldType, fieldName) \
+        USE_RET FORCEINLINE const fieldType& Get##fieldName() const noexcept { return fieldName; }
+#endif
+
+#ifndef USE_RET
+    #define USE_RET [[nodiscard]]
+#endif
+```
+
+

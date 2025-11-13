@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_model_component_data" kind="struct" language="C++" prot="public">
+    <compoundname>FModelComponentData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_model_component_data_1ae36680a4c050b7348eaf688d2058ff1e" prot="public" static="no" mutable="no">
+        <type>FString</type>
+        <definition>FString FModelComponentData::Filename</definition>
+        <argsstring></argsstring>
+        <name>Filename</name>
+        <qualifiedname>FModelComponentData::Filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="11" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_model_component_data_1a00b9ff10c714f6baa301c6865e8d7440" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector FModelComponentData::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>FModelComponentData::Position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="13" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_model_component_data_1a8e8b01259d36e217ac1067e5431558da" prot="public" static="no" mutable="no">
+        <type>FQuat</type>
+        <definition>FQuat FModelComponentData::Orientation</definition>
+        <argsstring></argsstring>
+        <name>Orientation</name>
+        <qualifiedname>FModelComponentData::Orientation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="15" column="11" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_model_component_data_1a28f713347608abc8e11d1bbc50aff3a6" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector FModelComponentData::Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <qualifiedname>FModelComponentData::Scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="17" column="13" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_model_component_data_1a589c3fbd6f4f1b7bd8ee6e72be69b900" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FModelComponentData::bIsCelestialBody</definition>
+        <argsstring></argsstring>
+        <name>bIsCelestialBody</name>
+        <qualifiedname>FModelComponentData::bIsCelestialBody</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/DataTypes.h" line="19" column="10" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/DataTypes.h" line="7" column="1" bodyfile="Source/DONToUnreal/Public/DataTypes.h" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="struct_f_model_component_data_1a589c3fbd6f4f1b7bd8ee6e72be69b900" prot="public" virt="non-virtual"><scope>FModelComponentData</scope><name>bIsCelestialBody</name></member>
+      <member refid="struct_f_model_component_data_1ae36680a4c050b7348eaf688d2058ff1e" prot="public" virt="non-virtual"><scope>FModelComponentData</scope><name>Filename</name></member>
+      <member refid="struct_f_model_component_data_1a8e8b01259d36e217ac1067e5431558da" prot="public" virt="non-virtual"><scope>FModelComponentData</scope><name>Orientation</name></member>
+      <member refid="struct_f_model_component_data_1a00b9ff10c714f6baa301c6865e8d7440" prot="public" virt="non-virtual"><scope>FModelComponentData</scope><name>Position</name></member>
+      <member refid="struct_f_model_component_data_1a28f713347608abc8e11d1bbc50aff3a6" prot="public" virt="non-virtual"><scope>FModelComponentData</scope><name>Scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

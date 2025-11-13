@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="struct_f_object_info_tmp" kind="struct" language="C++" prot="public">
+    <compoundname>FObjectInfoTmp</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_object_info_tmp_1aa5feb74994a6b7b0f8812358e458d65f" prot="public" static="no" mutable="no">
+        <type>FName</type>
+        <definition>FName FObjectInfoTmp::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>FObjectInfoTmp::Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="125" column="7" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_info_tmp_1a5175a128574aeca505cff2aa9f935347" prot="public" static="no" mutable="no">
+        <type>TOptional&lt; FName &gt;</type>
+        <definition>TOptional&lt;FName&gt; FObjectInfoTmp::ParentName</definition>
+        <argsstring></argsstring>
+        <name>ParentName</name>
+        <qualifiedname>FObjectInfoTmp::ParentName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="126" column="11" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_info_tmp_1a3c03483b484b2a67c115b5726d7e509b" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector FObjectInfoTmp::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>FObjectInfoTmp::Position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="127" column="9" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_info_tmp_1a41d1640385bdf197b623def7879b74d3" prot="public" static="no" mutable="no">
+        <type>FQuat</type>
+        <definition>FQuat FObjectInfoTmp::Orientation</definition>
+        <argsstring></argsstring>
+        <name>Orientation</name>
+        <qualifiedname>FObjectInfoTmp::Orientation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="128" column="7" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_object_info_tmp_1a5c564b1fbec2f0c8f6f2d5fe274eff49" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FObjectInfoTmp::Visibility</definition>
+        <argsstring></argsstring>
+        <name>Visibility</name>
+        <qualifiedname>FObjectInfoTmp::Visibility</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="129" column="6" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_f_object_info_tmp_1a93daefe391d350f36c5b977ec7723e57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoTmp::FObjectInfoTmp</definition>
+        <argsstring>(const FName &amp;name, const TOptional&lt; FName &gt; &amp;parent_name, const FVector &amp;position, const FQuat &amp;orientation, const bool visibility)</argsstring>
+        <name>FObjectInfoTmp</name>
+        <qualifiedname>FObjectInfoTmp::FObjectInfoTmp</qualifiedname>
+        <param>
+          <type>const FName &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const TOptional&lt; FName &gt; &amp;</type>
+          <declname>parent_name</declname>
+        </param>
+        <param>
+          <type>const FVector &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const FQuat &amp;</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>visibility</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="131" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="131" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_tmp_1ac394e321cd094c6b9a05cbb4b4033e1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoTmp::FObjectInfoTmp</definition>
+        <argsstring>()</argsstring>
+        <name>FObjectInfoTmp</name>
+        <qualifiedname>FObjectInfoTmp::FObjectInfoTmp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="141" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_tmp_1ae86dde1597892103e61f4754f900e41e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FObjectInfoTmp::~FObjectInfoTmp</definition>
+        <argsstring>()</argsstring>
+        <name>~FObjectInfoTmp</name>
+        <qualifiedname>FObjectInfoTmp::~FObjectInfoTmp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="146" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_f_object_info_tmp_1ac016913d6dc0ce832a0c220be90b0ba5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>FString</type>
+        <definition>FString FObjectInfoTmp::ToString</definition>
+        <argsstring>() const</argsstring>
+        <name>ToString</name>
+        <qualifiedname>FObjectInfoTmp::ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="150" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" line="121" column="1" bodyfile="Source/DONToUnreal/Public/Data/ObjectInfoStore.h" bodystart="122" bodyend="151"/>
+    <listofallmembers>
+      <member refid="struct_f_object_info_tmp_1a93daefe391d350f36c5b977ec7723e57" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>FObjectInfoTmp</name></member>
+      <member refid="struct_f_object_info_tmp_1ac394e321cd094c6b9a05cbb4b4033e1b" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>FObjectInfoTmp</name></member>
+      <member refid="struct_f_object_info_tmp_1aa5feb74994a6b7b0f8812358e458d65f" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>Name</name></member>
+      <member refid="struct_f_object_info_tmp_1a41d1640385bdf197b623def7879b74d3" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>Orientation</name></member>
+      <member refid="struct_f_object_info_tmp_1a5175a128574aeca505cff2aa9f935347" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>ParentName</name></member>
+      <member refid="struct_f_object_info_tmp_1a3c03483b484b2a67c115b5726d7e509b" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>Position</name></member>
+      <member refid="struct_f_object_info_tmp_1ac016913d6dc0ce832a0c220be90b0ba5" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>ToString</name></member>
+      <member refid="struct_f_object_info_tmp_1a5c564b1fbec2f0c8f6f2d5fe274eff49" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>Visibility</name></member>
+      <member refid="struct_f_object_info_tmp_1ae86dde1597892103e61f4754f900e41e" prot="public" virt="non-virtual"><scope>FObjectInfoTmp</scope><name>~FObjectInfoTmp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
